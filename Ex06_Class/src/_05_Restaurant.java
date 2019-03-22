@@ -18,23 +18,26 @@ import java.util.Random;
  *    만약에 생성자를 만들지 않으면 컴파일러가 컴파일시 자동으로
  *    default생성자를 추가해준다.
  *    Unity로 비유하면 void Start()의 역할과 유사
+ * 7) 메서드 중에 내부에서만 사용되는 메서드가 있다.
+ * 	  첫째 목적, 사용자가 사용할 필요 없는 메서드는 감추기 위해
+ *    둘째 목적, 구현자가 노출시키고 싶지 않은 메서드를 감추기 위해
  * */
 
-class Restaurant1{
+class Restaurant2{
 	// 필드(변수):명사
 		private int money = 100000;
 		private String[] foods = {"떡볶이", "순대", "라면", "쫄면"};
 		private int sel;		// 필드변수는 자동으로 초기화됨
 		
 		// 메서드(기능):동사
-		Restaurant1(){		// 생성자 (메서드)
+		Restaurant2(){		// 생성자 (메서드)
 			cleaning();
 			prepareFoods();
 		}
-		void cleaning() {
+		private void cleaning() {
 			System.out.println("식당을 청소한다");
 		}
-		void prepareFoods() {
+		private void prepareFoods() {
 			System.out.println("음식 재료를 손질하다");
 		}
 		void welcome() {
@@ -66,11 +69,11 @@ class Restaurant1{
 		}			
 }
 
-public class _04_Restaurant {
+public class _05_Restaurant {
 	
 	public static void main(String[] args) {
 		// 설계도         리모컨           실체(객체)
-		Restaurant1 rest = new Restaurant1();
+		Restaurant2 rest = new Restaurant2();
 //		rest.cleaning();
 //		rest.prepareFoods();
 		for(int i=0;i<10;i++){
@@ -88,7 +91,6 @@ public class _04_Restaurant {
 		}
 		System.out.println("==================");
 		rest.calcMoney();
-		rest.cleaning();
 	}
 }
 

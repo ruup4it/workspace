@@ -2,8 +2,8 @@
 public class _15_BubbleSort {
 	public static void main(String[] args) {
 		int[] arr = { 7, 9, 4, 1, 5 };
-		int[] arr1 = ascBubleSort(arr);
-		int[] arr2 = descBubleSort(arr);
+		ascBubleSort(arr);
+		descBubleSort(arr);
 	}
 
 	public static int[] ascBubleSort(int[] arr) {

@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 /* 짝수인지 홀수인지 
@@ -21,7 +20,7 @@ public class _05_JudgeTrueFalse {
 		Scanner scan = new Scanner(System.in);
 		int[] arr = new int[length];
 		int count = 0;
-		for (int iterm : arr) {
+		for (@SuppressWarnings("unused") int item : arr) {
 			System.out.println("정수를 입력하세요");
 			arr[count] = scan.nextInt();
 			count++;

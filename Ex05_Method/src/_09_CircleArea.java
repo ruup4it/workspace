@@ -6,22 +6,23 @@ import java.util.Scanner;
  */
 public class _09_CircleArea {
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		// 변수 영역
 		double r=0, area=0, round=0;
 		// 매서드 영역
-		r = inputRadius(r);
+		r = inputRadius(sc,r);
 		calcArea(r);
 		calcRound(r);
 		area = calcArea(r);
 		round = calcRound(r);
 		System.out.println("원의 넓이는 "+area+"입니다");
 		System.out.println("원의 넓이는 "+round+"입니다");
-		
+		sc.close();
 	}
 	// 반지름 입력받는 매서드
-	public static double inputRadius(double r2) {
+	public static double inputRadius(Scanner sc,double r2) {
 
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("반지름의 길이 입력: ");
 		double r = sc.nextDouble();
 		return r;
