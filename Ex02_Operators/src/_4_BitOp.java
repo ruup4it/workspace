@@ -1,10 +1,10 @@
-// ºñÆ® ³í¸® ¿¬»êÀÚ
-// Java¿¡¼­ °ÅÀÇ Àß ¾È ¾²ÀÓ
-// ±×³É ÀÖ±¸³ª 
+ï»¿// ë¹„íŠ¸ ë…¼ë¦¬ ì—°ì‚°ìž
+// Javaì—ì„œ ê±°ì˜ ìž˜ ì•ˆ ì“°ìž„
+// ê·¸ëƒ¥ ìžˆêµ¬ë‚˜ 
 // |(or), &(and), ^(xor)
-// |(or)  : ºñÆ®³¢¸® µÑ Áß 1 °³°¡ 1ÀÌ¸é 1
-// &(and) : ºñÆ®³¢¸® µÑ ´Ù 1ÀÌ¾î¾ß 1
-// ^(xor) : ºñÆ®³¢¸® °°À¸¸é 0, ´Ù¸£¸é 1
+// |(or)  : ë¹„íŠ¸ë¼ë¦¬ ë‘˜ ì¤‘ 1 ê°œê°€ 1ì´ë©´ 1
+// &(and) : ë¹„íŠ¸ë¼ë¦¬ ë‘˜ ë‹¤ 1ì´ì–´ì•¼ 1
+// ^(xor) : ë¹„íŠ¸ë¼ë¦¬ ê°™ìœ¼ë©´ 0, ë‹¤ë¥´ë©´ 1
 
 public class _4_BitOp {
 	public static void main(String[] args) {

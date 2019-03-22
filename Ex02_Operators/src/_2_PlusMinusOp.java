@@ -1,9 +1,9 @@
-// Áõ°¨¿¬»êÀÚ
+ï»¿// ì¦ê°ì—°ì‚°ì
 // Increment and Decrement Operators
 public class _2_PlusMinusOp {
 	public static void main(String[] args) {
 		int num = 10;
-		// µ¶¸³ÀûÀ¸·Î »ç¿ëµÉ ¶§´Â 1Áõ°¡ or 1 °¨¼Ò
+		// ë…ë¦½ì ìœ¼ë¡œ ì‚¬ìš©ë  ë•ŒëŠ” 1ì¦ê°€ or 1 ê°ì†Œ
 		num++; // num = num + 1;
 		System.out.println(num);
 		
@@ -21,11 +21,11 @@ public class _2_PlusMinusOp {
 		num = 10;
 		
 		// ++num
-		// num °ªÀ» ¸ÕÀú 1 Áõ°¡ ½ÃÅ² ÈÄ¿¡ temp¿¡ ´ã±â
+		// num ê°’ì„ ë¨¼ì € 1 ì¦ê°€ ì‹œí‚¨ í›„ì— tempì— ë‹´ê¸°
 		int temp = ++num;
 		System.out.println("num = 10;");
 		System.out.println("temp = ++num;");
-		System.out.println("num °ªÀ» ¸ÕÀú 1 Áõ°¡ ½ÃÅ² ÈÄ¿¡ temp¿¡ ´ã±â");
+		System.out.println("num ê°’ì„ ë¨¼ì € 1 ì¦ê°€ ì‹œí‚¨ í›„ì— tempì— ë‹´ê¸°");
 		System.out.println("num : " + num);
 		System.out.println("temp : " + temp);
 		
@@ -34,15 +34,15 @@ public class _2_PlusMinusOp {
 		num = 10;
 		
 		// num++
-		// num °ªÀ» temp¿¡ ´ãÀº ÈÄ¿¡ 1 Áõ°¡
+		// num ê°’ì„ tempì— ë‹´ì€ í›„ì— 1 ì¦ê°€
 		temp = num++;
 		System.out.println("num = 10;");
 		System.out.println("temp = num++;");
-		System.out.println("num °ªÀ» temp¿¡ ´ãÀº ÈÄ¿¡ 1 Áõ°¡");
+		System.out.println("num ê°’ì„ tempì— ë‹´ì€ í›„ì— 1 ì¦ê°€");
 		System.out.println("num : " + num);
 		System.out.println("temp : " + temp);
 		
-		// -- ¿ª½Ã ++°ú µ¿ÀÏÇÏ´Ù.
+		// -- ì—­ì‹œ ++ê³¼ ë™ì¼í•˜ë‹¤.
 		
 		System.out.println("===============");
 		

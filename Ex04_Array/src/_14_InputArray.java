@@ -1,11 +1,11 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 import java.util.Scanner;
 
-/* 7°³ÀÇ double ¹è¿­À» ÇÒ´çÇÏ¼¼¿ä
- * ¾ÕÀÇ 5°³¿¡´Â ¼ºÀûÀ» ÀÔ·Â¹Ş°í 
- * 6¹øÂ° ÃÑÁ¡
- * 7¹øÂ° Æò±ÕÀ» °è»êÇÏ°í ³Ö°í
- * Ãâ·ÂÇÏ¼¼¿ä
+/* 7ê°œì˜ double ë°°ì—´ì„ í• ë‹¹í•˜ì„¸ìš”
+ * ì•ì˜ 5ê°œì—ëŠ” ì„±ì ì„ ì…ë ¥ë°›ê³  
+ * 6ë²ˆì§¸ ì´ì 
+ * 7ë²ˆì§¸ í‰ê· ì„ ê³„ì‚°í•˜ê³  ë„£ê³ 
+ * ì¶œë ¥í•˜ì„¸ìš”
  * */
 public class _14_InputArray {
 	public static void main(String[] args) {
@@ -14,12 +14,12 @@ public class _14_InputArray {
 		Arrays.fill(arr,0);
 		
 		for(int i = 0; i < 5; i++) {
-			System.out.println("¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”");
 			arr[i] = scan.nextDouble();
 			arr[5] += arr[i];
 		}
 		arr[6] = arr[5]/5;
-		System.out.println(Arrays.toString(arr)+"ÃÑÁ¡ : "+arr[5]+" Æò±Õ : " +arr[6]);
+		System.out.println(Arrays.toString(arr)+"ì´ì  : "+arr[5]+" í‰ê·  : " +arr[6]);
 		
 		scan.close();
 	} 

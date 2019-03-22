@@ -1,6 +1,6 @@
-package exercise_190313;
+ï»¿package exercise_190313;
 
-// 2. while¹®À» ÀÌ¿ëÇØ¼­ 10ºÎÅÍ 20±îÁö Ãâ·ÂÇÏ¼¼¿ä
+// 2. whileë¬¸ì„ ì´ìš©í•´ì„œ 10ë¶€í„° 20ê¹Œì§€ ì¶œë ¥í•˜ì„¸ìš”
 
 public class while02 {
 	public static void main(String[] args) {

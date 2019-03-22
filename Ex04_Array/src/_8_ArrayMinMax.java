@@ -1,9 +1,9 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 import java.util.Scanner;
 
-/* ¹è¿­¿¡ Á¤¼ö 10°³¸¦ ÀÔ·Â¹Ş½À´Ï´Ù.
- * 1) for¹®À» ÀÌ¿ëÇØ¼­ ºñ±³¹æ½ÄÀ¸·Î ÃÖ¼Ò°ª°ú ÃÖ´ë°ªÀ» ±¸ÇÏ¼¼¿ä
- * 2) Arrays.sort¸¦ ÀÌ¿ëÇØ¼­ ÃÖ¼Ò°ª°ú ÃÖ´ë°ªÀ» ±¸ÇÏ¼¼¿ä
+/* ë°°ì—´ì— ì •ìˆ˜ 10ê°œë¥¼ ì…ë ¥ë°›ìŠµë‹ˆë‹¤.
+ * 1) forë¬¸ì„ ì´ìš©í•´ì„œ ë¹„êµë°©ì‹ìœ¼ë¡œ ìµœì†Œê°’ê³¼ ìµœëŒ€ê°’ì„ êµ¬í•˜ì„¸ìš”
+ * 2) Arrays.sortë¥¼ ì´ìš©í•´ì„œ ìµœì†Œê°’ê³¼ ìµœëŒ€ê°’ì„ êµ¬í•˜ì„¸ìš”
  * */
 public class _8_ArrayMinMax {
 	public static void main(String[] args) {
@@ -11,11 +11,11 @@ public class _8_ArrayMinMax {
 		int[] array = new int[10];
 		int max = 0, min = 0;
 		for (int i = 0; i < array.length; i++) {
-			System.out.println(String.format("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä %02d/10", i + 1));
+			System.out.println(String.format("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” %02d/10", i + 1));
 			array[i] = scan.nextInt();
 			min += array[i];
 		}
-		// for¹® ÀÌ¿ë
+		// forë¬¸ ì´ìš©
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] > max)
 				max = array[i];
@@ -23,14 +23,14 @@ public class _8_ArrayMinMax {
 				min = array[i];
 		}
 		
-		// sortÀÌ¿ë
+		// sortì´ìš©
 //		Arrays.sort(array);
 //		max = array[0];
 //		min = array[array.length-1];
 		
 		System.out.println(Arrays.toString(array));
-		System.out.println(String.format("ÃÖ´ë°ªÀº %d ÀÔ´Ï´Ù.", max));
-		System.out.println(String.format("ÃÖ¼Ò°ªÀº %d ÀÔ´Ï´Ù.", min));
+		System.out.println(String.format("ìµœëŒ€ê°’ì€ %d ì…ë‹ˆë‹¤.", max));
+		System.out.println(String.format("ìµœì†Œê°’ì€ %d ì…ë‹ˆë‹¤.", min));
 		scan.close();
 	}
 }

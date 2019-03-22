@@ -1,14 +1,14 @@
-import java.util.Scanner;
-//import java.util.*; // java.util ³»ÀÇ ¸ğµç °É import
+ï»¿import java.util.Scanner;
+//import java.util.*; // java.util ë‚´ì˜ ëª¨ë“  ê±¸ import
 
 public class _14_InputUserValue {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int num = scan.nextInt();
 
-		System.out.println("¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String string = scan.next();
 		
 		System.out.println(num);

@@ -1,53 +1,53 @@
-/* <<Å¬·¡½ºÀÇ ¸ñÀû>>
- * 1) ¸Å¼­µå ½Ã´ëº¸´Ù º¹ÀâÇØÁ®¼­ ´õ Å« ´ÜÀ§°¡ ÇÊ¿äÇØÁü
- * 2) Å« ÇÁ·Î±×·¥À» ÀûÀýÇÑ ´ÜÀ§·Î ÀÌÇØ, ÇØ°á
- * 3) ¸Å¼­µå¸¦ ÀçÈ°¿ëÇÏ·Á°í ½ÃµµÇß´õ´Ï »ý°¢º¸´Ù Àß ¾ÈµÊ
- * 		¿Ö? - ¸Å¼­µå´Â °á±¹ ¿ÜºÎ ÆÄ¶ó¹ÌÅÍ(¸Å°³º¯¼ö)·Î °ü·ÃµÈ º¯¼ö¸¦ ¹Þ¾Æ¾ß ÇÏ´Ï±î
- * 			  -  ¸Å¼­µå´Â ÀÚ±â¿Í °ü·ÃÀÖ´Â ´Ù¸¥ ¸Å¼­µå¸¦ ÇÊ¿ä·Î ÇÏ´Ï±î
- * 		±×·¡¼­ ¾Æ¿¹ °ü·ÃÀÖ´Â °ÍµéÀº Å¬·¡½º¶ó´Â ÀÌ¸§À¸·Î ´Ù ¹­¾î¹ö¸®ÀÚ
- * 4) ±×·¡¼­ Å¬·¡½º´Â »ó´çÈ÷ µ¶¸³ÀûÀÎ ÇüÅÂ¸¦ ÃëÇÏ°í ÀÖ°í
- * 		¾î´À Á¤µµ´Â Àç»ç¿ë¼ºÀÌ ³ô¾ÆÁ³´Ù.
- * 		½ÉÁö¾î´Â °´Ã¼ÁöÇâ ¹æ¹ý·ÐÀÌ ³ª¿À°í ³ª¼­
- * 		¹Ì·¡¿¡´Â °³¹ßÀÚ°¡ »ç¶óÁú °ÍÀÌ¶ó°í ¿¹ÃøÇÑ Àü¹®°¡µéµµ ÀÖ¾ú´Ù.
- * 5) °´Ã¼ÁöÇâ¿¡¼­ Àç»ç¿ë¼ºÀº FrameworkÀÇ Á¦ÀÛÀ¸·Î
- * 		¾î´À Á¤µµ´Â ¼º°øÇßÁö¸¸ °³¹ßÀÚ°¡ ¾ø¾îÁú ÀÏÀº ¾ø´Ù.
- * 6) ½Ä´ç Å¬·¡½º, °´Ã¼ÁöÇâÀº Çö½Ç¼¼°è¸¦ ¸ðµ¨¸µÇß´Ù°í Ç¥Çö
- * 		ex. ½Ä´ç - ½Ä´çÁÖÀÎ(¸ÅÃâ, ·¹¼­ÇÇ)
- * 			   		 - À§»ý°ø¹«¿ø(Ã»°á, ±Ô°Ý)
- * 			   		 - ¼Õ´Ô(°¡°Ý, ¸À)
- * 		°°Àº Å¬·¡½º¶óµµ ÁÖÃ¼¿¡ µû¶ó °ü½ÉÀÌ ´Ù¸§.
- *  7) ½ÇÁ¦´Â Çö½ÇÀ» ±×´ë·Î ¿Å±â´Â °ÍÀº ºÒ°¡´ÉÇÏ°í
- *  	 ÇöÀç ³»°¡ ´ë»ó(¿ÀºêÁ§Æ®)¿¡ ´ëÇÑ °ü½É»ç(¿ä±¸»çÇ×)¿¡ ´ëÇØ
- *  	 Á¦ÇÑÀûÀ¸·Î ÇÁ·Î±×·¡¹Ö ÇÏ°Ô µÈ´Ù.
- *  8) ±×·¯³ª Ç¥ÁØÀûÀÎ ±â´ÉµéÀº Framework¶ó´Â ÇüÅÂ·Î ¼³°èµÇ¾î
- *  	 ÀÚÁÖ »ç¿ëµÇ°Ô µÈ´Ù. ±×¸®°í ÀÌ Framework¸¦ »ç¿ëÇÏ±â À§ÇØ °³¹ßÀÚ°¡ ÇÊ¿äÇÏ´Ù.
- *  9) Á¤¸®: Å¬·¡½º = ÇÊµå(¸í»ç) + ¸Å¼­µå(µ¿»ç)
+ï»¿/* <<í´ëž˜ìŠ¤ì˜ ëª©ì >>
+ * 1) ë§¤ì„œë“œ ì‹œëŒ€ë³´ë‹¤ ë³µìž¡í•´ì ¸ì„œ ë” í° ë‹¨ìœ„ê°€ í•„ìš”í•´ì§
+ * 2) í° í”„ë¡œê·¸ëž¨ì„ ì ì ˆí•œ ë‹¨ìœ„ë¡œ ì´í•´, í•´ê²°
+ * 3) ë§¤ì„œë“œë¥¼ ìž¬í™œìš©í•˜ë ¤ê³  ì‹œë„í–ˆë”ë‹ˆ ìƒê°ë³´ë‹¤ ìž˜ ì•ˆë¨
+ * 		ì™œ? - ë§¤ì„œë“œëŠ” ê²°êµ­ ì™¸ë¶€ íŒŒë¼ë¯¸í„°(ë§¤ê°œë³€ìˆ˜)ë¡œ ê´€ë ¨ëœ ë³€ìˆ˜ë¥¼ ë°›ì•„ì•¼ í•˜ë‹ˆê¹Œ
+ * 			  -  ë§¤ì„œë“œëŠ” ìžê¸°ì™€ ê´€ë ¨ìžˆëŠ” ë‹¤ë¥¸ ë§¤ì„œë“œë¥¼ í•„ìš”ë¡œ í•˜ë‹ˆê¹Œ
+ * 		ê·¸ëž˜ì„œ ì•„ì˜ˆ ê´€ë ¨ìžˆëŠ” ê²ƒë“¤ì€ í´ëž˜ìŠ¤ë¼ëŠ” ì´ë¦„ìœ¼ë¡œ ë‹¤ ë¬¶ì–´ë²„ë¦¬ìž
+ * 4) ê·¸ëž˜ì„œ í´ëž˜ìŠ¤ëŠ” ìƒë‹¹ížˆ ë…ë¦½ì ì¸ í˜•íƒœë¥¼ ì·¨í•˜ê³  ìžˆê³ 
+ * 		ì–´ëŠ ì •ë„ëŠ” ìž¬ì‚¬ìš©ì„±ì´ ë†’ì•„ì¡Œë‹¤.
+ * 		ì‹¬ì§€ì–´ëŠ” ê°ì²´ì§€í–¥ ë°©ë²•ë¡ ì´ ë‚˜ì˜¤ê³  ë‚˜ì„œ
+ * 		ë¯¸ëž˜ì—ëŠ” ê°œë°œìžê°€ ì‚¬ë¼ì§ˆ ê²ƒì´ë¼ê³  ì˜ˆì¸¡í•œ ì „ë¬¸ê°€ë“¤ë„ ìžˆì—ˆë‹¤.
+ * 5) ê°ì²´ì§€í–¥ì—ì„œ ìž¬ì‚¬ìš©ì„±ì€ Frameworkì˜ ì œìž‘ìœ¼ë¡œ
+ * 		ì–´ëŠ ì •ë„ëŠ” ì„±ê³µí–ˆì§€ë§Œ ê°œë°œìžê°€ ì—†ì–´ì§ˆ ì¼ì€ ì—†ë‹¤.
+ * 6) ì‹ë‹¹ í´ëž˜ìŠ¤, ê°ì²´ì§€í–¥ì€ í˜„ì‹¤ì„¸ê³„ë¥¼ ëª¨ë¸ë§í–ˆë‹¤ê³  í‘œí˜„
+ * 		ex. ì‹ë‹¹ - ì‹ë‹¹ì£¼ì¸(ë§¤ì¶œ, ë ˆì„œí”¼)
+ * 			   		 - ìœ„ìƒê³µë¬´ì›(ì²­ê²°, ê·œê²©)
+ * 			   		 - ì†ë‹˜(ê°€ê²©, ë§›)
+ * 		ê°™ì€ í´ëž˜ìŠ¤ë¼ë„ ì£¼ì²´ì— ë”°ë¼ ê´€ì‹¬ì´ ë‹¤ë¦„.
+ *  7) ì‹¤ì œëŠ” í˜„ì‹¤ì„ ê·¸ëŒ€ë¡œ ì˜®ê¸°ëŠ” ê²ƒì€ ë¶ˆê°€ëŠ¥í•˜ê³ 
+ *  	 í˜„ìž¬ ë‚´ê°€ ëŒ€ìƒ(ì˜¤ë¸Œì íŠ¸)ì— ëŒ€í•œ ê´€ì‹¬ì‚¬(ìš”êµ¬ì‚¬í•­)ì— ëŒ€í•´
+ *  	 ì œí•œì ìœ¼ë¡œ í”„ë¡œê·¸ëž˜ë° í•˜ê²Œ ëœë‹¤.
+ *  8) ê·¸ëŸ¬ë‚˜ í‘œì¤€ì ì¸ ê¸°ëŠ¥ë“¤ì€ Frameworkë¼ëŠ” í˜•íƒœë¡œ ì„¤ê³„ë˜ì–´
+ *  	 ìžì£¼ ì‚¬ìš©ë˜ê²Œ ëœë‹¤. ê·¸ë¦¬ê³  ì´ Frameworkë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ ê°œë°œìžê°€ í•„ìš”í•˜ë‹¤.
+ *  9) ì •ë¦¬: í´ëž˜ìŠ¤ = í•„ë“œ(ëª…ì‚¬) + ë§¤ì„œë“œ(ë™ì‚¬)
  */
 public class _01_Puppy {
-		// Field(¸â¹öº¯¼ö)
-		String leftEye = "¿ÞÂÊ ´«";
-		String rightEye = "¿À¸¥ÂÊ ´«";
-		String mouth = "ÀÔ";
-		String nose = "ÄÚ";
-		String tail = "²¿¸®";
+		// Field(ë©¤ë²„ë³€ìˆ˜)
+		String leftEye = "ì™¼ìª½ ëˆˆ";
+		String rightEye = "ì˜¤ë¥¸ìª½ ëˆˆ";
+		String mouth = "ìž…";
+		String nose = "ì½”";
+		String tail = "ê¼¬ë¦¬";
 		String[] legs = new String[4];
 		
 	public void pretty() {
-		System.out.println(tail+"À» Èçµç´Ù");
+		System.out.println(tail+"ì„ í”ë“ ë‹¤");
 	}
 	
 	public void eat() {
-		System.out.println(nose+"¸¦ Å¯Å¯°Å¸°´Ù");
-		System.out.println(mouth+"¸¦ ¹ú·Á¼­ ¸Ô´Â´Ù");
+		System.out.println(nose+"ë¥¼ í‚í‚ê±°ë¦°ë‹¤");
+		System.out.println(mouth+"ë¥¼ ë²Œë ¤ì„œ ë¨¹ëŠ”ë‹¤");
 	}
 	
 	public void sleep() {
-		System.out.println(leftEye+"À» °¨´Â´Ù");
-		System.out.println(rightEye+"À» °¨´Â´Ù");
+		System.out.println(leftEye+"ì„ ê°ëŠ”ë‹¤");
+		System.out.println(rightEye+"ì„ ê°ëŠ”ë‹¤");
 	}
 	
 	public static void main(String[] args) {
-		//      Çªµé 	   ¸ð¸ð
+		//      í‘¸ë“¤ 	   ëª¨ëª¨
 		_01_Puppy puppy = new _01_Puppy();
 		puppy.pretty();
 		puppy.eat();

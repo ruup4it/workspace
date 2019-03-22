@@ -1,8 +1,8 @@
-package javaLec._class.ex06Constructor;
+ï»¿package javaLec._class.ex06Constructor;
 
 public class PencilBuyer {
-	int myMoney = 5000; // º¸À¯ ±İ¾×
-	int numOfPencil = 0; // ¿¬ÇÊ °³¼ö
+	int myMoney = 5000; // ë³´ìœ  ê¸ˆì•¡
+	int numOfPencil = 0; // ì—°í•„ ê°œìˆ˜
 
 	public void buyPencil(PencilSeller seller, int money) {
 		numOfPencil += seller.salePencil(money);
@@ -10,8 +10,8 @@ public class PencilBuyer {
 	}
 
 	public void showBuyResult() {
-		System.out.println("***³ªÀÇ ÇöÀç »óÈ²***");
-		System.out.println("ÇöÀç ÀÜ¾×: " + myMoney + "¿ø");
-		System.out.println("¿¬ÇÊ °³¼ö: " + numOfPencil + "°³");
+		System.out.println("***ë‚˜ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("í˜„ì¬ ì”ì•¡: " + myMoney + "ì›");
+		System.out.println("ì—°í•„ ê°œìˆ˜: " + numOfPencil + "ê°œ");
 	}
 }

@@ -1,27 +1,27 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* while	: ¸î ¹ø ¹İº¹ÇÒ Áö ¸ğ¸£¸é
- * do~while	: 1 ¹øÀº ½ÇÇàÇÏ°í ³ª¼­ ÆÇ´ÜÇÏ°í ½ÍÀ¸¸é
- * for		: ½ÃÀÛ°ú ³¡ÀÌ ¸íÈ®ÇÏ¸é
- * but »óÈ£È£È¯ÀÌ µÈ´Ù.
+/* while	: ëª‡ ë²ˆ ë°˜ë³µí•  ì§€ ëª¨ë¥´ë©´
+ * do~while	: 1 ë²ˆì€ ì‹¤í–‰í•˜ê³  ë‚˜ì„œ íŒë‹¨í•˜ê³  ì‹¶ìœ¼ë©´
+ * for		: ì‹œì‘ê³¼ ëì´ ëª…í™•í•˜ë©´
+ * but ìƒí˜¸í˜¸í™˜ì´ ëœë‹¤.
  * */
 
-// »ç¿ëÀÚ·ÎºÎÅÍ ¼ıÀÚ¸¦ ÀÔ·Â ¹Ş°í
-// ³ª¹«¸¦ ÇØ´ç ¼ıÀÚ¸¸Å­ ÂïÀ¸¼¼¿ä
-// ¸¶Áö¸·À¸·Î ³ª¹«°¡ Äô Ãâ·ÂÇÏ¼¼¿ä
+// ì‚¬ìš©ìë¡œë¶€í„° ìˆ«ìë¥¼ ì…ë ¥ ë°›ê³ 
+// ë‚˜ë¬´ë¥¼ í•´ë‹¹ ìˆ«ìë§Œí¼ ì°ìœ¼ì„¸ìš”
+// ë§ˆì§€ë§‰ìœ¼ë¡œ ë‚˜ë¬´ê°€ ì¿µ ì¶œë ¥í•˜ì„¸ìš”
 public class _6_while {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int inputNum = scan.nextInt();
 		int count = 0;
 		
 		while(inputNum>0) {
-			System.out.println(++count +"¹ø Âï¾ú½À´Ï´Ù.");
+			System.out.println(++count +"ë²ˆ ì°ì—ˆìŠµë‹ˆë‹¤.");
 			inputNum--;
 		}
-		System.out.println("³ª¹«°¡ Äô");
+		System.out.println("ë‚˜ë¬´ê°€ ì¿µ");
 		scan.close();
 	}
 }

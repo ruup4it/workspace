@@ -1,8 +1,8 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* Á¤¼ö¸¦ ÀÔ·ÂÇÏ¶ó 
- * ÀÔ·Â ¹ŞÀº ¼ıÀÚÁß¿¡ 3ÀÚ¸® ¼ö (100~999)¸¸ ´õÇØ¶ó
- * exit¸¦ ÀÔ·ÂÇÏ¸é ´õÇÑ °ªÀ» Ãâ·ÂÇÏ°í Á¾·áÇØ¶ó
+/* ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ë¼ 
+ * ì…ë ¥ ë°›ì€ ìˆ«ìì¤‘ì— 3ìë¦¬ ìˆ˜ (100~999)ë§Œ ë”í•´ë¼
+ * exitë¥¼ ì…ë ¥í•˜ë©´ ë”í•œ ê°’ì„ ì¶œë ¥í•˜ê³  ì¢…ë£Œí•´ë¼
  * */
 public class _11_for_break {
 	public static void main(String[] args) {
@@ -11,8 +11,8 @@ public class _11_for_break {
 		int sum = 0;
 		int num = 0;
 		for (;;) {
-			System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä (Á¾·á : exit) : ");
-			// next() : °³Çà¹®ÀÚ ¹ÌÆ÷ÇÔ / nextLine() : °³Çà¹®ÀÚ Æ÷ÇÔ
+			System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” (ì¢…ë£Œ : exit) : ");
+			// next() : ê°œí–‰ë¬¸ì ë¯¸í¬í•¨ / nextLine() : ê°œí–‰ë¬¸ì í¬í•¨
 			exit = scan.nextLine();
 			if(exit.equals("exit")) 
 				break;

@@ -1,18 +1,18 @@
-package exercise_190315;
+ï»¿package exercise_190315;
 
 import java.util.Scanner;
 
-//2. 0º¸´Ù Å« Á¤¼ö¸¦ ÀÔ·Â¹Ş°í ÀÌÁø¼ö¿Í 16Áø¼ö·Î Ãâ·ÂÇÏ¼¼¿ä
+//2. 0ë³´ë‹¤ í° ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ê³  ì´ì§„ìˆ˜ì™€ 16ì§„ìˆ˜ë¡œ ì¶œë ¥í•˜ì„¸ìš”
 public class Middle_02 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("0º¸´Ù Å« Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("0ë³´ë‹¤ í° ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num = scan.nextInt();
 		if (num < 0)
-			System.out.println("Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+			System.out.println("ì˜ëª»ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 		else {
-			System.out.println(num + "ÀÇ 2Áø¼ö °ª : " + Integer.toBinaryString(num));
-			System.out.println(num + "ÀÇ 16Áø¼ö °ª : " + Integer.toHexString(num));
+			System.out.println(num + "ì˜ 2ì§„ìˆ˜ ê°’ : " + Integer.toBinaryString(num));
+			System.out.println(num + "ì˜ 16ì§„ìˆ˜ ê°’ : " + Integer.toHexString(num));
 		}
 		scan.close();
 	}

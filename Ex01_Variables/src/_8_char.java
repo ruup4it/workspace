@@ -1,16 +1,16 @@
-
+ï»¿
 public class _8_char {
 	public static void main(String[] args) {
 		char a = 'A';
-		char b = '°¡';
+		char b = 'ê°€';
 		System.out.println(a);
 		System.out.println(b);
-		// ³»ºÎÀûÀ¸·Î ¼ıÀÚ·Î ÀúÀåµÊ
+		// ë‚´ë¶€ì ìœ¼ë¡œ ìˆ«ìë¡œ ì €ì¥ë¨
 		int ia = a;
 		int ib = b;
 		System.out.println(ia);
 		System.out.println(ib);
-		// char·Î °­Á¦ º¯È¯ÇÏ¸é ´Ù½Ã µ¹¾Æ¿È
+		// charë¡œ ê°•ì œ ë³€í™˜í•˜ë©´ ë‹¤ì‹œ ëŒì•„ì˜´
 		char c = (char)ia;
 		char d = (char)ib;
 		System.out.println(c);

@@ -1,24 +1,24 @@
-package exercise_190318;
+ï»¿package exercise_190318;
 
 import java.util.Scanner;
 
-/* 3.µÎ°³ÀÇ ½Ç¼ö(double)À» ÀÔ·Â¹Ş¾Æ
- * °¢°¢ +, -, *, / ¸¦ ÇÏ¿© ¹İÈ¯ÇÏ´Â
- * ¸Ş¼­µå¸¦ 4°³ Á¦ÀÛÇÏ°í »ç¿ëÇØº¸¼¼¿ä
+/* 3.ë‘ê°œì˜ ì‹¤ìˆ˜(double)ì„ ì…ë ¥ë°›ì•„
+ * ê°ê° +, -, *, / ë¥¼ í•˜ì—¬ ë°˜í™˜í•˜ëŠ”
+ * ë©”ì„œë“œë¥¼ 4ê°œ ì œì‘í•˜ê³  ì‚¬ìš©í•´ë³´ì„¸ìš”
  * */
 public class Basic_03 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		double num4 = inputNum(scan); // ½Ç¼ö¸¦ ÀÔ·Â¹Ş´Â ¸Ş¼­µå È£Ãâ
-		double num5 = inputNum(scan); // ½Ç¼ö¸¦ ÀÔ·Â¹Ş´Â ¸Ş¼­µå È£Ãâ
-		printPlus(num4, num5);// ÀÔ·Â¹ŞÀº ½Ç¼ö·Î ¿¬»êÇÏ´Â ¸Ş¼­µå È£Ãâ
+		double num4 = inputNum(scan); // ì‹¤ìˆ˜ë¥¼ ì…ë ¥ë°›ëŠ” ë©”ì„œë“œ í˜¸ì¶œ
+		double num5 = inputNum(scan); // ì‹¤ìˆ˜ë¥¼ ì…ë ¥ë°›ëŠ” ë©”ì„œë“œ í˜¸ì¶œ
+		printPlus(num4, num5);// ì…ë ¥ë°›ì€ ì‹¤ìˆ˜ë¡œ ì—°ì‚°í•˜ëŠ” ë©”ì„œë“œ í˜¸ì¶œ
 
 		double result = printMinus(num4, num5);
-		// System.out.println("»©±â °á°ú°ªÀº "+result+"ÀÔ´Ï´Ù.");
+		// System.out.println("ë¹¼ê¸° ê²°ê³¼ê°’ì€ "+result+"ì…ë‹ˆë‹¤.");
 		printResult(result);
 
-		System.out.println("°öÇÏ±â °á°ú°ªÀº " + printMultiple(num4, num5) + "ÀÔ´Ï´Ù.");
+		System.out.println("ê³±í•˜ê¸° ê²°ê³¼ê°’ì€ " + printMultiple(num4, num5) + "ì…ë‹ˆë‹¤.");
 
 		printResult(printDivision(num4, num5));
 		scan.close();
@@ -28,36 +28,36 @@ public class Basic_03 {
 		return num1 / num2;
 	}
 
-	// ÀÔ·Â¹ŞÀº ½Ç¼ö·Î ¿¬»êÇÏ´Â ¸Ş¼­µå ¼±¾ğ +
+	// ì…ë ¥ë°›ì€ ì‹¤ìˆ˜ë¡œ ì—°ì‚°í•˜ëŠ” ë©”ì„œë“œ ì„ ì–¸ +
 	public static void printPlus(double num1, double num2) {
 		// int result = 0;
 		// result = num1+num2;
-		//System.out.println("´õÇÏ±â : °á°ú°ªÀº " + result + "ÀÔ´Ï´Ù.");
-		System.out.println("´õÇÏ±â : °á°ú°ªÀº " + (num1 + num2) + "ÀÔ´Ï´Ù.");
+		//System.out.println("ë”í•˜ê¸° : ê²°ê³¼ê°’ì€ " + result + "ì…ë‹ˆë‹¤.");
+		System.out.println("ë”í•˜ê¸° : ê²°ê³¼ê°’ì€ " + (num1 + num2) + "ì…ë‹ˆë‹¤.");
 	}
 
-	// ÀÔ·Â¹ŞÀº ½Ç¼ö·Î ¿¬»êÇÏ´Â ¸Ş¼­µå ¼±¾ğ -
+	// ì…ë ¥ë°›ì€ ì‹¤ìˆ˜ë¡œ ì—°ì‚°í•˜ëŠ” ë©”ì„œë“œ ì„ ì–¸ -
 	public static double printMinus(double num1, double num2) {
 		double result = 0;
 		result = num1 - num2;
 		return result;
 	}
 
-	// ÀÔ·Â¹ŞÀº ½Ç¼ö·Î ¿¬»êÇÏ´Â ¸Ş¼­µå ¼±¾ğ *
+	// ì…ë ¥ë°›ì€ ì‹¤ìˆ˜ë¡œ ì—°ì‚°í•˜ëŠ” ë©”ì„œë“œ ì„ ì–¸ *
 	public static double printMultiple(double num1, double num2) {
 		return num1 * num2;
 	}
 
-	// ½Ç¼ö¸¦ ÀÔ·Â¹Ş´Â ¸Ş¼­µå ¼±¾ğ
+	// ì‹¤ìˆ˜ë¥¼ ì…ë ¥ë°›ëŠ” ë©”ì„œë“œ ì„ ì–¸
 	public static double inputNum(Scanner scan) {
-		System.out.println("½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double num = scan.nextDouble();
 		return num;
 	}
 
-	// Ãâ·ÂÇÏ´Â ¸Ş¼­µå
+	// ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œ
 	public static void printResult(double result) {
-		System.out.println("°á°ú°ªÀº" + result + "ÀÔ´Ï´Ù.");
+		System.out.println("ê²°ê³¼ê°’ì€" + result + "ì…ë‹ˆë‹¤.");
 	}
 
 }

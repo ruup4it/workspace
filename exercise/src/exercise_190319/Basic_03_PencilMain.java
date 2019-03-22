@@ -1,7 +1,7 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
-//3. PencilSeller¿¡ »ı¼ºÀÚ¸¦ Ãß°¡ÇÏ°í »ç¿ëÇØº¸¼¼¿ä
-//(¼ö¾÷½Ã°£ ¸¶Áö¸· ¹®Á¦)
+//3. PencilSellerì— ìƒì„±ìë¥¼ ì¶”ê°€í•˜ê³  ì‚¬ìš©í•´ë³´ì„¸ìš”
+//(ìˆ˜ì—…ì‹œê°„ ë§ˆì§€ë§‰ ë¬¸ì œ)
 public class Basic_03_PencilMain {
 
 	public static void main(String[] args) {

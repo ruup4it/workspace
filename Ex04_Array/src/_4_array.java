@@ -1,8 +1,8 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 
 /*
- * 10°³ÀÇ int¹è¿­À» ¼±¾ğÇÏ°í
- * 1ºÎÅÍ 10±îÁö ¹è¿­¿¡ ÀúÀåÇÏ°í, for¹®À» ÀÌ¿ëÇØ¼­ Ãâ·ÂÇÏ¼¼¿ä
+ * 10ê°œì˜ intë°°ì—´ì„ ì„ ì–¸í•˜ê³ 
+ * 1ë¶€í„° 10ê¹Œì§€ ë°°ì—´ì— ì €ì¥í•˜ê³ , forë¬¸ì„ ì´ìš©í•´ì„œ ì¶œë ¥í•˜ì„¸ìš”
  */
 public class _4_array {
 	public static void main(String[] args) {

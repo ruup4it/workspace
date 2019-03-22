@@ -1,25 +1,25 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
-//2. ³ª´Â ¸¶Æ®¿¡ °¡¼­ 5000¿øÀ» ÁÖ°í ¹è °¡°İ 2500¸¦ »ò´Ù¸¦ 
-//Å¬·¡½º·Î ¼³°èÇØ¼­ ÇÁ·Î±×·¡¹Ö ÇÏ¼¼¿ä
+//2. ë‚˜ëŠ” ë§ˆíŠ¸ì— ê°€ì„œ 5000ì›ì„ ì£¼ê³  ë°° ê°€ê²© 2500ë¥¼ ìƒ€ë‹¤ë¥¼ 
+//í´ë˜ìŠ¤ë¡œ ì„¤ê³„í•´ì„œ í”„ë¡œê·¸ë˜ë° í•˜ì„¸ìš”
 public class Basic_02_PearSeller {
-	int numOfPear; // ¹è °³¼ö
-	int myMoney; // ÆÇ¸Å ±İ¾×
-	final int PEAR_PRICE; // ¹è °¡°İ(»ó¼ö)
+	int numOfPear; // ë°° ê°œìˆ˜
+	int myMoney; // íŒë§¤ ê¸ˆì•¡
+	final int PEAR_PRICE; // ë°° ê°€ê²©(ìƒìˆ˜)
 
 	Basic_02_PearSeller() {
-		myMoney = 5000; // º¸À¯ ±İ¾×
-		numOfPear = 10; // ¹è °³¼ö
-		PEAR_PRICE = 2500; // ¹è °¡°İ(»ó¼ö)
+		myMoney = 5000; // ë³´ìœ  ê¸ˆì•¡
+		numOfPear = 10; // ë°° ê°œìˆ˜
+		PEAR_PRICE = 2500; // ë°° ê°€ê²©(ìƒìˆ˜)
 	}
 
 	Basic_02_PearSeller(int money, int pearNum, int price) {
-		myMoney = money; // º¸À¯ ±İ¾×
-		numOfPear = pearNum; // ¹è °³¼ö
-		PEAR_PRICE = price; // ¹è °¡°İ(»ó¼ö)
+		myMoney = money; // ë³´ìœ  ê¸ˆì•¡
+		numOfPear = pearNum; // ë°° ê°œìˆ˜
+		PEAR_PRICE = price; // ë°° ê°€ê²©(ìƒìˆ˜)
 	}
 
-	// ÆÇ¸ÅÇÏ´Ù
+	// íŒë§¤í•˜ë‹¤
 	public int salePear(int money) {
 		int num = money / PEAR_PRICE;
 		numOfPear -= num;
@@ -27,14 +27,14 @@ public class Basic_02_PearSeller {
 		return num;
 	}
 
-	// ÆÇ¸Å°á°ú
+	// íŒë§¤ê²°ê³¼
 	public void showSaleResult() {
-		System.out.println("***¸¶Æ® ÇöÀç »óÈ²***");
-		System.out.println("³²Àº ¹è: " + numOfPear + "°³");
-		System.out.println("ÆÇ¸Å ¼öÀÍ: " + myMoney + "¿ø");
+		System.out.println("***ë§ˆíŠ¸ í˜„ì¬ ìƒí™©***");
+		System.out.println("ë‚¨ì€ ë°°: " + numOfPear + "ê°œ");
+		System.out.println("íŒë§¤ ìˆ˜ìµ: " + myMoney + "ì›");
 	}
 
-	// °¡°İ È®ÀÎ ¸Ş¼­µå
+	// ê°€ê²© í™•ì¸ ë©”ì„œë“œ
 	public int getPearPrice() {
 		return PEAR_PRICE;
 	}

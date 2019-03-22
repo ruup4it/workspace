@@ -1,4 +1,4 @@
-package javaLec._class.ex08Package;
+﻿package javaLec._class.ex08Package;
 
 public class Circle {
 	double rad;
@@ -8,6 +8,6 @@ public class Circle {
 	}
 
 	public double circlePerimeter() {
-		return rad * 2 * 3.14; // �ѷ�
+		return rad * 2 * 3.14; // µÑ·¹
 	}
 }

@@ -1,40 +1,40 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
 public class _5_switch_case {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int month = 0;
-		System.out.println("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì›”ì„ ì…ë ¥í•˜ì„¸ìš”");
 		month = scan.nextInt();
 		switch (month) {
 		case 3:
 		case 4:
 		case 5:
-			System.out.println("º½");
+			System.out.println("ë´„");
 			break;
 		case 6:
-			System.out.println("ÃÊ¿©¸§");
+			System.out.println("ì´ˆì—¬ë¦„");
 			break;
 		case 7:
 		case 8:
-			System.out.println("ÇÑ¿©¸§");
+			System.out.println("í•œì—¬ë¦„");
 			break;
 		case 9:
-			System.out.println("ÃÊ°¡À»");
+			System.out.println("ì´ˆê°€ì„");
 			break;
 		case 10:
 		case 11:
-			System.out.println("°¡À»");
+			System.out.println("ê°€ì„");
 			break;
 		case 12:
 		case 1:
-			System.out.println("°Ü¿ï");
+			System.out.println("ê²¨ìš¸");
 			break;
 		case 2:
-			System.out.println("ÃÊº½");
+			System.out.println("ì´ˆë´„");
 			break;
 		default:
-			System.out.println("¿ùÀÌ Àß¸ø ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì›”ì´ ì˜ëª» ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			break;
 		}
 		scan.close();

@@ -1,7 +1,7 @@
-// ³í¸® ¿¬»êÀÚ
+ï»¿// ë…¼ë¦¬ ì—°ì‚°ì
 // && (and), || (or)
-// && (and) : µÑ ´Ù trueÀÏ ¶§ °á°ú°¡ true
-// || (or)  : µÑ Áß¿¡ 1°³°¡ true¸é °á°ú´Â true
+// && (and) : ë‘˜ ë‹¤ trueì¼ ë•Œ ê²°ê³¼ê°€ true
+// || (or)  : ë‘˜ ì¤‘ì— 1ê°œê°€ trueë©´ ê²°ê³¼ëŠ” true
 public class _5_LogicOp {
 	public static void main(String[] args) {
 		boolean bX = true;

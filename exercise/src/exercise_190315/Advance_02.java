@@ -1,15 +1,15 @@
-package exercise_190315;
+ï»¿package exercise_190315;
 
 import java.util.Arrays;
 
-//2. ¼±ÅÃÁ¤·ÄÀ» ÀÌ¿ëÇØ¼­ ¹è¿­ÀÇ ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÏ´Â ¸Ş¼­µå¿Í
-//³»¸²Â÷¼øÀ¸·Î Á¤·ÄÇÏ´Â ¸Ş¼­µå¸¦ ¸¸µé°í »ç¿ëÇØº¸¼¼¿ä
+//2. ì„ íƒì •ë ¬ì„ ì´ìš©í•´ì„œ ë°°ì—´ì˜ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ëŠ” ë©”ì„œë“œì™€
+//ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ëŠ” ë©”ì„œë“œë¥¼ ë§Œë“¤ê³  ì‚¬ìš©í•´ë³´ì„¸ìš”
 public class Advance_02 {
 	public static void main(String[] args) {
 		int arr[] = { 6, 7, 5, 2, 0, 1 };
 		System.out.println(Arrays.toString(arr));
 
-		// ¿À¸§Â÷¼ø
+		// ì˜¤ë¦„ì°¨ìˆœ
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] > arr[j]) {
@@ -19,9 +19,9 @@ public class Advance_02 {
 				}
 			}
 		}
-		System.out.println(String.format("¿À¸§Â÷¼ø °á°ú : %s",Arrays.toString(arr)));
+		System.out.println(String.format("ì˜¤ë¦„ì°¨ìˆœ ê²°ê³¼ : %s",Arrays.toString(arr)));
 
-		// ³»¸²Â÷¼ø
+		// ë‚´ë¦¼ì°¨ìˆœ
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] < arr[j]) {
@@ -31,7 +31,7 @@ public class Advance_02 {
 				}
 			}
 		}
-		System.out.println(String.format("³»¸²Â÷¼ø °á°ú : %s",Arrays.toString(arr)));
+		System.out.println(String.format("ë‚´ë¦¼ì°¨ìˆœ ê²°ê³¼ : %s",Arrays.toString(arr)));
 	}
 
 }

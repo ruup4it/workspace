@@ -1,15 +1,15 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
 /* 1. 
- * ¿µ¹® ´ë¹®ÀÚ¸¦ ÀÔ·Â¹Ş¾Æ 
- * 'A'ÀÌ¸é ¡°Excellent¡±, 
- * 'B'ÀÌ¸é ¡°Good¡±, 
- * 'C'ÀÌ¸é ¡°Usually¡±, 
- * 'D'ÀÌ¸é ¡°Effort¡±, 
- * 'F'ÀÌ¸é ¡°Failure¡±, 
- * ±× ¿Ü ¹®ÀÚÀÌ¸é ¡°error¡± ¶ó°í Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+ * ì˜ë¬¸ ëŒ€ë¬¸ìë¥¼ ì…ë ¥ë°›ì•„ 
+ * 'A'ì´ë©´ â€œExcellentâ€, 
+ * 'B'ì´ë©´ â€œGoodâ€, 
+ * 'C'ì´ë©´ â€œUsuallyâ€, 
+ * 'D'ì´ë©´ â€œEffortâ€, 
+ * 'F'ì´ë©´ â€œFailureâ€, 
+ * ê·¸ ì™¸ ë¬¸ìì´ë©´ â€œerrorâ€ ë¼ê³  ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 */
 public class free_01 {
 	public static void main(String[] args) {

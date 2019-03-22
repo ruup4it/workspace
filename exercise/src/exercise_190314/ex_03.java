@@ -1,30 +1,30 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
-//3. 2Â÷¿ø Æò¸é¿¡¼­ ÇÏ³ªÀÇ Á÷»ç°¢ÇüÀº µÎ Á¡À¸·Î Ç¥ÇöµÈ´Ù. (50, 50)°ú (100, 100)ÀÇ
-//	µÎ Á¡À¸·Î ÀÌ·ç¾îÁø Á÷»ç°¢ÇüÀÌ ÀÖ´Ù°í ÇÏÀÚ. 
-//	ÀÌ¶§ Å°º¸µå·ÎºÎÅÍ ´Ù¸¥ Á÷»ç°¢ÇüÀ» ±¸¼ºÇÏ´Â µÎ Á¡(x1, y1), (x2, y2)¸¦ ÀÔ·Â¹Þ¾Æ
-//	µÎ °³ÀÇ Á÷»ç°¢ÇüÀÌ ¼­·Î Ãæµ¹ÇÏ´ÂÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä
+//3. 2ì°¨ì› í‰ë©´ì—ì„œ í•˜ë‚˜ì˜ ì§ì‚¬ê°í˜•ì€ ë‘ ì ìœ¼ë¡œ í‘œí˜„ëœë‹¤. (50, 50)ê³¼ (100, 100)ì˜
+//	ë‘ ì ìœ¼ë¡œ ì´ë£¨ì–´ì§„ ì§ì‚¬ê°í˜•ì´ ìžˆë‹¤ê³  í•˜ìž. 
+//	ì´ë•Œ í‚¤ë³´ë“œë¡œë¶€í„° ë‹¤ë¥¸ ì§ì‚¬ê°í˜•ì„ êµ¬ì„±í•˜ëŠ” ë‘ ì (x1, y1), (x2, y2)ë¥¼ ìž…ë ¥ë°›ì•„
+//	ë‘ ê°œì˜ ì§ì‚¬ê°í˜•ì´ ì„œë¡œ ì¶©ëŒí•˜ëŠ”ì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì„¸ìš”
 
 public class ex_03 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println(String.format("x1¸¦ ÀÔ·ÂÇÏ¼¼¿ä"));
+		System.out.println(String.format("x1ë¥¼ ìž…ë ¥í•˜ì„¸ìš”"));
 		int x1 = scan.nextInt();
-		System.out.println(String.format("y1¸¦ ÀÔ·ÂÇÏ¼¼¿ä"));
+		System.out.println(String.format("y1ë¥¼ ìž…ë ¥í•˜ì„¸ìš”"));
 		int y1 = scan.nextInt();
-		System.out.println(String.format("x2¸¦ ÀÔ·ÂÇÏ¼¼¿ä"));
+		System.out.println(String.format("x2ë¥¼ ìž…ë ¥í•˜ì„¸ìš”"));
 		int x2 = scan.nextInt();
-		System.out.println(String.format("y2¸¦ ÀÔ·ÂÇÏ¼¼¿ä"));
+		System.out.println(String.format("y2ë¥¼ ìž…ë ¥í•˜ì„¸ìš”"));
 		int y2 = scan.nextInt();
 
 		if (((x1 >= 50 && x1 <= 100) || (x2 >= 50 && x2 <= 100))
 				&& ((y1 >= 50 && y1 <= 100) || (y2 >= 50 && y2 <= 100)))
-			System.out.println("Ãæµ¹ÇÕ´Ï´Ù.");
+			System.out.println("ì¶©ëŒí•©ë‹ˆë‹¤.");
 		else
-			System.out.println("Ãæµ¹ÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ì¶©ëŒí•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		scan.close();
 	}
 }

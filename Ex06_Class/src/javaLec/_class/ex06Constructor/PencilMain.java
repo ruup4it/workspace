@@ -1,4 +1,4 @@
-package javaLec._class.ex06Constructor;
+﻿package javaLec._class.ex06Constructor;
 
 public class PencilMain {
 	public static void main(String[] args) {

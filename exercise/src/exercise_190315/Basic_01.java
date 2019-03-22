@@ -1,15 +1,15 @@
-package exercise_190315;
+ï»¿package exercise_190315;
 
 import java.util.Scanner;
 
-//1. Á¤¼ö 10°³¸¦ ÀÔ·Â¹Ş¾Æ ¹è¿­¿¡ ÀúÀåÇÏ°í, ÀÌ Á¤¼öÁß¿¡¼­ 3ÀÇ ¹è¼ö¸¸ Ãâ·ÂÇÏ¼¼¿ä
+//1. ì •ìˆ˜ 10ê°œë¥¼ ì…ë ¥ë°›ì•„ ë°°ì—´ì— ì €ì¥í•˜ê³ , ì´ ì •ìˆ˜ì¤‘ì—ì„œ 3ì˜ ë°°ìˆ˜ë§Œ ì¶œë ¥í•˜ì„¸ìš”
 public class Basic_01 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		final int ARRLENTH = 10;
 		int[] arr = new int[ARRLENTH];
 		for (int i = 0; i < ARRLENTH; i++) {
-			System.out.print(String.format("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä (%d/%d) :", i + 1, ARRLENTH));
+			System.out.print(String.format("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” (%d/%d) :", i + 1, ARRLENTH));
 			arr[i] = scan.nextInt();
 		}
 		for (int item : arr) {

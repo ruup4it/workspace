@@ -1,17 +1,17 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* Á¡¼ö¸¦ ÀÔ·Â ¹Þ´Â´Ù.
- * 90Á¡ ÀÌ»óÀÌ¸é A
- * 80Á¡ ÀÌ»óÀÌ¸é B
- * 70Á¡ ÀÌ»óÀÌ¸é C
- * 60Á¡ ÀÌ»óÀÌ¸é D
- * 60Á¡ ¹Ì¸¸ÀÌ¸é F
+/* ì ìˆ˜ë¥¼ ìž…ë ¥ ë°›ëŠ”ë‹¤.
+ * 90ì  ì´ìƒì´ë©´ A
+ * 80ì  ì´ìƒì´ë©´ B
+ * 70ì  ì´ìƒì´ë©´ C
+ * 60ì  ì´ìƒì´ë©´ D
+ * 60ì  ë¯¸ë§Œì´ë©´ F
  * */
 
 public class _2_ifScore {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		int score = scan.nextInt();
 		String result = score >= 90 ? "A" : 
 						score >= 80 ? "B" : 

@@ -1,6 +1,6 @@
-/* ¸Å°³º¯¼ö¸¦ ÀÏ¹İÀûÀ¸·Î
- * argument ¶Ç´Â parameter¶ó°í ºÎ¸¥´Ù.
- * ¸Å°³º¯¼ö´Â ÇØ´ç ¸Ş¼­µåÀÇ Áö¿ª º¯¼öÀÌ´Ù.
+ï»¿/* ë§¤ê°œë³€ìˆ˜ë¥¼ ì¼ë°˜ì ìœ¼ë¡œ
+ * argument ë˜ëŠ” parameterë¼ê³  ë¶€ë¥¸ë‹¤.
+ * ë§¤ê°œë³€ìˆ˜ëŠ” í•´ë‹¹ ë©”ì„œë“œì˜ ì§€ì—­ ë³€ìˆ˜ì´ë‹¤.
  * */
 public class _03_Method2Param {
 	public static void main(String[] args) {
@@ -11,12 +11,12 @@ public class _03_Method2Param {
 	}
 
 	private static void hiEveryOne(int age, double height) {
-		System.out.println("Á¦ ³ªÀÌ´Â" + age + "ÀÔ´Ï´Ù.");
-		System.out.println("ÀúÀÇ Å°´Â" + height + "ÀÔ´Ï´Ù.");
+		System.out.println("ì œ ë‚˜ì´ëŠ”" + age + "ì…ë‹ˆë‹¤.");
+		System.out.println("ì €ì˜ í‚¤ëŠ”" + height + "ì…ë‹ˆë‹¤.");
 	}
 
 	private static void byEveryOne() {
-		System.out.println("´ÙÀ½¿¡ ºË°Ú½À´Ï´Ù.");
+		System.out.println("ë‹¤ìŒì— ëµ™ê² ìŠµë‹ˆë‹¤.");
 	}
 
 }

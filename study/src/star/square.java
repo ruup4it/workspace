@@ -1,4 +1,4 @@
-package star;
+﻿package star;
 
 
 public class square {

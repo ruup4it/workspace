@@ -1,12 +1,12 @@
-/* ±¸±¸´ÜÀ» Ãâ·ÂÇÏ¼¼¿ä
- * ´Ü ±¸±¸´ÜÀÇ 2~9 ´ÜÀ» µÚÀÇ ¼ıÀÚ°¡ 1 ~ 5±îÁö Ãâ·ÂÇÏ¼¼¿ä
- * ¿¹¸¦ µé¾î 3x1=3 ... 3x5=15 ÇØ¼­ 5±îÁö¸¸ Ãâ·ÂÇÏ¸é µË´Ï´Ù.
- * 1) break¸¦ »ç¿ëÇØ¼­ ÇØ°áÇÏ¼¼¿ä
- * 2) continue¸¦ »ç¿ëÇØ¼­ ÇØ°áÇÏ¼¼¿ä
+ï»¿/* êµ¬êµ¬ë‹¨ì„ ì¶œë ¥í•˜ì„¸ìš”
+ * ë‹¨ êµ¬êµ¬ë‹¨ì˜ 2~9 ë‹¨ì„ ë’¤ì˜ ìˆ«ìê°€ 1 ~ 5ê¹Œì§€ ì¶œë ¥í•˜ì„¸ìš”
+ * ì˜ˆë¥¼ ë“¤ì–´ 3x1=3 ... 3x5=15 í•´ì„œ 5ê¹Œì§€ë§Œ ì¶œë ¥í•˜ë©´ ë©ë‹ˆë‹¤.
+ * 1) breakë¥¼ ì‚¬ìš©í•´ì„œ í•´ê²°í•˜ì„¸ìš”
+ * 2) continueë¥¼ ì‚¬ìš©í•´ì„œ í•´ê²°í•˜ì„¸ìš”
  * */
 public class _15_break_continue {
 	public static void main(String[] args) {
-		System.out.println("continue »ç¿ë");
+		System.out.println("continue ì‚¬ìš©");
 		for (int i = 2; i <= 9; i++) {
 			for (int j = 1; j <= 9; j++) {
 				if (j>5) 
@@ -16,7 +16,7 @@ public class _15_break_continue {
 			System.out.println();
 		}
 
-		System.out.println("break »ç¿ë");
+		System.out.println("break ì‚¬ìš©");
 		for (int i = 2; i <= 9; i++) {
 			for (int j = 1; j <= 9; j++) {
 				if (j > 5)

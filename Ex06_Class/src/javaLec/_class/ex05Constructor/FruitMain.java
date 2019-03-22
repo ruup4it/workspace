@@ -1,16 +1,16 @@
-package javaLec._class.ex05Constructor;
+ï»¿package javaLec._class.ex05Constructor;
 
-/* initMember ¸Ş¼­µå·Î °ªÀ» º¯°æÇÒ ¼ö ÀÖ¾î
- * °´Ã¼¸¶´Ù ´Ù¸¥ ±¸¼ºÀÌ °¡´ÉÇØÁ³´Ù
- * ±×·¯³ª, APPLE_PRICE¸¦ »ó¼ö -> º¯¼ö·Î ¸¸µé¾î¾ß¸¸ÇÏ°í
- * initMember¸¦ ÀØÁö ¾Ê°í È£ÃâÇØ¾ß¸¸ÇÑ´Ù.
- * ÀÌ·² ¶§ º°µµ·Î ÃÊ±âÈ­ ÇÔ¼ö¸¦ µÎÁö ¾Ê°í
- * »ı¼ºÀÚ ÇÔ¼ö¸¦ ÀÌ¿ëÇÏ¸é Æí¸®ÇÏ´Ù
+/* initMember ë©”ì„œë“œë¡œ ê°’ì„ ë³€ê²½í•  ìˆ˜ ìˆì–´
+ * ê°ì²´ë§ˆë‹¤ ë‹¤ë¥¸ êµ¬ì„±ì´ ê°€ëŠ¥í•´ì¡Œë‹¤
+ * ê·¸ëŸ¬ë‚˜, APPLE_PRICEë¥¼ ìƒìˆ˜ -> ë³€ìˆ˜ë¡œ ë§Œë“¤ì–´ì•¼ë§Œí•˜ê³ 
+ * initMemberë¥¼ ìŠì§€ ì•Šê³  í˜¸ì¶œí•´ì•¼ë§Œí•œë‹¤.
+ * ì´ëŸ´ ë•Œ ë³„ë„ë¡œ ì´ˆê¸°í™” í•¨ìˆ˜ë¥¼ ë‘ì§€ ì•Šê³ 
+ * ìƒì„±ì í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ë©´ í¸ë¦¬í•˜ë‹¤
  * */
 public class FruitMain {
 	public static void main(String[] args) {
-		FruitSeller seller1 = new FruitSeller(); // Default »ı¼ºÀÚ È£Ãâ
-		FruitSeller seller2 = new FruitSeller(10000, 20, 1500); // ¸Å°³º¯¼ö ÀÖ´Â »ı¼ºÀÚ È£Ãâ
+		FruitSeller seller1 = new FruitSeller(); // Default ìƒì„±ì í˜¸ì¶œ
+		FruitSeller seller2 = new FruitSeller(10000, 20, 1500); // ë§¤ê°œë³€ìˆ˜ ìˆëŠ” ìƒì„±ì í˜¸ì¶œ
 		FruitBuyer buyer = new FruitBuyer();
 
 		if (seller1.getApplePrice() < seller2.getApplePrice()) {

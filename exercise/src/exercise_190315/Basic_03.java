@@ -1,22 +1,22 @@
-package exercise_190315;
+ï»¿package exercise_190315;
 
 import java.util.Scanner;
 
-//3. 2°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Ş°í Å« °ªÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼­µå¿Í
-//ÀÛÀº °ªÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼­µå¸¦ ÀÛ¼ºÇÏ°í »ç¿ëÇÏ¼¼¿ä
+//3. 2ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ê³  í° ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œì™€
+//ì‘ì€ ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œë¥¼ ì‘ì„±í•˜ê³  ì‚¬ìš©í•˜ì„¸ìš”
 public class Basic_03 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		// int[] inputArr= inputNum();  ¹è¿­¹öÀü ¸¸µé¾îº¸±â
-		int first = inputNum(scan);  	// ÀÔ·Â ¹Ş´Â ¸Ş¼­µå
-		int second = inputNum(scan);  	// ÀÔ·Â ¹Ş´Â ¸Ş¼­µå
-		calMax(first,second);   	// Å« °ªÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
-		calMin(first,second); 		// ÀÛÀº °ªÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
+		// int[] inputArr= inputNum();  ë°°ì—´ë²„ì „ ë§Œë“¤ì–´ë³´ê¸°
+		int first = inputNum(scan);  	// ì…ë ¥ ë°›ëŠ” ë©”ì„œë“œ
+		int second = inputNum(scan);  	// ì…ë ¥ ë°›ëŠ” ë©”ì„œë“œ
+		calMax(first,second);   	// í° ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
+		calMin(first,second); 		// ì‘ì€ ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
 		scan.close();
 	}
 
 	private static int inputNum(Scanner scan) {
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num = scan.nextInt();
 		
 		return num;
@@ -28,7 +28,7 @@ public class Basic_03 {
 			max = num1;
 		else
 			max = num2;
-		System.out.println(String.format("µÑ Áß Å« °ªÀº %dÀÔ´Ï´Ù.",max));
+		System.out.println(String.format("ë‘˜ ì¤‘ í° ê°’ì€ %dì…ë‹ˆë‹¤.",max));
 	}
 
 	private static void calMin(int num1, int num2) {
@@ -37,6 +37,6 @@ public class Basic_03 {
 			min = num1;
 		else
 			min = num2;
-		System.out.println(String.format("µÑ Áß ÀÛÀº °ªÀº %dÀÔ´Ï´Ù.",min));
+		System.out.println(String.format("ë‘˜ ì¤‘ ì‘ì€ ê°’ì€ %dì…ë‹ˆë‹¤.",min));
 	}
 }

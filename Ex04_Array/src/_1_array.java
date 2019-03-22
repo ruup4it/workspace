@@ -1,21 +1,21 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 import java.util.Scanner;
 
-/* ¹è¿­ (Array)
- * ÛÕ Â¦ÁöÀ» ¹è : Â¦
- * æê ¹úÀÏ ¿­ : ³ª¶õÈ÷ ÁÙ ¼­ÀÖ´Ù.
- * °°Àº Á¾·ùÀÇ ÀÚ·áÇü³¢¸® ¿¬¼ÓµÇ¾î ¼±¾ğµÈ´Ù.
- * ex) ÇĞ»ıµéÀÇ ±¹¾î Á¡¼ö
+/* ë°°ì—´ (Array)
+ * é… ì§ì§€ì„ ë°° : ì§
+ * ï¦œ ë²Œì¼ ì—´ : ë‚˜ë€íˆ ì¤„ ì„œìˆë‹¤.
+ * ê°™ì€ ì¢…ë¥˜ì˜ ìë£Œí˜•ë¼ë¦¬ ì—°ì†ë˜ì–´ ì„ ì–¸ëœë‹¤.
+ * ex) í•™ìƒë“¤ì˜ êµ­ì–´ ì ìˆ˜
  */
 
-// ÇĞ»ı 5¸íÀÇ ±¹¾î Á¡¼ö
+// í•™ìƒ 5ëª…ì˜ êµ­ì–´ ì ìˆ˜
 public class _1_array {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int[] korScore = new int[5];
 		for(int i = 0; i < 5; i++) {
-			System.out.print(String.format("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä (%d/5): ", i+1));
+			System.out.print(String.format("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” (%d/5): ", i+1));
 			korScore[i] = scan.nextInt();
 		}
 		System.out.println(Arrays.toString(korScore));

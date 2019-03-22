@@ -1,9 +1,9 @@
-package javaLec._class.ex11Static;
+ï»¿package javaLec._class.ex11Static;
 
 class StudyClass {
-	static int schoolNum = 0;	// ÇĞ±³ ÀüÃ¼ ÇĞ»ı ¼ö
-	int cNum=0;					// ÇØ´ç ¹İ ÇĞ»ı ¼ö 
-	String className;			// ÇØ´ç ¹İ ÀÌ¸§
+	static int schoolNum = 0;	// í•™êµ ì „ì²´ í•™ìƒ ìˆ˜
+	int cNum=0;					// í•´ë‹¹ ë°˜ í•™ìƒ ìˆ˜ 
+	String className;			// í•´ë‹¹ ë°˜ ì´ë¦„
 	
 
 	StudyClass(String cName, int num) {
@@ -13,18 +13,18 @@ class StudyClass {
 	}
 	
 	void showStudyClassInfo() {
-		System.out.println(String.format("%s ÇĞ»ı ¼ö : %d ¸í",className,cNum));
+		System.out.println(String.format("%s í•™ìƒ ìˆ˜ : %d ëª…",className,cNum));
 	}
 	
 	static void showSchoolInfo() {
-		System.out.println(String.format("ÃÑ ÇĞ»ı ¼ö : %d ¸í", schoolNum));
+		System.out.println(String.format("ì´ í•™ìƒ ìˆ˜ : %d ëª…", schoolNum));
 	}
 }
 
 public class School {
 	public static void main(String[] args) {
-		StudyClass studyClassA = new StudyClass("A¹İ",6);
-		StudyClass studyClassB = new StudyClass("B¹İ",12);
+		StudyClass studyClassA = new StudyClass("Aë°˜",6);
+		StudyClass studyClassB = new StudyClass("Bë°˜",12);
 		studyClassA.showStudyClassInfo();
 		studyClassB.showStudyClassInfo();
 		StudyClass.showSchoolInfo();

@@ -1,10 +1,10 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-//1. ÀÌÁø °Ë»öÀ» Àç±ÍÈ£Ãâ·Î ÀÛ¼ºÇÏ¼¼¿ä
+//1. ì´ì§„ ê²€ìƒ‰ì„ ì¬ê·€í˜¸ì¶œë¡œ ì‘ì„±í•˜ì„¸ìš”
 public class Advance_01_presentation {
 	public static void main(String[] args) {
 		int[] arr = new int[100];
@@ -15,22 +15,22 @@ public class Advance_01_presentation {
 			arr[i] = rd.nextInt(1001);
 		}
 		Arrays.sort(arr);
-		System.out.println("¹è¿­ ÀúÀå°ª Âü°í");
+		System.out.println("ë°°ì—´ ì €ì¥ê°’ ì°¸ê³ ");
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
 		System.out.println("");
 
-		System.out.println("Ã£°íÀÚ ÇÏ´Â ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì°¾ê³ ì í•˜ëŠ” ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int goal;
 		goal = sc.nextInt();
 		int bottom = 0;
 		int top = arr.length - 1;
 
 		if (re_BiSearch(arr, goal, bottom, top) == -1) {
-			System.out.println("¹è¿­¿¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ë°°ì—´ì— ì—†ìŠµë‹ˆë‹¤.");
 		} else
-			System.out.println(re_BiSearch(arr, goal, bottom, top) + 1 + "¹øÂ°¿¡ ÀÖ½À´Ï´Ù.");
+			System.out.println(re_BiSearch(arr, goal, bottom, top) + 1 + "ë²ˆì§¸ì— ìˆìŠµë‹ˆë‹¤.");
 		sc.close();
 	}
 

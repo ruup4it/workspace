@@ -1,15 +1,15 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
-//6. ¾çÀÇ Á¤¼ö ÀÔ·Â¹Ş°í ±× ¼ö¸¸Å­ 3ÀÇ ¹è¼ö Ãâ·ÂÇÏ¼¼¿ä
-//¿¹¸¦ µé¾î 5¸¦ ÀÔ·Â¹ŞÀ¸¸é 3 6 9 12 15¸¦ Ãâ·ÂÇÏ¸é µË´Ï´Ù
+//6. ì–‘ì˜ ì •ìˆ˜ ì…ë ¥ë°›ê³  ê·¸ ìˆ˜ë§Œí¼ 3ì˜ ë°°ìˆ˜ ì¶œë ¥í•˜ì„¸ìš”
+//ì˜ˆë¥¼ ë“¤ì–´ 5ë¥¼ ì…ë ¥ë°›ìœ¼ë©´ 3 6 9 12 15ë¥¼ ì¶œë ¥í•˜ë©´ ë©ë‹ˆë‹¤
 public class doWhile06 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = 0;
 		int count = 0;
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		num = scan.nextInt();
 		do {
 			++count;

@@ -1,14 +1,14 @@
-package exercise_190320;
+ï»¿package exercise_190320;
 
 import java.util.Arrays;
 
-/*1. ´ÙÀ½ µÎ °³ÀÇ static¸Ş¼Òµå¸¦ °¡Áø ArrayUtilityÅ¬·¡½º¸¦ ¸¸µé¾îº¸°í »ç¿ëÇØº¸¼¼¿ä
-static double[] intToDouble(int[] source);	// int¹è¿­À» double¹è¿­·Î º¯È¯
-static int[] doubleToInt(double[] source);	// double¹è¿­À» int¹è¿­·Î º¯È¯
+/*1. ë‹¤ìŒ ë‘ ê°œì˜ staticë©”ì†Œë“œë¥¼ ê°€ì§„ ArrayUtilityí´ë˜ìŠ¤ë¥¼ ë§Œë“¤ì–´ë³´ê³  ì‚¬ìš©í•´ë³´ì„¸ìš”
+static double[] intToDouble(int[] source);	// intë°°ì—´ì„ doubleë°°ì—´ë¡œ ë³€í™˜
+static int[] doubleToInt(double[] source);	// doubleë°°ì—´ì„ intë°°ì—´ë¡œ ë³€í™˜
 */
 
 class ArrayUtility{
-	// int¹è¿­À» double¹è¿­·Î º¯È¯
+	// intë°°ì—´ì„ doubleë°°ì—´ë¡œ ë³€í™˜
 	static double[] intToDouble(int[] source) {
 		double[] changeArr = new double [source.length];
 		for(int i = 0; i < source.length; i++) {
@@ -16,7 +16,7 @@ class ArrayUtility{
 		}
 		return changeArr;
 	}
-	// double¹è¿­À» int¹è¿­·Î º¯È¯
+	// doubleë°°ì—´ì„ intë°°ì—´ë¡œ ë³€í™˜
 	static int[] doubleToInt(double[] source) {
 		int[] changeArr = new int [source.length];
 		for(int i = 0; i < source.length; i++) {

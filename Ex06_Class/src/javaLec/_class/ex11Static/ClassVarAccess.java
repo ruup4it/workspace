@@ -1,4 +1,4 @@
-package javaLec._class.ex11Static;
+ï»¿package javaLec._class.ex11Static;
 
 class AccessWay {
 	static int num = 0;
@@ -8,27 +8,27 @@ class AccessWay {
 	}
 
 	/*
-	 * static º¯¼ö´Â static ¸Ş¼­µå³ª instance¸Ş¼­µå °ü°è¾øÀÌ Å¬·¡½º ³»ºÎ¿¡¼­ ÀÚÀ¯·Ó°Ô Á¢±Ù °¡´ÉÇÏ´Ù.
+	 * static ë³€ìˆ˜ëŠ” static ë©”ì„œë“œë‚˜ instanceë©”ì„œë“œ ê´€ê³„ì—†ì´ í´ë˜ìŠ¤ ë‚´ë¶€ì—ì„œ ììœ ë¡­ê²Œ ì ‘ê·¼ ê°€ëŠ¥í•˜ë‹¤.
 	 */
 	public void incrCnt() {
 		num++;
 	}
 }
-/* static ¸â¹öÀÇ Á¢±Ù
- * 1) Å¬·¡½º ³»ºÎ¿¡¼­ ÀÚÀ¯·Ó°Ô Á¢±Ù
- * 2) Å¬·¡½º ÀÌ¸§À¸·Î Á¢±Ù
- * 3) °´Ã¼ ÀÌ¸§À¸·Î Á¢±Ù
- * ¼±È£ÇÏ´Â ¹æ½Ä : Å¬·¡½º ÀÌ¸§ > °´Ã¼ ÀÌ¸§ 
- * staticÀº °´Ã¼ º°·Î »ı¼ºµÇ´Â º¯¼ö°¡ ¾Æ´Ï°í
- * Å¬·¡½º¿¡ À¯ÀÏÇÏ°Ô °øÀ¯ÇÒ ¼ö ÀÖ´Â º¯¼öÀÌ¹Ç·Î
- * Å¬·¡½º ¼Ò¼ÓÀ¸·Î È£ÃâÇÏ´Â °ÍÀÌ ´õ ¸íÈ®
+/* static ë©¤ë²„ì˜ ì ‘ê·¼
+ * 1) í´ë˜ìŠ¤ ë‚´ë¶€ì—ì„œ ììœ ë¡­ê²Œ ì ‘ê·¼
+ * 2) í´ë˜ìŠ¤ ì´ë¦„ìœ¼ë¡œ ì ‘ê·¼
+ * 3) ê°ì²´ ì´ë¦„ìœ¼ë¡œ ì ‘ê·¼
+ * ì„ í˜¸í•˜ëŠ” ë°©ì‹ : í´ë˜ìŠ¤ ì´ë¦„ > ê°ì²´ ì´ë¦„ 
+ * staticì€ ê°ì²´ ë³„ë¡œ ìƒì„±ë˜ëŠ” ë³€ìˆ˜ê°€ ì•„ë‹ˆê³ 
+ * í´ë˜ìŠ¤ì— ìœ ì¼í•˜ê²Œ ê³µìœ í•  ìˆ˜ ìˆëŠ” ë³€ìˆ˜ì´ë¯€ë¡œ
+ * í´ë˜ìŠ¤ ì†Œì†ìœ¼ë¡œ í˜¸ì¶œí•˜ëŠ” ê²ƒì´ ë” ëª…í™•
  * */
 public class ClassVarAccess {
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		AccessWay way = new AccessWay();
-		AccessWay.num++; 	// Å¬·¡½º¸íÀ¸·Î Á¢±Ù
-		way.num++; 			// °´Ã¼·Î Á¢±Ù
+		AccessWay.num++; 	// í´ë˜ìŠ¤ëª…ìœ¼ë¡œ ì ‘ê·¼
+		way.num++; 			// ê°ì²´ë¡œ ì ‘ê·¼
 		System.out.println(String.format("num = %d",AccessWay.num));
 
 	}

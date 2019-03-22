@@ -1,12 +1,12 @@
-
-// ÀÚÁÖ ¾²´Â ÀÚ·áÇü
+ï»¿
+// ìì£¼ ì“°ëŠ” ìë£Œí˜•
 public class _4_FrequentVariables {
 	public static void main(String[] args) {
 		int num = 100;
 		double dnum = 3.14;
-		char ch = '°¡';
+		char ch = 'ê°€';
 		boolean isLogic = true;
-		String name = "È«±æµ¿";
+		String name = "í™ê¸¸ë™";
 		System.out.println(num);
 		System.out.println(dnum);
 		System.out.println(ch);

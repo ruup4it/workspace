@@ -1,30 +1,30 @@
-package javaLec._class.ex02classToClass;
+ï»¿package javaLec._class.ex02classToClass;
 
-/* <Å¬·¡½º¿Í Å¬·¡½º°£ÀÇ »óÈ£°ü°è>
- * ³ª´Â °úÀÏÀå¼ö¿¡°Ô »ç°ú 2°³¸¦ ±¸¸ÅÇß´Ù.
- * 1) ¸í»ç : ³ª, °úÀÏÀå¼ö, »ç°ú
- * 2) µ¿»ç : ±¸¸ÅÇß´Ù
- * 3) ³ª¿Í °úÀÏÀå¼ö´Â ClassÀÇ ´ë»ó
- * 4) »ç°ú´Â ÇÊµå
- * 5) ±¸¸ÅÇß´Ù´Â ¸Ş¼­µå
+/* <í´ë˜ìŠ¤ì™€ í´ë˜ìŠ¤ê°„ì˜ ìƒí˜¸ê´€ê³„>
+ * ë‚˜ëŠ” ê³¼ì¼ì¥ìˆ˜ì—ê²Œ ì‚¬ê³¼ 2ê°œë¥¼ êµ¬ë§¤í–ˆë‹¤.
+ * 1) ëª…ì‚¬ : ë‚˜, ê³¼ì¼ì¥ìˆ˜, ì‚¬ê³¼
+ * 2) ë™ì‚¬ : êµ¬ë§¤í–ˆë‹¤
+ * 3) ë‚˜ì™€ ê³¼ì¼ì¥ìˆ˜ëŠ” Classì˜ ëŒ€ìƒ
+ * 4) ì‚¬ê³¼ëŠ” í•„ë“œ
+ * 5) êµ¬ë§¤í–ˆë‹¤ëŠ” ë©”ì„œë“œ
  * */
 
 public class FruitSeller {
-	int numOfApple = 20;	// »ç°ú °³¼ö
-	int myMoney = 0;		// ÆÇ¸Å ±İ¾×
+	int numOfApple = 20;	// ì‚¬ê³¼ ê°œìˆ˜
+	int myMoney = 0;		// íŒë§¤ ê¸ˆì•¡
 	
 
-	// ÆÇ¸ÅÇÏ´Ù
+	// íŒë§¤í•˜ë‹¤
 	public void saleApple(FruitBuyer buyer, int money) {
 	//public int saleApple(int money) {
 		numOfApple -= buyer.buyApple(money);
 		myMoney += money;
 	}
-	// ÆÇ¸Å°á°ú
+	// íŒë§¤ê²°ê³¼
 	public void showSaleResult() {
-		System.out.println("***°úÀÏ Àå¼öÀÇ ÇöÀç »óÈ²***");
-		System.out.println("³²Àº »ç°ú: " + numOfApple);
-		System.out.println("ÆÇ¸Å ¼öÀÍ: " + myMoney);
+		System.out.println("***ê³¼ì¼ ì¥ìˆ˜ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("ë‚¨ì€ ì‚¬ê³¼: " + numOfApple);
+		System.out.println("íŒë§¤ ìˆ˜ìµ: " + myMoney);
 	}
 }
 

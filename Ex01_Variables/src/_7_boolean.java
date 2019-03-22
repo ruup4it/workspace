@@ -1,4 +1,4 @@
-// boolean ³í¸® : true, false
+// boolean í˜• : true, false
 // 10 == 10 : true
 public class _7_boolean {
 	public static void main(String[] args) {

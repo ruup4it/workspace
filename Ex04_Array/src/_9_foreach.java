@@ -1,7 +1,7 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 
-/* Çö¾÷¿¡¼­ ¸¶Âù°¡ÁöÀÎµ¥
- * for¹®¿¡¼­ °¡Àå ¸¹ÀÌ ¾²ÀÌ´Â ¹®¹ýÀº
+/* í˜„ì—…ì—ì„œ ë§ˆì°¬ê°€ì§€ì¸ë°
+ * forë¬¸ì—ì„œ ê°€ìž¥ ë§Žì´ ì“°ì´ëŠ” ë¬¸ë²•ì€
  * for(int i=0; i<10; i++)
  * */
 public class _9_foreach {
@@ -10,14 +10,14 @@ public class _9_foreach {
 		int[] scores = {89, 99, 100, 21, 10};
 		System.out.println(Arrays.toString(scores));
 		
-		// for¹®À» ÀÌ¿ëÇÑ Á¢±Ù
+		// forë¬¸ì„ ì´ìš©í•œ ì ‘ê·¼
 		for(int i=0; i<scores.length; i++) {
 			System.out.print(scores[i]+" ");
 		}
 		
 		System.out.println();
 		
-		// foreach¸¦ ÀÌ¿ëÇÑ Á¢±Ù
+		// foreachë¥¼ ì´ìš©í•œ ì ‘ê·¼
 		for(int score : scores) {
 			System.out.print(score+" ");
 		}

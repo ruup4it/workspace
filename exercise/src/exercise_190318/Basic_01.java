@@ -1,10 +1,10 @@
-package exercise_190318;
+ï»¿package exercise_190318;
 
 import java.util.Scanner;
 
-//1. µÎ °³ÀÇ Á¤¼ö¸¦ ¹Þ¾Æ¼­, µÎ ¼öÀÇ Â÷ÀÇ Àý´ë°ªÀ» °è»êÇÏ¿© Ãâ·ÂÇÏ´Â ¸Þ¼­µå¿Í
-//ÀÌ ¸Þ¼­µå¸¦ »ç¿ëÇØº¸¼¼¿ä. ¸Þ¼­µå È£Ãâ ½Ã Àü´ÞµÇ´Â °ªÀÇ ¼ø¼­¿Í »ó°ü¾øÀÌ
-//Àý´ë°ªÀÌ °è»êµÇ¾î¼­ Ãâ·ÂµÇ¾î¾ß ÇÕ´Ï´Ù
+//1. ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ë°›ì•„ì„œ, ë‘ ìˆ˜ì˜ ì°¨ì˜ ì ˆëŒ€ê°’ì„ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œì™€
+//ì´ ë©”ì„œë“œë¥¼ ì‚¬ìš©í•´ë³´ì„¸ìš”. ë©”ì„œë“œ í˜¸ì¶œ ì‹œ ì „ë‹¬ë˜ëŠ” ê°’ì˜ ìˆœì„œì™€ ìƒê´€ì—†ì´
+//ì ˆëŒ€ê°’ì´ ê³„ì‚°ë˜ì–´ì„œ ì¶œë ¥ë˜ì–´ì•¼ í•©ë‹ˆë‹¤
 public class Basic_01 {
 
 	public static void main(String[] args) {

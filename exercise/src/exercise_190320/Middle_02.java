@@ -1,14 +1,14 @@
-package exercise_190320;
+ï»¿package exercise_190320;
 
 import java.util.Arrays;
 
 
-/*2. ´ÙÀ½ µÎ °³ÀÇ static °¡Áø ArrayUtility2Å¬·¡½º¸¦ ¸¸µé¾îº¸°í »ç¿ëÇÏ¼¼¿ä
-static int[] concat(int[] s1, int[] s2);	// s1°ú s2¸¦ ¿¬°áÇÑ »õ·Î¿î ¹è¿­ ¸®ÅÏ
-static int[] remove(int[] s1, int[] s2);	// s1¿¡¼­ s2¹è¿­ÀÇ ¼ıÀÚ¸¦ ¸ğµÎ »èÁ¦ÇÑ »õ·Î¿î ¹è¿­ ¸®ÅÏ
+/*2. ë‹¤ìŒ ë‘ ê°œì˜ static ê°€ì§„ ArrayUtility2í´ë˜ìŠ¤ë¥¼ ë§Œë“¤ì–´ë³´ê³  ì‚¬ìš©í•˜ì„¸ìš”
+static int[] concat(int[] s1, int[] s2);	// s1ê³¼ s2ë¥¼ ì—°ê²°í•œ ìƒˆë¡œìš´ ë°°ì—´ ë¦¬í„´
+static int[] remove(int[] s1, int[] s2);	// s1ì—ì„œ s2ë°°ì—´ì˜ ìˆ«ìë¥¼ ëª¨ë‘ ì‚­ì œí•œ ìƒˆë¡œìš´ ë°°ì—´ ë¦¬í„´
 */
 class ArrayUtility2 {
-	// s1°ú s2¸¦ ¿¬°áÇÑ »õ·Î¿î ¹è¿­ ¸®ÅÏ
+	// s1ê³¼ s2ë¥¼ ì—°ê²°í•œ ìƒˆë¡œìš´ ë°°ì—´ ë¦¬í„´
 	static int[] concat(int[] s1, int[] s2) {
 		int[] concatArr = new int[s1.length + s2.length];
 
@@ -21,7 +21,7 @@ class ArrayUtility2 {
 		return concatArr;
 	};
 
-	// s1¿¡¼­ s2¹è¿­ÀÇ ¼ıÀÚ¸¦ ¸ğµÎ »èÁ¦ÇÑ »õ·Î¿î ¹è¿­ ¸®ÅÏ
+	// s1ì—ì„œ s2ë°°ì—´ì˜ ìˆ«ìë¥¼ ëª¨ë‘ ì‚­ì œí•œ ìƒˆë¡œìš´ ë°°ì—´ ë¦¬í„´
 	static int[] remove(int[] s1, int[] s2) {
 		int[] removeArr;
 		int count = 0;

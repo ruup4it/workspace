@@ -1,50 +1,50 @@
-/* Method (Java¿¡¼­ ÇÔ¼ö¸¦ °¡¸®Å°´Â ¿ë¾î)
+ï»¿/* Method (Javaì—ì„œ í•¨ìˆ˜ë¥¼ ê°€ë¦¬í‚¤ëŠ” ìš©ì–´)
  * Function
  * 
- * ¹®Àå = ¸í»ç + µ¿»ç = ÁÖ¾î + µ¿»ç
- * ÇÁ·Î±×·¡¹Ö = ÇÊµå + ¸Þ¼­µå
+ * ë¬¸ìž¥ = ëª…ì‚¬ + ë™ì‚¬ = ì£¼ì–´ + ë™ì‚¬
+ * í”„ë¡œê·¸ëž˜ë° = í•„ë“œ + ë©”ì„œë“œ
  * 
- * ¸Þ¼­µå¸¦ ¸¸µå´Â ¸ñÀû 
- * 1) ÄÚµå°¡ ±æ¾îÁö°Ô µÇ¸é °¡µ¶¼ºÀ» À§ÇÏ¿© ÀÏÁ¤ ´ÜÀ§·Î ºÐ·ù
- * 	  ÀÏÁ¤ ÀÇ¹Ì ÀÖ´Â ´ÜÀ§·Î ºÐ·ù
- * 	k5 - ºÎÇ° ¸ðµâÈ­, 1±ºµ¥°¡ ÀÌ»óÀÌ »ý±â¸é ±× ºÎºÐ¸¸ ¼ö¸®
- * 	(°³¹ß ºñ¿ëÀÇ Àý¾à)
- * 2) Áßº¹ ÄÚµå¸¦ ÀÌ¸§À¸·Î¸¸ È£ÃâÇÏ±â À§ÇØ
- * 3) Àç»ç¿ëÀ» ½±°Ô ÇÏ±â À§ÇØ
+ * ë©”ì„œë“œë¥¼ ë§Œë“œëŠ” ëª©ì  
+ * 1) ì½”ë“œê°€ ê¸¸ì–´ì§€ê²Œ ë˜ë©´ ê°€ë…ì„±ì„ ìœ„í•˜ì—¬ ì¼ì • ë‹¨ìœ„ë¡œ ë¶„ë¥˜
+ * 	  ì¼ì • ì˜ë¯¸ ìžˆëŠ” ë‹¨ìœ„ë¡œ ë¶„ë¥˜
+ * 	k5 - ë¶€í’ˆ ëª¨ë“ˆí™”, 1êµ°ë°ê°€ ì´ìƒì´ ìƒê¸°ë©´ ê·¸ ë¶€ë¶„ë§Œ ìˆ˜ë¦¬
+ * 	(ê°œë°œ ë¹„ìš©ì˜ ì ˆì•½)
+ * 2) ì¤‘ë³µ ì½”ë“œë¥¼ ì´ë¦„ìœ¼ë¡œë§Œ í˜¸ì¶œí•˜ê¸° ìœ„í•´
+ * 3) ìž¬ì‚¬ìš©ì„ ì‰½ê²Œ í•˜ê¸° ìœ„í•´
  * */
 
-/* static ¸Þ¼­µå
- * Å¬·¡½º°¡ »ç¿ëµÉ ¶§ °´Ã¼¸¦ ¸¸µéÁö ¾Ê¾Æµµ ¹Ù·Î ¸Þ¸ð¸®¿¡ ·Îµù
+/* static ë©”ì„œë“œ
+ * í´ëž˜ìŠ¤ê°€ ì‚¬ìš©ë  ë•Œ ê°ì²´ë¥¼ ë§Œë“¤ì§€ ì•Šì•„ë„ ë°”ë¡œ ë©”ëª¨ë¦¬ì— ë¡œë”©
  * */
-/* ¸Þ¼­µåÀÇ Çü½Ä
+/* ë©”ì„œë“œì˜ í˜•ì‹
  * 
- * ³ìÁó			³ìÁó±â		(ÀÙ)
+ * ë…¹ì¦™			ë…¹ì¦™ê¸°		(ìžŽ)
  * returnValue methodName (argumentValue){
  * 
  * }
- * ¸®ÅÏ°ª(returnValue)ÀÌ int, double, int[], Å¬·¡½º µî
- * return ÇØ´ç returnÇü; ÀÌ ¿Í¾ß ÇÑ´Ù.
- * ¸®ÅÏ °ªÀÌ voidÀÌ¸é ¾Æ¹«°ªµµ ¹ÝÈ¯ÇÏÁö ¾Ê´Â´Ù´Â ÀÇ¹ÌÀÌ¹Ç·Î
- * returnÀ» »ý·«ÇÏ°Å³ª ±×³É retuurn¸¸ ½áÁÖ¸é µÈ´Ù.
- * returnÀÇ ÀÇ¹Ì´Â ÀÌ ÇÔ¼ö¸¦ È£ÃâÇÑ °÷À¸·Î µ¹¾Æ°¡¶ó
+ * ë¦¬í„´ê°’(returnValue)ì´ int, double, int[], í´ëž˜ìŠ¤ ë“±
+ * return í•´ë‹¹ returní˜•; ì´ ì™€ì•¼ í•œë‹¤.
+ * ë¦¬í„´ ê°’ì´ voidì´ë©´ ì•„ë¬´ê°’ë„ ë°˜í™˜í•˜ì§€ ì•ŠëŠ”ë‹¤ëŠ” ì˜ë¯¸ì´ë¯€ë¡œ
+ * returnì„ ìƒëžµí•˜ê±°ë‚˜ ê·¸ëƒ¥ retuurnë§Œ ì¨ì£¼ë©´ ëœë‹¤.
+ * returnì˜ ì˜ë¯¸ëŠ” ì´ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•œ ê³³ìœ¼ë¡œ ëŒì•„ê°€ë¼
  * */
 
-/* return°ª   2x+1ÀÌ ÇÔ¼ö¸í (x°¡ ¸Å°³º¯¼ö)
+/* returnê°’   2x+1ì´ í•¨ìˆ˜ëª… (xê°€ ë§¤ê°œë³€ìˆ˜)
  *    y   =    2x + 1
  * 
  * */
-// ÇÑ ÆÄÀÏ¿¡ public Å¬·¡½º´Â ÇÏ³ª¸¸ Á¸Àç
+// í•œ íŒŒì¼ì— public í´ëž˜ìŠ¤ëŠ” í•˜ë‚˜ë§Œ ì¡´ìž¬
 public class _01_MethodDefAdd {
 	public static void main(String[] args) {
-		System.out.println("ÇÁ·Î±×·¥ÀÇ ½ÃÀÛ");
+		System.out.println("í”„ë¡œê·¸ëž¨ì˜ ì‹œìž‘");
 		hiEveryOne(12);
 		hiEveryOne(12);
-		System.out.println("ÇÁ·Î±×·¥ÀÇ ³¡");
+		System.out.println("í”„ë¡œê·¸ëž¨ì˜ ë");
 	}
 	static void hiEveryOne(int age) {
-		System.out.println("ÁÁÀº ¾ÆÄ§ ÀÔ´Ï´Ù.");
-		System.out.println("Á¦ ³ªÀÌ´Â" + age + "ÀÔ´Ï´Ù.");
-		return; // ¾Æ¹« °ªµµ ¸®ÅÏÇÒ °Í ¾øÀÌ µ¹¾Æ°¡¶ó ; voidÀÏ °æ¿ì »ý·« °¡´É
+		System.out.println("ì¢‹ì€ ì•„ì¹¨ ìž…ë‹ˆë‹¤.");
+		System.out.println("ì œ ë‚˜ì´ëŠ”" + age + "ìž…ë‹ˆë‹¤.");
+		return; // ì•„ë¬´ ê°’ë„ ë¦¬í„´í•  ê²ƒ ì—†ì´ ëŒì•„ê°€ë¼ ; voidì¼ ê²½ìš° ìƒëžµ ê°€ëŠ¥
 	}
 }
 

@@ -1,7 +1,7 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* ¹«ÇÑ·çÇÁ
- * ifÁ¶°Ç + break¹®°ú °°ÀÌ »ç¿ëµÉ °æ¿ì°¡ ¸¹´Ù.
+/* ë¬´í•œë£¨í”„
+ * ifì¡°ê±´ + breakë¬¸ê³¼ ê°™ì´ ì‚¬ìš©ë  ê²½ìš°ê°€ ë§ë‹¤.
  * 1) while(true)
  * 
  * 2) do{
@@ -10,24 +10,24 @@ import java.util.Scanner;
  * 3) for(;;)
  * */
 
-//¼ıÀÚ¸¦ ÀÔ·Â ¹Ş¾Æ¶ó
-//ÀÔ·Â¹ŞÀº ¼ıÀÚ¸¦ ´õÇØ¶ó 
-//-1ÀÌ ÀÔ·ÂµÇ¸é ´õÇÑ ¼ıÀÚ¸¦ Ãâ·ÂÇÏ°í 
-//Á¾·áÇØ¶ó
+//ìˆ«ìë¥¼ ì…ë ¥ ë°›ì•„ë¼
+//ì…ë ¥ë°›ì€ ìˆ«ìë¥¼ ë”í•´ë¼ 
+//-1ì´ ì…ë ¥ë˜ë©´ ë”í•œ ìˆ«ìë¥¼ ì¶œë ¥í•˜ê³  
+//ì¢…ë£Œí•´ë¼
 public class _10_NeverEndingLoop {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int sum = 0;
 		int num = 0;
-		// ¹«ÇÑ ·çÇÁ
+		// ë¬´í•œ ë£¨í”„
 		for(;;) {
-			System.out.print("¼ıÀÚ ÀÔ·Â (-1ÀÌ¸é Á¾·á) : ");
+			System.out.print("ìˆ«ì ì…ë ¥ (-1ì´ë©´ ì¢…ë£Œ) : ");
 			num = scan.nextInt();
 			sum += num;
 			if(num == -1)
 				break;
 		}
-		System.out.println("´©Àû °ª :" + sum);
+		System.out.println("ëˆ„ì  ê°’ :" + sum);
 		scan.close();
 	}
 }

@@ -1,4 +1,4 @@
-
+﻿
 public class _6_Floats {
 	public static void main(String[] args) {
 		float f = 10.0F;

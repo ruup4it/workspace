@@ -1,27 +1,27 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 
-/* Èü¿¡ ¿Ã¶ó°¡´Â ¸Þ¸ð¸®´Â 
- * JVM ³»ÀÇ Garbage Collector(¾²·¹±â ¼öÁý±â)¿¡ ÀÇÇØ
- * ³»ºÎ ¾Ë°í¸®ÁòÀÌ Àû¿ëµÇ¾î ¾Ë¾Æ¼­ ÇØÁ¦µÈ´Ù.
+/* íž™ì— ì˜¬ë¼ê°€ëŠ” ë©”ëª¨ë¦¬ëŠ” 
+ * JVM ë‚´ì˜ Garbage Collector(ì“°ë ˆê¸° ìˆ˜ì§‘ê¸°)ì— ì˜í•´
+ * ë‚´ë¶€ ì•Œê³ ë¦¬ì¦˜ì´ ì ìš©ë˜ì–´ ì•Œì•„ì„œ í•´ì œëœë‹¤.
  * 
- * korÀÌ °¡¸®Å°´Â 5°³ÀÇ µ¥ÀÌÅÍ ¿µ¿ªÀº GC°¡ ÇØÁ¦
+ * korì´ ê°€ë¦¬í‚¤ëŠ” 5ê°œì˜ ë°ì´í„° ì˜ì—­ì€ GCê°€ í•´ì œ
  * 
- * ½ºÅÃ¿¡ ¿Ã¶ó°£ ¸Þ¸ð¸®´Â ÇØ´ç ¿µ¿ªÀÌ ³¡³¯ ¶§ ¼Ò¸êµÈ´Ù.
- * stnum°ú korÀº main ¸Þ¼­µå°¡ ³¡³¯ ¶§ Áï½Ã ¼Ò¸í
+ * ìŠ¤íƒì— ì˜¬ë¼ê°„ ë©”ëª¨ë¦¬ëŠ” í•´ë‹¹ ì˜ì—­ì´ ëë‚  ë•Œ ì†Œë©¸ëœë‹¤.
+ * stnumê³¼ korì€ main ë©”ì„œë“œê°€ ëë‚  ë•Œ ì¦‰ì‹œ ì†Œëª…
  * */
 public class _2_array {
 	public static void main(String[] args) {
-		//int stNum = 5 ; // ½ºÅÃ¿¡ ¿Ã¶ó°£´Ù.
-		int[] korScore = new int[5]; // Èü¿¡ ¿Ã¶ó°£´Ù.
+		//int stNum = 5 ; // ìŠ¤íƒì— ì˜¬ë¼ê°„ë‹¤.
+		int[] korScore = new int[5]; // íž™ì— ì˜¬ë¼ê°„ë‹¤.
 		korScore[0] = 88;
 		korScore[1] = 99;
 		korScore[2] = 90;
 		korScore[3] = 87;
 		korScore[4] = 79;
 		
-		// 16Áø¼ö hashCode °ª
-		// JVM¿¡ ÀÇÇØ ½ÇÁ¦ °ø°£À» Á¢±ÙÇÏ±â À§ÇØ
-		// ÇØ¼®µÇ´Â ¾à¼Ó ¼ýÀÚ ±âÈ£
+		// 16ì§„ìˆ˜ hashCode ê°’
+		// JVMì— ì˜í•´ ì‹¤ì œ ê³µê°„ì„ ì ‘ê·¼í•˜ê¸° ìœ„í•´
+		// í•´ì„ë˜ëŠ” ì•½ì† ìˆ«ìž ê¸°í˜¸
 		System.out.println(korScore);
 		System.out.println(Arrays.toString(korScore));
 	}

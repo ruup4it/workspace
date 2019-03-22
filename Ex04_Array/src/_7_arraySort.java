@@ -1,17 +1,17 @@
-import java.util.Arrays;
-/* ¹è¿­ÀÇ Á¤·Ä
- * µÑ ´Ù ¿À¸§Â÷¼ø Á¤·Ä (ÀÛÀº °Í -> Å« °Í)
- * Arrays.sort();			// µ¥ÀÌÅÍ°¡ ÀûÀ» ¶§
- * Arrays.parallelSort();	// µ¥ÀÌÅÍ°¡ ¸¹À» ¶§\
+ï»¿import java.util.Arrays;
+/* ë°°ì—´ì˜ ì •ë ¬
+ * ë‘˜ ë‹¤ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ (ì‘ì€ ê²ƒ -> í° ê²ƒ)
+ * Arrays.sort();			// ë°ì´í„°ê°€ ì ì„ ë•Œ
+ * Arrays.parallelSort();	// ë°ì´í„°ê°€ ë§ì„ ë•Œ\
  * 
- * ÇÑ ¹ø¿¡ ¹®ÀÚ¿­·Î ¹è¿­ÀÇ µ¥ÀÌÅÍ¸¦ È®ÀÎÇÏ·Á°í ÇÒ ¶§
- * Arrays.toString(scores) -> ¹è¿­ÀÇ ¸ğµç °ªÀÌ ¹®ÀÚ¿­
+ * í•œ ë²ˆì— ë¬¸ìì—´ë¡œ ë°°ì—´ì˜ ë°ì´í„°ë¥¼ í™•ì¸í•˜ë ¤ê³  í•  ë•Œ
+ * Arrays.toString(scores) -> ë°°ì—´ì˜ ëª¨ë“  ê°’ì´ ë¬¸ìì—´
  * */
 public class _7_arraySort {
 	public static void main(String[] args) {
 		int[] scores = {98, 12, 52, 68, 78, 98, 99, 100, 23, 65};
 		System.out.println(Arrays.toString(scores));
-		// Á¤·Ä
+		// ì •ë ¬
 		Arrays.sort(scores);
 		// Arrays.parallelSort(scores);
 		System.out.println(Arrays.toString(scores));

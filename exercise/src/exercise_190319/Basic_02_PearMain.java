@@ -1,7 +1,7 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
-//2. ³ª´Â ¸¶Æ®¿¡ °¡¼­ 5000¿øÀ» ÁÖ°í ¹è °¡°İ 2500¸¦ »ò´Ù¸¦ 
-//Å¬·¡½º·Î ¼³°èÇØ¼­ ÇÁ·Î±×·¡¹Ö ÇÏ¼¼¿ä
+//2. ë‚˜ëŠ” ë§ˆíŠ¸ì— ê°€ì„œ 5000ì›ì„ ì£¼ê³  ë°° ê°€ê²© 2500ë¥¼ ìƒ€ë‹¤ë¥¼ 
+//í´ë˜ìŠ¤ë¡œ ì„¤ê³„í•´ì„œ í”„ë¡œê·¸ë˜ë° í•˜ì„¸ìš”
 public class Basic_02_PearMain {
 	public static void main(String[] args) {
 		Basic_02_PearSeller seller1 = new Basic_02_PearSeller();

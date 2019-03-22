@@ -1,6 +1,6 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
-//3. do~while¹®À» ÀÌ¿ëÇØ¼­ 1ºÎÅÍ 10±îÁö ÇÕÀ» Ãâ·ÂÇÏ¼¼¿ä
+//3. do~whileë¬¸ì„ ì´ìš©í•´ì„œ 1ë¶€í„° 10ê¹Œì§€ í•©ì„ ì¶œë ¥í•˜ì„¸ìš”
 public class doWhile03 {
 	public static void main(String[] args) {
 		int num = 0;

@@ -1,19 +1,19 @@
-package exercise_190313;
+ï»¿package exercise_190313;
 
 import java.util.Scanner;
 
-//4. 369°ÔÀÓÀ» ÀÛ¼ºÇÕ´Ï´Ù.
-//1~99±îÁöÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Ş°í
-//3,6,9Áß ÇÏ³ª°¡ ÀÖÀ¸¸é "¹Ú¼öÂ¦"À» Ãâ·ÂÇÏ°í
-//2°³°¡ ÀÖÀ¸¸é "¹Ú¼öÂ¦Â¦"À» Ãâ·ÂÇÏ¼¼¿ä
-//¿¹¸¦ µé¾î 13Àº "¹Ú¼öÂ¦"
-//36ÀÎ °æ¿ì´Â "¹Ú¼öÂ¦Â¦"À» Ãâ·ÂÇÏ¸é µË´Ï´Ù.
+//4. 369ê²Œì„ì„ ì‘ì„±í•©ë‹ˆë‹¤.
+//1~99ê¹Œì§€ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ê³ 
+//3,6,9ì¤‘ í•˜ë‚˜ê°€ ìˆìœ¼ë©´ "ë°•ìˆ˜ì§"ì„ ì¶œë ¥í•˜ê³ 
+//2ê°œê°€ ìˆìœ¼ë©´ "ë°•ìˆ˜ì§ì§"ì„ ì¶œë ¥í•˜ì„¸ìš”
+//ì˜ˆë¥¼ ë“¤ì–´ 13ì€ "ë°•ìˆ˜ì§"
+//36ì¸ ê²½ìš°ëŠ” "ë°•ìˆ˜ì§ì§"ì„ ì¶œë ¥í•˜ë©´ ë©ë‹ˆë‹¤.
 public class ex_04 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
 		int count = 0; 
-		System.out.println("1~99±îÁöÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("1~99ê¹Œì§€ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int inputNum = scan.nextInt();
 		int num10 = inputNum / 10 ;
 		int num1 = inputNum % 10;
@@ -31,13 +31,13 @@ public class ex_04 {
 		switch(count)
 		{
 			case 1:
-				System.out.println("¹Ú¼öÂ¦");
+				System.out.println("ë°•ìˆ˜ì§");
 				break;
 			case 2:
-				System.out.println("¹Ú¼öÂ¦Â¦");
+				System.out.println("ë°•ìˆ˜ì§ì§");
 				break;
 			default :
-				System.out.println("3,6,9 °ªÀÌ ¾ø½À´Ï´Ù.");
+				System.out.println("3,6,9 ê°’ì´ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		scan.close();
 	}

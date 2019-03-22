@@ -1,8 +1,8 @@
-// Á¶°Ç ¿¬»êÀÚ : Á¶°Ç¹® ´ë½Å »ç¿ë
-// »ïÇ× ¿¬»êÀÚ - Ç×¸ñÀÌ 3°³¶ó¼­ ÀÌ¸§ ÁöÀ½
-// A ? B : C - A °¡ true¸é B°¡ °á°ú
-//			   A °¡ false¸é C°¡ °á°ú
-// Á¶°Ç¹® ´ë½Å ¾²ÀÌ´Â °æ¿ì°¡ ÀÖ´Ù.
+ï»¿// ì¡°ê±´ ì—°ì‚°ìž : ì¡°ê±´ë¬¸ ëŒ€ì‹  ì‚¬ìš©
+// ì‚¼í•­ ì—°ì‚°ìž - í•­ëª©ì´ 3ê°œë¼ì„œ ì´ë¦„ ì§€ìŒ
+// A ? B : C - A ê°€ trueë©´ Bê°€ ê²°ê³¼
+//			   A ê°€ falseë©´ Cê°€ ê²°ê³¼
+// ì¡°ê±´ë¬¸ ëŒ€ì‹  ì“°ì´ëŠ” ê²½ìš°ê°€ ìžˆë‹¤.
 public class _7_ThreeParamOp {
 	public static void main(String[] args) {
 		boolean b = true;

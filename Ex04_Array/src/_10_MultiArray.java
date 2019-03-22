@@ -1,15 +1,15 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 
-/* ´ÙÂ÷¿ø ¹è¿­ (2Â÷¿ø ÀÌ»ó ¹è¿­)
- * ½ÇÁ¦·Î 90% ÀÌ»ó 1Â÷¿ø ¹è¿­¸¸ ¾´´Ù.
- * int[][] arr = new int [ÀúÀåµÉ 1Â÷¿ø ¹è¿­ÀÇ ¼ö][°¢ 1Â÷¿ø ¹è¿­ÀÇ ±æÀÌ]
+/* ë‹¤ì°¨ì› ë°°ì—´ (2ì°¨ì› ì´ìƒ ë°°ì—´)
+ * ì‹¤ì œë¡œ 90% ì´ìƒ 1ì°¨ì› ë°°ì—´ë§Œ ì“´ë‹¤.
+ * int[][] arr = new int [ì €ì¥ë  1ì°¨ì› ë°°ì—´ì˜ ìˆ˜][ê° 1ì°¨ì› ë°°ì—´ì˜ ê¸¸ì´]
  * */
 public class _10_MultiArray {
 	public static void main(String[] args) {
-		// ÀÚ·áÇü int[] / º¯¼ö scores
+		// ìë£Œí˜• int[] / ë³€ìˆ˜ scores
 		// int[] scores = {10, 20};
 		
-		// ÀÚ·áÇü int[][] / º¯¼ö arr
+		// ìë£Œí˜• int[][] / ë³€ìˆ˜ arr
 		int[][] arr = new int[5][];
 		System.out.println(arr);
 		arr[0] = new int[3];

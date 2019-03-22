@@ -1,9 +1,9 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
-//7. ÀÔ·Â¹ŞÀº ¼ıÀÚÀÇ ±¸±¸´ÜÀ» Ãâ·ÂÇÏ¼¼¿ä
-//¿¹¸¦ µé¾î 3À» ÀÔ·ÂÇÏ¸é 
+//7. ì…ë ¥ë°›ì€ ìˆ«ìì˜ êµ¬êµ¬ë‹¨ì„ ì¶œë ¥í•˜ì„¸ìš”
+//ì˜ˆë¥¼ ë“¤ì–´ 3ì„ ì…ë ¥í•˜ë©´ 
 //3 x 1 = 3
 //3 x 2 = 6
 //...
@@ -13,7 +13,7 @@ public class doWhile07 {
 		Scanner scan = new Scanner(System.in);
 		int num = 0;
 		int count = 0;
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		num = scan.nextInt();
 		do {
 			++count;

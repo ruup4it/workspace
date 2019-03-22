@@ -1,6 +1,6 @@
-// ºñ±³¿¬»êÀÚ
+ï»¿// ë¹„êµì—°ì‚°ì
 // Relational and Logical Operators
-// Boolean Çü > °á°ú°ªÀÌ true ¶Ç´Â false 
+// Boolean í˜• > ê²°ê³¼ê°’ì´ true ë˜ëŠ” false 
 public class _3_CompareOp {
 	public static void main(String[] args) {
 		//int x = 10; int y = 20;

@@ -1,9 +1,9 @@
-// ¸Å¼­µå ÀÌ¿ë¸ñÀû: ÀûÀıÇÑ ±æÀÌ·Î Àß¶óÁÖ±â À§ÇÔ
+ï»¿// ë§¤ì„œë“œ ì´ìš©ëª©ì : ì ì ˆí•œ ê¸¸ì´ë¡œ ì˜ë¼ì£¼ê¸° ìœ„í•¨
 public class _06_MethodReturns {
 	public static void main(String[] args) {
 		int result = adder(4,5);
-		System.out.println("4¿Í 5ÀÇ ÇÕ: "+result);
-		System.out.println("3.5ÀÇ Á¦°ö: "+square(3.5));
+		System.out.println("4ì™€ 5ì˜ í•©: "+result);
+		System.out.println("3.5ì˜ ì œê³±: "+square(3.5));
 	}
 	
 	public static int adder(int num1, int num2) {

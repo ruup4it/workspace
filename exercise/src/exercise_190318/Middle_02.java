@@ -1,5 +1,5 @@
-package exercise_190318;
-//2. Basic 2¹ø ¹®Á¦¸¦ 2Â÷¿ø ¹è¿­¿¡ ÀúÀåÇÏ°í Ãâ·ÂÇØº¸¼¼¿ä
+ï»¿package exercise_190318;
+//2. Basic 2ë²ˆ ë¬¸ì œë¥¼ 2ì°¨ì› ë°°ì—´ì— ì €ì¥í•˜ê³  ì¶œë ¥í•´ë³´ì„¸ìš”
 public class Middle_02 {
 
 	public static void main(String[] args) {

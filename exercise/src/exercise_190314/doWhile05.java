@@ -1,18 +1,18 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
-//5. ¾çÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Ş°í ±× ¼ö¸¸Å­ "°¨»çÇÕ´Ï´Ù"¸¦ Ãâ·ÂÇÏ¼¼¿ä
+//5. ì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ê³  ê·¸ ìˆ˜ë§Œí¼ "ê°ì‚¬í•©ë‹ˆë‹¤"ë¥¼ ì¶œë ¥í•˜ì„¸ìš”
 public class doWhile05 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = 0;
 		int count = 0;
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		num = scan.nextInt();
 		do {
 			++count;
-			System.out.println(String.format("°¨»çÇÕ´Ï´Ù. %d",count));
+			System.out.println(String.format("ê°ì‚¬í•©ë‹ˆë‹¤. %d",count));
 		} while (count < num);
 		scan.close();
 	}

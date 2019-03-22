@@ -1,22 +1,22 @@
-package exercise_190319;
-//2. RectangleÅ¬·¡½º¸¦ ÀÛ¼ºÇÏ¼¼¿ä
+ï»¿package exercise_190319;
+//2. Rectangleí´ë˜ìŠ¤ë¥¼ ì‘ì„±í•˜ì„¸ìš”
 
 import java.util.Scanner;
 
-//intÅ¸ÀÔÀÇ x1, y1, x2, y2 : »ç°¢ÇüÀ» ±¸¼ºÇÏ´Â µÎ Á¡ÀÇ ÁÂÇ¥
-//void set(int x1, int y1, int x2, int y2) : ÁÂÇ¥ ¼³Á¤
-//int square() : »ç°¢Çü ³ĞÀÌ ¸®ÅÏ
-//void show() : ÁÂÇ¥¿Í ³ĞÀÌ µî Á÷»ç°¢Çü Á¤º¸ÀÇ È­¸é Ãâ·Â
-//boolean equals(Rectangle r) : ÀÎÀÚ·Î Àü´ŞµÈ °´Ã¼ r°ú Çö °´Ã¼°¡ µ¿ÀÏÇÑ ÁÂÇ¥ÀÇ Á÷»ç°¢ÇüÀÌ¸é true ¸®ÅÏ
+//intíƒ€ì…ì˜ x1, y1, x2, y2 : ì‚¬ê°í˜•ì„ êµ¬ì„±í•˜ëŠ” ë‘ ì ì˜ ì¢Œí‘œ
+//void set(int x1, int y1, int x2, int y2) : ì¢Œí‘œ ì„¤ì •
+//int square() : ì‚¬ê°í˜• ë„“ì´ ë¦¬í„´
+//void show() : ì¢Œí‘œì™€ ë„“ì´ ë“± ì§ì‚¬ê°í˜• ì •ë³´ì˜ í™”ë©´ ì¶œë ¥
+//boolean equals(Rectangle r) : ì¸ìë¡œ ì „ë‹¬ëœ ê°ì²´ rê³¼ í˜„ ê°ì²´ê°€ ë™ì¼í•œ ì¢Œí‘œì˜ ì§ì‚¬ê°í˜•ì´ë©´ true ë¦¬í„´
 
 class Rectangle {
-	// »ç°¢ÇüÀ» ±¸¼ºÇÏ´Â µÎ Á¡ÀÇ ÁÂÇ¥
+	// ì‚¬ê°í˜•ì„ êµ¬ì„±í•˜ëŠ” ë‘ ì ì˜ ì¢Œí‘œ
 	int x1;
 	int y1;
 	int x2;
 	int y2;
 
-	// ÁÂÇ¥ ¼³Á¤
+	// ì¢Œí‘œ ì„¤ì •
 	public void set(int x1, int y1, int x2, int y2) {
 		this.x1 = x1;
 		this.y1 = y1;
@@ -24,19 +24,19 @@ class Rectangle {
 		this.y2 = y2;
 	}
 
-	// »ç°¢Çü ³ĞÀÌ ¸®ÅÏ
+	// ì‚¬ê°í˜• ë„“ì´ ë¦¬í„´
 	public int square() {
 		int horizontal = x1 - x2 > 0 ? x1 - x2 : -(x1 - x2);
 		int Vertical = y1 - y2 > 0 ? y1 - y2 : -(y1 - y2);
 		return horizontal * Vertical;
 	}
 
-	// ÁÂÇ¥¿Í ³ĞÀÌ µî Á÷»ç°¢Çü Á¤º¸ÀÇ È­¸é Ãâ·Â
+	// ì¢Œí‘œì™€ ë„“ì´ ë“± ì§ì‚¬ê°í˜• ì •ë³´ì˜ í™”ë©´ ì¶œë ¥
 	public void show() {
-		System.out.println(String.format("ÁÂÇ¥1 : (%d, %d) \nÁÂÇ¥2 : (%d, %d)", x1, y1, x2, y2));
+		System.out.println(String.format("ì¢Œí‘œ1 : (%d, %d) \nì¢Œí‘œ2 : (%d, %d)", x1, y1, x2, y2));
 	}
 
-	// ÀÎÀÚ·Î Àü´ŞµÈ °´Ã¼ r°ú Çö °´Ã¼°¡ µ¿ÀÏÇÑ ÁÂÇ¥ÀÇ Á÷»ç°¢ÇüÀÌ¸é true ¸®ÅÏ
+	// ì¸ìë¡œ ì „ë‹¬ëœ ê°ì²´ rê³¼ í˜„ ê°ì²´ê°€ ë™ì¼í•œ ì¢Œí‘œì˜ ì§ì‚¬ê°í˜•ì´ë©´ true ë¦¬í„´
 	public boolean equals(Rectangle r) {
 		int r1XMin = x1 < x2 ? x1 : x2;
 		int r1YMin = y1 < y2 ? y1 : y2;
@@ -63,13 +63,13 @@ public class Middle_02 {
 		Rectangle rec1 = new Rectangle();
 		Rectangle rec2 = new Rectangle();
 
-		System.out.println("Ã¹ ¹øÂ° »ç°¢Çü");
+		System.out.println("ì²« ë²ˆì§¸ ì‚¬ê°í˜•");
 		rec1.set(50, 50, 100, 100);
 		rec1.show();
-		System.out.println(String.format("³ĞÀÌ : %d\n", rec1.square()));
+		System.out.println(String.format("ë„“ì´ : %d\n", rec1.square()));
 
 		do {
-			System.out.println("ºñ±³ÇÒ »ç°¢Çü ÀÔ·ÂÇÏ±â");
+			System.out.println("ë¹„êµí•  ì‚¬ê°í˜• ì…ë ¥í•˜ê¸°");
 			System.out.print("X1 : ");
 			int inputX1 = scan.nextInt();
 			System.out.print("Y1 : ");
@@ -80,7 +80,7 @@ public class Middle_02 {
 			int inputY2 = scan.nextInt();
 			rec2.set(inputX1, inputY1, inputX2, inputY2);
 			System.out.println(rec1.equals(rec2));
-			System.out.println("[°è¼ÓÇÏ±â : 1] [±×¸¸ : 2]");
+			System.out.println("[ê³„ì†í•˜ê¸° : 1] [ê·¸ë§Œ : 2]");
 			check = scan.nextInt();
 		} while (check != 2);
 

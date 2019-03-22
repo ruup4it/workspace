@@ -1,13 +1,13 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
-//	4.  °¡À§ ¹ÙÀ§ º¸ °ÔÀÓÀ» ¸¸µì´Ï´Ù
-//		ÄÄÇ»ÅÍ´Â ³­¼ö·Î »ı¼ºÇÏ°í »ç¿ëÀÚ´Â ¹®ÀÚ¿­·Î ÀÔ·Â¹Ş½À´Ï´Ù
-//		10¹ø ÁøÇàÇÏ°í ½Â ÆĞ ºñ±è À» Ãâ·ÂÇÏ¼¼¿ä
-//	°¡À§1  ¹ÙÀ§2
-//  ¹ÙÀ§2  º¸3
-//   º¸3   °¡À§1
+//	4.  ê°€ìœ„ ë°”ìœ„ ë³´ ê²Œì„ì„ ë§Œë“­ë‹ˆë‹¤
+//		ì»´í“¨í„°ëŠ” ë‚œìˆ˜ë¡œ ìƒì„±í•˜ê³  ì‚¬ìš©ìëŠ” ë¬¸ìì—´ë¡œ ì…ë ¥ë°›ìŠµë‹ˆë‹¤
+//		10ë²ˆ ì§„í–‰í•˜ê³  ìŠ¹ íŒ¨ ë¹„ê¹€ ì„ ì¶œë ¥í•˜ì„¸ìš”
+//	ê°€ìœ„1  ë°”ìœ„2
+//  ë°”ìœ„2  ë³´3
+//   ë³´3   ê°€ìœ„1
 public class ex_04 {
 	public static void main(String[] args) {
 		// Random rd = new Random();
@@ -21,29 +21,29 @@ public class ex_04 {
 			// play = rd.nextInt(3)+1;
 			com = (int) (Math.random() * 3 + 1);
 			System.out.println("==================");
-			System.out.print("¹«¾ùÀ» ³»½Ã°Ú½À´Ï±î? (°¡À§/¹ÙÀ§/º¸)");
+			System.out.print("ë¬´ì—‡ì„ ë‚´ì‹œê² ìŠµë‹ˆê¹Œ? (ê°€ìœ„/ë°”ìœ„/ë³´)");
 			userInput = scan.next();
 
 			switch (com) {
 			case 1:
-				computerInput = "°¡À§";
+				computerInput = "ê°€ìœ„";
 				break;
 			case 2:
-				computerInput = "¹ÙÀ§";
+				computerInput = "ë°”ìœ„";
 				break;
 			case 3:
-				computerInput = "º¸";
+				computerInput = "ë³´";
 				break;
 			}
 
-			if ((computerInput.equals("°¡À§") && userInput.equals("º¸"))
-					|| (computerInput.equals("¹ÙÀ§") && userInput.equals("°¡À§"))
-					|| (computerInput.equals("º¸") && userInput.equals("¹ÙÀ§"))) {
+			if ((computerInput.equals("ê°€ìœ„") && userInput.equals("ë³´"))
+					|| (computerInput.equals("ë°”ìœ„") && userInput.equals("ê°€ìœ„"))
+					|| (computerInput.equals("ë³´") && userInput.equals("ë°”ìœ„"))) {
 				result = "You Lose!!";
 				win++;
-			} else if ((computerInput.equals("º¸") && userInput.equals("°¡À§"))
-					|| (computerInput.equals("°¡À§") && userInput.equals("¹ÙÀ§"))
-					|| (computerInput.equals("¹ÙÀ§") && userInput.equals("º¸"))) {
+			} else if ((computerInput.equals("ë³´") && userInput.equals("ê°€ìœ„"))
+					|| (computerInput.equals("ê°€ìœ„") && userInput.equals("ë°”ìœ„"))
+					|| (computerInput.equals("ë°”ìœ„") && userInput.equals("ë³´"))) {
 				result = "You Win!!";
 				lose++;
 			} else {
@@ -51,11 +51,11 @@ public class ex_04 {
 				draw++;
 			}
 
-			System.out.println(String.format("======%d¹øÂ°°á°ú======\nÄÄÇ»ÅÍ : %s \n»ç¿ëÀÚ : %s\n   %s", i + 1, computerInput,
+			System.out.println(String.format("======%dë²ˆì§¸ê²°ê³¼======\nì»´í“¨í„° : %s \nì‚¬ìš©ì : %s\n   %s", i + 1, computerInput,
 					userInput, result));
 		}
 		System.out.println("==================");
-		System.out.println(String.format("½Â : %d, ÆĞ : %d, ¹«½ÂºÎ: %d", win, lose, draw));
+		System.out.println(String.format("ìŠ¹ : %d, íŒ¨ : %d, ë¬´ìŠ¹ë¶€: %d", win, lose, draw));
 		scan.close();
 	}
 }

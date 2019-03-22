@@ -1,11 +1,11 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
-//8. »ç¿ëÀÚ·ÎºÎÅÍ Á¤¼ö¸¦ ÀÔ·Â¹Ş½À´Ï´Ù.
-//ÀÔ·Â ¹ŞÀº °ªÀ» °è¼Ó ´õÇÕ´Ï´Ù
-//»ç¿ëÀÚ°¡ 0À» ÀÔ·ÂÇÏ¸é ÇÕÀ» Ãâ·ÂÇÕ´Ï´Ù
-//ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.
+//8. ì‚¬ìš©ìë¡œë¶€í„° ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ìŠµë‹ˆë‹¤.
+//ì…ë ¥ ë°›ì€ ê°’ì„ ê³„ì† ë”í•©ë‹ˆë‹¤
+//ì‚¬ìš©ìê°€ 0ì„ ì…ë ¥í•˜ë©´ í•©ì„ ì¶œë ¥í•©ë‹ˆë‹¤
+//í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.
 public class doWhile08 {
 
 	public static void main(String[] args) {
@@ -13,11 +13,11 @@ public class doWhile08 {
 		int num = 0;
 		int sum = 0;
 		do {
-			System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+			System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 			num = scan.nextInt();
 			sum += num;
 		} while (num != 0);
-		System.out.println(String.format("ÇÕ°è : %d",sum));
+		System.out.println(String.format("í•©ê³„ : %d",sum));
 		scan.close();
 	}
 

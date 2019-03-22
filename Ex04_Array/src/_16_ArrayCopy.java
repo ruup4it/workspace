@@ -1,10 +1,10 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 
 public class _16_ArrayCopy {
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 3, 4, 5 };
 		int[] temp = { 1, 2, 0, 0, 0 };
-		// arr ¹è¿­ ÀÎµ¦½º2ºÎÅÍ º¹»çÇØ¼­ temp ¹è¿­ ÀÎµ¦½º2 À§Ä¡·Î ºÙ¿© ³Ö´Âµ¥ ±æÀÌ´Â 3¸¸Å­
+		// arr ë°°ì—´ ì¸ë±ìŠ¤2ë¶€í„° ë³µì‚¬í•´ì„œ temp ë°°ì—´ ì¸ë±ìŠ¤2 ìœ„ì¹˜ë¡œ ë¶™ì—¬ ë„£ëŠ”ë° ê¸¸ì´ëŠ” 3ë§Œí¼
 		//System.arraycopy(arr, 2, temp, 2, 3);// [1, 2, 3, 4, 5]
 		
 		System.arraycopy(arr, 1, temp, 3, 2); //[1, 2, 0, 2, 3]

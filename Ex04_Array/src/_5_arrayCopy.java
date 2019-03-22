@@ -1,14 +1,14 @@
-import java.util.Arrays;
-/* ¹è¿­ º¯¼ö¿¡ ´Ù¸¥ ¹è¿­À» ´ëÀÔÇÏ¸é
- * hashCode °ª¸¸ º¹»çµÇ¹Ç·Î
- * °°Àº ÈüÀÇ °ø°£À» °¡¸®Å°°Ô µÈ´Ù.
+ï»¿import java.util.Arrays;
+/* ë°°ì—´ ë³€ìˆ˜ì— ë‹¤ë¥¸ ë°°ì—´ì„ ëŒ€ì…í•˜ë©´
+ * hashCode ê°’ë§Œ ë³µì‚¬ë˜ë¯€ë¡œ
+ * ê°™ì€ í™ì˜ ê³µê°„ì„ ê°€ë¦¬í‚¤ê²Œ ëœë‹¤.
  *
- * <±íÀº º¹»ç>
- * Arrays.copyOf(¹è¿­¸í, ±æÀÌ)
- * Arrays Å¬·¡½º ÀÌ¿ë
- * Arrays.copyOfÀÇ µµ¿òÀ» ¹ŞÀ¸¸é ±íÀº º¹»ç°¡ ÀÏ¾î³­´Ù
- * Áï, Èü ¸Ş¸ğ¸®¿¡ ¹è¿­ °ø°£ÀÌ ÇÒ´çµÇ°í °ªÀÌ º¹Á¦µÈ´Ù.
- * º¹Á¦µÈ ¹è¿­À» °¡¸®Å°´Â ÂüÁ¶º¯¼ö´Â ´Ù¸¥ hashCode¸¦ °¡Áö°Ô µÈ´Ù.
+ * <ê¹Šì€ ë³µì‚¬>
+ * Arrays.copyOf(ë°°ì—´ëª…, ê¸¸ì´)
+ * Arrays í´ë˜ìŠ¤ ì´ìš©
+ * Arrays.copyOfì˜ ë„ì›€ì„ ë°›ìœ¼ë©´ ê¹Šì€ ë³µì‚¬ê°€ ì¼ì–´ë‚œë‹¤
+ * ì¦‰, í™ ë©”ëª¨ë¦¬ì— ë°°ì—´ ê³µê°„ì´ í• ë‹¹ë˜ê³  ê°’ì´ ë³µì œëœë‹¤.
+ * ë³µì œëœ ë°°ì—´ì„ ê°€ë¦¬í‚¤ëŠ” ì°¸ì¡°ë³€ìˆ˜ëŠ” ë‹¤ë¥¸ hashCodeë¥¼ ê°€ì§€ê²Œ ëœë‹¤.
  * */
 public class _5_arrayCopy {
 	public static void main(String[] args) {
@@ -27,12 +27,12 @@ public class _5_arrayCopy {
 		System.out.println(Arrays.toString(scores));
 		System.out.println(Arrays.toString(scores));
 		
-		// ¾èÀº º¹»çÀÏ ¶§ ³ªÅ¸³ª´Â Çö»ó
+		// ì–•ì€ ë³µì‚¬ì¼ ë•Œ ë‚˜íƒ€ë‚˜ëŠ” í˜„ìƒ
 		scores[0] = 30;
 		System.out.println(scores1[0]);
 		System.out.println(scores2[0]);
 		
-		// ±íÀº º¹»ç?
+		// ê¹Šì€ ë³µì‚¬?
 		int[] scores4 = 
 				Arrays.copyOf(scores, scores.length);
 		for(int i=0; i<scores4.length;i++) {

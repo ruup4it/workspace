@@ -1,9 +1,9 @@
-package javaLec._class.ex02classToClass;
+ï»¿package javaLec._class.ex02classToClass;
 
 public class FruitBuyer {
-	int myMoney = 5000;		// º¸À¯ ±İ¾×
-	int numOfApple = 0;		// »ç°ú °³¼ö
-	final int APPLE_PRICE = 1000;// »ç°ú °¡°İ(»ó¼ö)
+	int myMoney = 5000;		// ë³´ìœ  ê¸ˆì•¡
+	int numOfApple = 0;		// ì‚¬ê³¼ ê°œìˆ˜
+	final int APPLE_PRICE = 1000;// ì‚¬ê³¼ ê°€ê²©(ìƒìˆ˜)
 	
 	public int buyApple(int money) {
 	//public void buyApple(FruitSeller seller, int money) {
@@ -13,9 +13,9 @@ public class FruitBuyer {
 		return num;
 	}
 	public void showBuyResult() {
-		System.out.println("***°úÀÏ ±¸¸ÅÀÚÀÇ ÇöÀç »óÈ²***");
-		System.out.println("ÇöÀç ÀÜ¾×: " + myMoney);
-		System.out.println("»ç°ú °³¼ö: " + numOfApple);
+		System.out.println("***ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("í˜„ì¬ ì”ì•¡: " + myMoney);
+		System.out.println("ì‚¬ê³¼ ê°œìˆ˜: " + numOfApple);
 	}
 }
 

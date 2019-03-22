@@ -1,23 +1,23 @@
-// 16Áø¼ö
+ï»¿// 16ì§„ìˆ˜
 public class _10_HexValue {
 	public static void main(String[] args) {
-		// 10Áø¼ö¸¦ 16Áø¼ö·Î Ãâ·Â
+		// 10ì§„ìˆ˜ë¥¼ 16ì§„ìˆ˜ë¡œ ì¶œë ¥
 		System.out.format("%02X%n", 255); // FF
 		System.out.format("%02x%n", 255); // ff
 		System.out.format("%X%n", 10); // A
 		
-		// "0x"¸¦ ºÙÀÎ Ã¤ 10Áø¼ö¸¦ 16Áø¼ö·Î Ãâ·Â
+		// "0x"ë¥¼ ë¶™ì¸ ì±„ 10ì§„ìˆ˜ë¥¼ 16ì§„ìˆ˜ë¡œ ì¶œë ¥
 		System.out.format("0x%02X%n", 255); // FF
 		System.out.format("0x%02x%n", 255); // ff
 		System.out.format("0x%X%n", 10); // A
 
-		String s = String.format("0x%02X%n", 10); // 16Áø¼ö ¹®ÀÚ¿­·Î º¯È¯
-	    System.out.println("¹®ÀÚ¿­·Î ¸¸µé¾î¼­ Ãâ·Â: " + s); // ¹®ÀÚ¿­·Î ¸¸µé¾î¼­ Ãâ·Â: 0A
+		String s = String.format("0x%02X%n", 10); // 16ì§„ìˆ˜ ë¬¸ìì—´ë¡œ ë³€í™˜
+	    System.out.println("ë¬¸ìì—´ë¡œ ë§Œë“¤ì–´ì„œ ì¶œë ¥: " + s); // ë¬¸ìì—´ë¡œ ë§Œë“¤ì–´ì„œ ì¶œë ¥: 0A
 
 
-	    // 10Áø¼ö¸¦ 16Áø¼ö·Î: ºÒÆíÇÑ ¹æ¹ı
+	    // 10ì§„ìˆ˜ë¥¼ 16ì§„ìˆ˜ë¡œ: ë¶ˆí¸í•œ ë°©ë²•
 	    System.out.println(Integer.toHexString(255)); // ff
-	    System.out.println(Integer.toHexString(255).toUpperCase()); // ´ë¹®ÀÚ·Î: FF
+	    System.out.println(Integer.toHexString(255).toUpperCase()); // ëŒ€ë¬¸ìë¡œ: FF
 	    System.out.println(Integer.toHexString(10).toUpperCase()); // A
 
 	}

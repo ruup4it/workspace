@@ -1,19 +1,19 @@
-package javaLec._class.ex13MethodOverloading;
-/* ¸Ş¼­µå ¿À¹ö·Îµù
- * ÀÌ¸§ÀÌ °°Àº ¸Ş¼­µå°¡ ¿©·¯ °³ Á¸ÀçÇÏ´Â °Í
- * 1) ¸Ş¼­µåÀÇ ÀÌ¸§ÀÌ °°¾Æ¾ßÇÑ´Ù.
- * 2) ¸Å°³º¯¼öÀÇ Å¸ÀÔ ¶Ç´Â °¹¼ö°¡ ´Ş¶ó¾ßÇÑ´Ù.
+ï»¿package javaLec._class.ex13MethodOverloading;
+/* ë©”ì„œë“œ ì˜¤ë²„ë¡œë”©
+ * ì´ë¦„ì´ ê°™ì€ ë©”ì„œë“œê°€ ì—¬ëŸ¬ ê°œ ì¡´ì¬í•˜ëŠ” ê²ƒ
+ * 1) ë©”ì„œë“œì˜ ì´ë¦„ì´ ê°™ì•„ì•¼í•œë‹¤.
+ * 2) ë§¤ê°œë³€ìˆ˜ì˜ íƒ€ì… ë˜ëŠ” ê°¯ìˆ˜ê°€ ë‹¬ë¼ì•¼í•œë‹¤.
  * 
  * */
 
 class CalcAdder {
 	static int add(int num1, int num2) {
-		System.out.print("int ¸®ÅÏ : " + num1 + " + " + num2 + " = ");
+		System.out.print("int ë¦¬í„´ : " + num1 + " + " + num2 + " = ");
 		return num1 + num2;
 	}
 
 	static double add(double num1, double num2) {
-		System.out.print("double ¸®ÅÏ : " + num1 + " + " + num2 + " = ");
+		System.out.print("double ë¦¬í„´ : " + num1 + " + " + num2 + " = ");
 		return num1 + num2;
 	}
 
@@ -24,9 +24,9 @@ class Adder {
 	int result;
 
 	Adder() {
-		// ÇÊµå´Â ÀÚµ¿À¸·Î 0À¸·Î ÃÊ±âÈ­°¡ µÇÁö¸¸
-		// ¸í½ÃÀûÀ¸·Î ÇØÁÖ´Â ÀÌÀ¯
-		// : »ç¶÷ÀÌ ÄÚµå¸¦ ¸í½ÃÀûÀ¸·Î È®ÀÎÇÏ°í ½Í¾î¼­
+		// í•„ë“œëŠ” ìë™ìœ¼ë¡œ 0ìœ¼ë¡œ ì´ˆê¸°í™”ê°€ ë˜ì§€ë§Œ
+		// ëª…ì‹œì ìœ¼ë¡œ í•´ì£¼ëŠ” ì´ìœ 
+		// : ì‚¬ëŒì´ ì½”ë“œë¥¼ ëª…ì‹œì ìœ¼ë¡œ í™•ì¸í•˜ê³  ì‹¶ì–´ì„œ
 		num1 = num2 = result = 0;
 	}
 

@@ -1,36 +1,36 @@
-package javaLec._class.ex05Constructor;
+ï»¿package javaLec._class.ex05Constructor;
 
-/* <Å¬·¡½º¿Í Å¬·¡½º°£ÀÇ »óÈ£°ü°è>
- * ³ª´Â °úÀÏÀå¼ö¿¡°Ô »ç°ú 2°³¸¦ ±¸¸ÅÇß´Ù.
- * 1) ¸í»ç : ³ª, °úÀÏÀå¼ö, »ç°ú
- * 2) µ¿»ç : ±¸¸ÅÇß´Ù
- * 3) ³ª¿Í °úÀÏÀå¼ö´Â ClassÀÇ ´ë»ó
- * 4) »ç°ú´Â ÇÊµå
- * 5) ±¸¸ÅÇß´Ù´Â ¸Ş¼­µå
+/* <í´ë˜ìŠ¤ì™€ í´ë˜ìŠ¤ê°„ì˜ ìƒí˜¸ê´€ê³„>
+ * ë‚˜ëŠ” ê³¼ì¼ì¥ìˆ˜ì—ê²Œ ì‚¬ê³¼ 2ê°œë¥¼ êµ¬ë§¤í–ˆë‹¤.
+ * 1) ëª…ì‚¬ : ë‚˜, ê³¼ì¼ì¥ìˆ˜, ì‚¬ê³¼
+ * 2) ë™ì‚¬ : êµ¬ë§¤í–ˆë‹¤
+ * 3) ë‚˜ì™€ ê³¼ì¼ì¥ìˆ˜ëŠ” Classì˜ ëŒ€ìƒ
+ * 4) ì‚¬ê³¼ëŠ” í•„ë“œ
+ * 5) êµ¬ë§¤í–ˆë‹¤ëŠ” ë©”ì„œë“œ
  * */
 
 public class FruitSeller {
-	int numOfApple; // »ç°ú °³¼ö
-	int myMoney; // ÆÇ¸Å ±İ¾×
-	final int APPLE_PRICE;// »ç°ú °¡°İ(»ó¼ö)
+	int numOfApple; // ì‚¬ê³¼ ê°œìˆ˜
+	int myMoney; // íŒë§¤ ê¸ˆì•¡
+	final int APPLE_PRICE;// ì‚¬ê³¼ ê°€ê²©(ìƒìˆ˜)
 	
-	// »ı¼ºÀÚ¿¡¼­´Â final »ó¼öµµ 1¹ø ÃÊ±âÈ­ ÇÒ ¼ö ÀÖ´Ù.
-	// ¾È ¸¸µé¾îÁÖ¸é ÄÄÆÄÀÏ·¯¿¡ ÀÇÇØ ÀÌ·± ¸íÄªÀ¸·Î »ı°Ü³²
+	// ìƒì„±ìì—ì„œëŠ” final ìƒìˆ˜ë„ 1ë²ˆ ì´ˆê¸°í™” í•  ìˆ˜ ìˆë‹¤.
+	// ì•ˆ ë§Œë“¤ì–´ì£¼ë©´ ì»´íŒŒì¼ëŸ¬ì— ì˜í•´ ì´ëŸ° ëª…ì¹­ìœ¼ë¡œ ìƒê²¨ë‚¨
 	FruitSeller(){
-		numOfApple = 20; // »ç°ú °³¼ö
-		myMoney = 0; // ÆÇ¸Å ±İ¾×
-		APPLE_PRICE = 1000;// »ç°ú °¡°İ(»ó¼ö)
-		System.out.println("Default »ı¼ºÀÚ");
+		numOfApple = 20; // ì‚¬ê³¼ ê°œìˆ˜
+		myMoney = 0; // íŒë§¤ ê¸ˆì•¡
+		APPLE_PRICE = 1000;// ì‚¬ê³¼ ê°€ê²©(ìƒìˆ˜)
+		System.out.println("Default ìƒì„±ì");
 	}
 	
 	FruitSeller(int money, int appleNum, int price){
-		numOfApple = appleNum; // »ç°ú °³¼ö
-		myMoney = money; // ÆÇ¸Å ±İ¾×
-		APPLE_PRICE = price;// »ç°ú °¡°İ(»ó¼ö)
-		System.out.println("¸Å°³º¯¼ö ÀÖ´Â »ı¼ºÀÚ");
+		numOfApple = appleNum; // ì‚¬ê³¼ ê°œìˆ˜
+		myMoney = money; // íŒë§¤ ê¸ˆì•¡
+		APPLE_PRICE = price;// ì‚¬ê³¼ ê°€ê²©(ìƒìˆ˜)
+		System.out.println("ë§¤ê°œë³€ìˆ˜ ìˆëŠ” ìƒì„±ì");
 	}
 	
-	// ÆÇ¸ÅÇÏ´Ù
+	// íŒë§¤í•˜ë‹¤
 	// public int saleApple(FruitBuyer buyer, int money)
 	public int saleApple(int money) {
 		int num = money / APPLE_PRICE;
@@ -39,14 +39,14 @@ public class FruitSeller {
 		return num;
 	}
 
-	// ÆÇ¸Å°á°ú
+	// íŒë§¤ê²°ê³¼
 	public void showSaleResult() {
-		System.out.println("***°úÀÏ Àå¼öÀÇ ÇöÀç »óÈ²***");
-		System.out.println("³²Àº »ç°ú: " + numOfApple);
-		System.out.println("ÆÇ¸Å ¼öÀÍ: " + myMoney);
+		System.out.println("***ê³¼ì¼ ì¥ìˆ˜ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("ë‚¨ì€ ì‚¬ê³¼: " + numOfApple);
+		System.out.println("íŒë§¤ ìˆ˜ìµ: " + myMoney);
 	}
 	
-	// °¡°İ È®ÀÎ ¸Ş¼­µå
+	// ê°€ê²© í™•ì¸ ë©”ì„œë“œ
 	public int getApplePrice() {
 		return APPLE_PRICE;
 	}

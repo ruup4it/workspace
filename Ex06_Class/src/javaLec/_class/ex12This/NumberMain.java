@@ -1,11 +1,11 @@
-package javaLec._class.ex12This;
+ï»¿package javaLec._class.ex12This;
 
-/* this ´Â °´Ã¼ ÀÚ½ÅÀ» °¡¸®Å°´Â ´Ü¾î·Î 
- * self¸¦ ÀÇ¹ÌÇÑ´Ù.
+/* this ëŠ” ê°ì²´ ìì‹ ì„ ê°€ë¦¬í‚¤ëŠ” ë‹¨ì–´ë¡œ 
+ * selfë¥¼ ì˜ë¯¸í•œë‹¤.
  * */
 
-/*  ÄÄÆÄÀÏ ½Ã Ã¹ ¹øÂ° ¸Å°³ º¯¼ö·Î this°¡ Ãß°¡ µÊ
- *  ÀÌ this´Â °´Ã¼¸¦ ±¸º°ÇØÁÖ´Â ¿ªÇÒÀ» ÇÑ´Ù.
+/*  ì»´íŒŒì¼ ì‹œ ì²« ë²ˆì§¸ ë§¤ê°œ ë³€ìˆ˜ë¡œ thisê°€ ì¶”ê°€ ë¨
+ *  ì´ thisëŠ” ê°ì²´ë¥¼ êµ¬ë³„í•´ì£¼ëŠ” ì—­í• ì„ í•œë‹¤.
  *  Number(int num) -> Number(Number this, int num)
  *  void showNum() -> void showNum(Number this)
  *  num1.showNum(); -> showNum(num1);
@@ -14,17 +14,17 @@ package javaLec._class.ex12This;
 class Number {
 	private int num;
 
-	// Áö¿ª º¯¼ö°¡ ÇÊµåº¸´Ù ¿ì¼± ¼øÀ§°¡ ³ôÀ¸¹Ç·Î ÇÊµå¿¡ ÀúÀåÀÌ ¾È µÊ
+	// ì§€ì—­ ë³€ìˆ˜ê°€ í•„ë“œë³´ë‹¤ ìš°ì„  ìˆœìœ„ê°€ ë†’ìœ¼ë¯€ë¡œ í•„ë“œì— ì €ì¥ì´ ì•ˆ ë¨
 //	Number(int num) {
 //		num = num;
 //	}
-	// Áö¿ª º¯¼ö°¡ µ¿ÀÏÇÑ ÀÌ¸§ÀÏ °æ¿ì this¸¦ ºÙ¿©¾ß ÇÊµå·Î ÀÎ½ÄµÊ
+	// ì§€ì—­ ë³€ìˆ˜ê°€ ë™ì¼í•œ ì´ë¦„ì¼ ê²½ìš° thisë¥¼ ë¶™ì—¬ì•¼ í•„ë“œë¡œ ì¸ì‹ë¨
 	Number(int num) {
 		this.num = num;
 		System.out.println("Constructor :\t" + this);
 	}
 
-	// Áö¿ªº¯¼ö°¡ ¾øÀ¸¹Ç·Î this »ı·« °¡´ÉÇÔ
+	// ì§€ì—­ë³€ìˆ˜ê°€ ì—†ìœ¼ë¯€ë¡œ this ìƒëµ ê°€ëŠ¥í•¨
 	void showNum() {
 		System.out.println(num);
 	}

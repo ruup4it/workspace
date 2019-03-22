@@ -1,4 +1,4 @@
-package javaLec._class.ex03classToClass;
+ï»¿package javaLec._class.ex03classToClass;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class PencilMain {
 		PencilSeller seller = new PencilSeller();
 		PencilBuyer buyer = new PencilBuyer();
 		Scanner scan = new Scanner(System.in);
-		System.out.println("³ª´Â Ä£±¸¿¡°Ô ¿¬ÇÊÀ» ±¸¸ÅÇÑ´Ù. (1ÀÚ·ç´Â 1000¿ø)\n¸î ÀÚ·ç¸¦ ±¸¸ÅÇÒ °ÍÀÎ°¡? " + "\n1ÀÚ·ç(1ÀÔ·Â)\n2ÀÚ·ç(2ÀÔ·Â)");
+		System.out.println("ë‚˜ëŠ” ì¹œêµ¬ì—ê²Œ ì—°í•„ì„ êµ¬ë§¤í•œë‹¤. (1ìë£¨ëŠ” 1000ì›)\nëª‡ ìë£¨ë¥¼ êµ¬ë§¤í•  ê²ƒì¸ê°€? " + "\n1ìë£¨(1ì…ë ¥)\n2ìë£¨(2ì…ë ¥)");
 		int num = scan.nextInt() * 1000;
 		seller.salePencil(buyer, num);
 		seller.showSaleResult();

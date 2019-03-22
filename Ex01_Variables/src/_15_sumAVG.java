@@ -1,28 +1,28 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-// 3¸íÀÇ Á¡¼ö¸¦ ÀÔ·Â ¹Ş°í ÃÑÇÕ°ú Æò±ÕÀ» Ãâ·ÂÇÏ¼¼¿ä
-// ¼Ò¼öÁ¡ 2¹øÂ° ÀÚ¸®±îÁö ¹İ¿Ã¸² 
-// String.format("%.2f", º¯¼ö or °ª)
+// 3ëª…ì˜ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ê³  ì´í•©ê³¼ í‰ê· ì„ ì¶œë ¥í•˜ì„¸ìš”
+// ì†Œìˆ˜ì  2ë²ˆì§¸ ìë¦¬ê¹Œì§€ ë°˜ì˜¬ë¦¼ 
+// String.format("%.2f", ë³€ìˆ˜ or ê°’)
 public class _15_sumAVG {
 	public static void main(String[] args) {
 		double score1 = 0, score2 =0, score3 = 0, sum = 0, avg = 0;
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Ã¹ ¹øÂ° Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì²« ë²ˆì§¸ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		score1 = scan.nextDouble();
 		
-		System.out.println("µÎ ¹øÂ° Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë‘ ë²ˆì§¸ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		score2 = scan.nextDouble();
 
-		System.out.println("¼¼ ¹øÂ° Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì„¸ ë²ˆì§¸ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		score3 = scan.nextDouble();
 		
 		sum = score1 + score2 + score3;
 		avg = sum/3;
 		
-		System.out.println("ÃÑÇÕÀº " + String.format("%.0f", sum) + "ÀÔ´Ï´Ù.");
-		System.out.println("Æò±ÕÀº " + String.format("%.2f", avg) + "ÀÔ´Ï´Ù.");
+		System.out.println("ì´í•©ì€ " + String.format("%.0f", sum) + "ì…ë‹ˆë‹¤.");
+		System.out.println("í‰ê· ì€ " + String.format("%.2f", avg) + "ì…ë‹ˆë‹¤.");
 		
 		scan.close();
 	}

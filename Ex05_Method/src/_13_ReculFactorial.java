@@ -1,14 +1,14 @@
-/*	<<Àç±Í È£Ãâ>>
- * ÀÚ±â ÀÚ½ÅÀ» °è¼Ó È£ÃâÇÑ´Ù
- * ÇÏ³ëÀÌÅ¾, ÀÌÁøÅ½»ö°ú °°Àº ¹Ýº¹ÀûÀÎ ³í¸®¸¦ ¼öÇàÇÒ¶§ »ç¿ë
- * ÁÖÀÇ»çÇ×) Á¾·á Á¶°ÇÀ» ¸í½ÃÇÏÁö ¾ÊÀ¸¸é ½ºÅØ¿¡ ¸Þ¸ð¸®°¡ °è¼Ó ½×¿© ¿¡·¯ ¹ß»ý
+ï»¿/*	<<ìž¬ê·€ í˜¸ì¶œ>>
+ * ìžê¸° ìžì‹ ì„ ê³„ì† í˜¸ì¶œí•œë‹¤
+ * í•˜ë…¸ì´íƒ‘, ì´ì§„íƒìƒ‰ê³¼ ê°™ì€ ë°˜ë³µì ì¸ ë…¼ë¦¬ë¥¼ ìˆ˜í–‰í• ë•Œ ì‚¬ìš©
+ * ì£¼ì˜ì‚¬í•­) ì¢…ë£Œ ì¡°ê±´ì„ ëª…ì‹œí•˜ì§€ ì•Šìœ¼ë©´ ìŠ¤í…ì— ë©”ëª¨ë¦¬ê°€ ê³„ì† ìŒ“ì—¬ ì—ëŸ¬ ë°œìƒ
  */
 public class _13_ReculFactorial {
 	public static void main(String[] args) {
-		// for¹®À» ÀÌ¿ëÇÑ ÆÑÅä¸®¾ó
+		// forë¬¸ì„ ì´ìš©í•œ íŒ©í† ë¦¬ì–¼
 		System.out.println(forFactorial(5));
 		
-		// Àç±ÍÈ£ÃâÀ» ÀÌ¿ëÇÑ ÆÑÅä¸®¾ó
+		// ìž¬ê·€í˜¸ì¶œì„ ì´ìš©í•œ íŒ©í† ë¦¬ì–¼
 		System.out.println(factorial(5));
 	}
 	

@@ -1,11 +1,11 @@
-/*import java.util.Scanner;
+ï»¿/*import java.util.Scanner;
 
-/* Â¦¼öÀÎÁö È¦¼öÀÎÁö
- * ¹®ÀÚ¿­À» ¸®ÅÏÇÏ´Â ¸Å¼­µå¸¦ Á¦ÀÛÇÏ¼¼¿ä
- * 5°³ÀÇ Á¤¼ö ¹è¿­À» ¼±¾ğÇÏ¼¼¿©
- * ¹è¿­¿¡ Á¤¼ö 5°³¸¦ Å°º¸µå·ÎºÎÅÍ ÀÔ·Â¹ŞÀ¸¼¼¿ä
- * foreach ¹®À» »ç¿ëÇØ¼­ ¸Ş¼­µå¿¡ ¹è¿­À» ÀÔ·ÂÇÏ°í
- * °á°ú°ªÀ» Ãâ·Â(Â¦¼ö/È¦¼ö)ÇÏ¼¼¿ä
+/* ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€
+ * ë¬¸ìì—´ì„ ë¦¬í„´í•˜ëŠ” ë§¤ì„œë“œë¥¼ ì œì‘í•˜ì„¸ìš”
+ * 5ê°œì˜ ì •ìˆ˜ ë°°ì—´ì„ ì„ ì–¸í•˜ì„¸ì—¬
+ * ë°°ì—´ì— ì •ìˆ˜ 5ê°œë¥¼ í‚¤ë³´ë“œë¡œë¶€í„° ì…ë ¥ë°›ìœ¼ì„¸ìš”
+ * foreach ë¬¸ì„ ì‚¬ìš©í•´ì„œ ë©”ì„œë“œì— ë°°ì—´ì„ ì…ë ¥í•˜ê³ 
+ * ê²°ê³¼ê°’ì„ ì¶œë ¥(ì§ìˆ˜/í™€ìˆ˜)í•˜ì„¸ìš”
  *  /
 public class _051_0_JudgeTrueFalse {
 	public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class _051_0_JudgeTrueFalse {
 	public static InputArray(Scanner sc) {
 		int[] arr = new int[5];
 		for(int i=0;i<arr.length;i++) {
-			System.out.print(i+"¹øÂ° Á¤¼ö ÀÔ·Â: ");
+			System.out.print(i+"ë²ˆì§¸ ì •ìˆ˜ ì…ë ¥: ");
 			arr[i] = sc.nextInt();
 		}
 		return arr;
@@ -25,9 +25,9 @@ public class _051_0_JudgeTrueFalse {
 	public static Judge(int[] arr) {
 		for(int array : arr) {
 			if(array%2==0)
-				return "Â¦¼öÀÔ´Ï´Ù";
+				return "ì§ìˆ˜ì…ë‹ˆë‹¤";
 			else
-				return "È¦¼öÀÔ´Ï´Ù";
+				return "í™€ìˆ˜ì…ë‹ˆë‹¤";
 		}
 
 	}

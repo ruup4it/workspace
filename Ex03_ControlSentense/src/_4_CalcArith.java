@@ -1,56 +1,56 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* 2°³ÀÇ ¼ıÀÚ¸¦ double·Î ÀÔ·Â (nextDouble)
- * ¿¬»êÀÚ (+ - * /) (nextLine)
- * °á°ú Ãâ·Â
+/* 2ê°œì˜ ìˆ«ìë¥¼ doubleë¡œ ì…ë ¥ (nextDouble)
+ * ì—°ì‚°ì (+ - * /) (nextLine)
+ * ê²°ê³¼ ì¶œë ¥
  * */
 
-// nextLine() : °³Çà ¹®ÀÚ¸¦ ¸¸³µÀ» ¶§ Ãâ·Â
-// nextDouble() > ¹®ÀÚÀÔ·Â ¹Ş°í °³Çà ¹®ÀÚµµ ¹ŞÀ½
-/* nextInt(), nextDouble() °°Àº ¸Ş¼­µå¸¦ »ç¿ëÇÑ ÀÌÈŞ¿¡
- * nextLine()À» »ç¿ëÇÏ¸é ¹öÆÛ¿¡ ³²¾ÆÀÖ´Â \n °ªÀ» ÀĞ¾îµéÀÌ±â ¶§¹®¿¡
- * nextLine()°¡ ¹Ù·Î ¸®ÅÏÇØ¹ö¸°´Ù.(ÀÔ·Â °ªÀ» ¹ŞÁö ¾Ê°íµµ)
- * ±×·¯¹Ç·Î,
- * nextLine()À» È£ÃâÇÏ±â Àü¿¡ nextLine()À» ÇÑ ¹ø ½áÁÖ¸é ¹öÆÛ¿¡ ÀÖ´Â \nÀ» 
- * ÀĞ¾î¹ö¸®¹Ç·Î ±× ´ÙÀ½ ¹®ÀÚ¿­ÀÌ Àß ÀĞÈù´Ù.
+// nextLine() : ê°œí–‰ ë¬¸ìë¥¼ ë§Œë‚¬ì„ ë•Œ ì¶œë ¥
+// nextDouble() > ë¬¸ìì…ë ¥ ë°›ê³  ê°œí–‰ ë¬¸ìë„ ë°›ìŒ
+/* nextInt(), nextDouble() ê°™ì€ ë©”ì„œë“œë¥¼ ì‚¬ìš©í•œ ì´íœ´ì—
+ * nextLine()ì„ ì‚¬ìš©í•˜ë©´ ë²„í¼ì— ë‚¨ì•„ìˆëŠ” \n ê°’ì„ ì½ì–´ë“¤ì´ê¸° ë•Œë¬¸ì—
+ * nextLine()ê°€ ë°”ë¡œ ë¦¬í„´í•´ë²„ë¦°ë‹¤.(ì…ë ¥ ê°’ì„ ë°›ì§€ ì•Šê³ ë„)
+ * ê·¸ëŸ¬ë¯€ë¡œ,
+ * nextLine()ì„ í˜¸ì¶œí•˜ê¸° ì „ì— nextLine()ì„ í•œ ë²ˆ ì¨ì£¼ë©´ ë²„í¼ì— ìˆëŠ” \nì„ 
+ * ì½ì–´ë²„ë¦¬ë¯€ë¡œ ê·¸ ë‹¤ìŒ ë¬¸ìì—´ì´ ì˜ ì½íŒë‹¤.
  * 
- *  C#Àº StringÀÏ °æ¿ì´Â == ¿Í Equals¸¦ µ¿ÀÏÇÏ°Ô ³»¿ë¹° ºñ±³·Î ±¸Çö
- *  Java´Â ¹İµå½Ã ³»¿ë(µ¿ÀÏÇÑ ¹®ÀÚ¿­ÀÎÁö)À» ºñ±³ÇÒ ¶§´Â equals¸¦ ½á¾ß¸¸ÇÑ´Ù.
- *  == : °°Àº °´Ã¼¸¦ ÂüÁ¶ÇÏ´Â°¡
- *  equals : ³»¿ë¹°ÀÌ °°Àº°¡ 
+ *  C#ì€ Stringì¼ ê²½ìš°ëŠ” == ì™€ Equalsë¥¼ ë™ì¼í•˜ê²Œ ë‚´ìš©ë¬¼ ë¹„êµë¡œ êµ¬í˜„
+ *  JavaëŠ” ë°˜ë“œì‹œ ë‚´ìš©(ë™ì¼í•œ ë¬¸ìì—´ì¸ì§€)ì„ ë¹„êµí•  ë•ŒëŠ” equalsë¥¼ ì¨ì•¼ë§Œí•œë‹¤.
+ *  == : ê°™ì€ ê°ì²´ë¥¼ ì°¸ì¡°í•˜ëŠ”ê°€
+ *  equals : ë‚´ìš©ë¬¼ì´ ê°™ì€ê°€ 
  *  
- * 1. nextDouble() »çÀÌ¿¡ nextLine ³Ö¾îÁÖ±â
- * 2. ¿¬»êÀÚ next()·Î ¹Ş±â
- * 3. string °ªÀ¸·Î ¹Ş°í(nextLine()) Çüº¯È¯ Double.parseDouble()ÇØÁÖ±â
+ * 1. nextDouble() ì‚¬ì´ì— nextLine ë„£ì–´ì£¼ê¸°
+ * 2. ì—°ì‚°ì next()ë¡œ ë°›ê¸°
+ * 3. string ê°’ìœ¼ë¡œ ë°›ê³ (nextLine()) í˜•ë³€í™˜ Double.parseDouble()í•´ì£¼ê¸°
  * */
 public class _4_CalcArith {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		double result = 0;
 		
-		System.out.println("Ã¹ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì²« ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double num1 = Double.parseDouble(scan.nextLine());
 		
-		System.out.println("µÎ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë‘ ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double num2 = Double.parseDouble(scan.nextLine());
 		
-		System.out.println("¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String op = scan.nextLine();
 		// String op = scan.next();
 		
 		/*
-		System.out.println("Ã¹ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì²« ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double num1 = scan.nextDouble();
-		scan.nextLine(); // \n Á¦°Å¸¦ À§ÇÔ
-		System.out.println("µÎ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		scan.nextLine(); // \n ì œê±°ë¥¼ ìœ„í•¨
+		System.out.println("ë‘ ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		double num2 = scan.nextDouble();
-		scan.nextLine(); // \n Á¦°Å¸¦ À§ÇÔ
-		System.out.println("¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		scan.nextLine(); // \n ì œê±°ë¥¼ ìœ„í•¨
+		System.out.println("ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		String op = scan.nextLine();
 		// String op = scan.next();
 		 * */
 
-		/* switch ¹æ½Ä
+		/* switch ë°©ì‹
 		switch (op) {
 		case "+":
 			result = num1 + num2;

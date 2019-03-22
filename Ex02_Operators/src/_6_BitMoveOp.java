@@ -1,5 +1,5 @@
-// ºñÆ® ÀÌµ¿ ¿¬»êÀÚ : Java¿¡¼­ Àß ¾È ¾²ÀÓ
-// 2ÀÇ ¹è¼ö ´ÜÀ§ÀÇ °è»êÀ» ÇÒ ¶§ °¡Àå ºü¸£´Ù.
+ï»¿// ë¹„íŠ¸ ì´ë™ ì—°ì‚°ìž : Javaì—ì„œ ìž˜ ì•ˆ ì“°ìž„
+// 2ì˜ ë°°ìˆ˜ ë‹¨ìœ„ì˜ ê³„ì‚°ì„ í•  ë•Œ ê°€ìž¥ ë¹ ë¥´ë‹¤.
 
 public class _6_BitMoveOp {
 	public static void main(String[] args) {

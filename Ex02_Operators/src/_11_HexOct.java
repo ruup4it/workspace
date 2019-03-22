@@ -1,5 +1,5 @@
-// 16Áø¼ö : 0x1A
-// 8Áø¼ö : 065
+// 16ì§„ìˆ˜ : 0x1A
+// 8ì§„ìˆ˜ : 065
 
 public class _11_HexOct {
 	public static void main(String[] args) {

@@ -1,20 +1,20 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* ¼ıÀÚ¸¦ ÀÔ·Â ¹Ş°í Â¦¼öÀÎÁö È¦¼öÀÎÁö
- * ¹®ÀÚ¿­À» ¸®ÅÏÇÏ´Â ¸Ş¼­µå¸¦ Á¦ÀÛÇÏ°í
- * »ç¿ëÇØº¸¼¼¿ä
+/* ìˆ«ìë¥¼ ì…ë ¥ ë°›ê³  ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€
+ * ë¬¸ìì—´ì„ ë¦¬í„´í•˜ëŠ” ë©”ì„œë“œë¥¼ ì œì‘í•˜ê³ 
+ * ì‚¬ìš©í•´ë³´ì„¸ìš”
  * */
 public class _04_JudgeTrueFalse {
 	public static void main(String[] args) {
-		int num = inputNum(); // ÀÔ·Â ¹Ş´Â ¸Ş¼­µå
-		String result = isOddOrEven(num);// Â¦¼ö È¦¼ö ÆÇ´ÜÇÏ´Â ¸Ş¼­µå
-		printResult(result);// Ãâ·Â ¸Ş¼­µå
+		int num = inputNum(); // ì…ë ¥ ë°›ëŠ” ë©”ì„œë“œ
+		String result = isOddOrEven(num);// ì§ìˆ˜ í™€ìˆ˜ íŒë‹¨í•˜ëŠ” ë©”ì„œë“œ
+		printResult(result);// ì¶œë ¥ ë©”ì„œë“œ
 	}
 
 	private static int inputNum() {
 		Scanner scan = new Scanner(System.in);
 		int numForInput = 0;
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		numForInput = scan.nextInt();
 		scan.close();
 		return numForInput;
@@ -23,11 +23,11 @@ public class _04_JudgeTrueFalse {
 	private static String isOddOrEven(int num) {
 		//String returnString = "";
 		if(num%2 ==0) 
-			return String.format("ÀÔ·ÂÇÏ½Å Á¤¼ö : %d \n°á°ú : Â¦¼öÀÔ´Ï´Ù.", num);
-			//returnString = String.format("ÀÔ·ÂÇÏ½Å Á¤¼ö : %d \n°á°ú : Â¦¼öÀÔ´Ï´Ù.", num);
+			return String.format("ì…ë ¥í•˜ì‹  ì •ìˆ˜ : %d \nê²°ê³¼ : ì§ìˆ˜ì…ë‹ˆë‹¤.", num);
+			//returnString = String.format("ì…ë ¥í•˜ì‹  ì •ìˆ˜ : %d \nê²°ê³¼ : ì§ìˆ˜ì…ë‹ˆë‹¤.", num);
 		else 
-			return  String.format("ÀÔ·ÂÇÏ½Å Á¤¼ö : %d \n°á°ú : Â¦¼öÀÔ´Ï´Ù.", num);
-			//returnString = String.format("ÀÔ·ÂÇÏ½Å Á¤¼ö : %d \n°á°ú : È¦¼öÀÔ´Ï´Ù.", num);
+			return  String.format("ì…ë ¥í•˜ì‹  ì •ìˆ˜ : %d \nê²°ê³¼ : ì§ìˆ˜ì…ë‹ˆë‹¤.", num);
+			//returnString = String.format("ì…ë ¥í•˜ì‹  ì •ìˆ˜ : %d \nê²°ê³¼ : í™€ìˆ˜ì…ë‹ˆë‹¤.", num);
 		//return returnString;
 	}
 

@@ -1,24 +1,24 @@
-package javaLec._class.ex11Static;
-/* static º¯¼ö´Â °´Ã¼ »ý¼º ÀÌÀü¿¡ ¸Þ¸ð¸®¿¡ ¿Ã¶ó°¡°í
- * ¸ðµç °´Ã¼¿¡¼­ °øÀ¯ÇÒ ¼ö ÀÖ´Ù.
+ï»¿package javaLec._class.ex11Static;
+/* static ë³€ìˆ˜ëŠ” ê°ì²´ ìƒì„± ì´ì „ì— ë©”ëª¨ë¦¬ì— ì˜¬ë¼ê°€ê³ 
+ * ëª¨ë“  ê°ì²´ì—ì„œ ê³µìœ í•  ìˆ˜ ìžˆë‹¤.
  * */
-/* ÀÎ½ºÅÏ½º º¯¼ö´Â °´Ã¼°¡ »ý¼ºµÉ ¶§ ÇÔ²² »ý¼ºµÇ¸ç, °´Ã¼ º°·Î º°µµÀÌ´Ù. (¸ðµç °´Ã¼¿¡¼­ °øÀ¯ÇÒ ¼ö ¾øÀ½)
+/* ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ê°ì²´ê°€ ìƒì„±ë  ë•Œ í•¨ê»˜ ìƒì„±ë˜ë©°, ê°ì²´ ë³„ë¡œ ë³„ë„ì´ë‹¤. (ëª¨ë“  ê°ì²´ì—ì„œ ê³µìœ í•  ìˆ˜ ì—†ìŒ)
  * */
 
-/* staticÀº Å¬·¡½º ¼Ò¼ÓÀÌ°í ÀÌ¸â¹ö´Â °´Ã¼¿¡¼­ ÀÚÀ¯·Ó°Ô Á¢±Ù °¡´ÉÇÏÁö¸¸ Å¬·¡½ºÀÇ µü 1°³¸¸ Á¸ÀçÇÒ ¼ö ÀÖ´Ù.
- * ±×·¯¹Ç·Î °´Ã¼º°·Î ´Ù¸¥ Á¤º¸°¡ ¾Æ´Ï¶ó °øÅëµÈ Á¤º¸¸¦ ¸Þ¼­µå¸¦ 
- * staticÀ¸·Î ¸¸µé¸é °øÅëÀûÀ¸·Î »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+/* staticì€ í´ëž˜ìŠ¤ ì†Œì†ì´ê³  ì´ë©¤ë²„ëŠ” ê°ì²´ì—ì„œ ìžìœ ë¡­ê²Œ ì ‘ê·¼ ê°€ëŠ¥í•˜ì§€ë§Œ í´ëž˜ìŠ¤ì˜ ë”± 1ê°œë§Œ ì¡´ìž¬í•  ìˆ˜ ìžˆë‹¤.
+ * ê·¸ëŸ¬ë¯€ë¡œ ê°ì²´ë³„ë¡œ ë‹¤ë¥¸ ì •ë³´ê°€ ì•„ë‹ˆë¼ ê³µí†µëœ ì •ë³´ë¥¼ ë©”ì„œë“œë¥¼ 
+ * staticìœ¼ë¡œ ë§Œë“¤ë©´ ê³µí†µì ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
  * 
  * */
-/* static ¸â¹ö : °´Ã¼ »ý¼º Àü¿¡ ¸Þ¸ð¸®¿¡ ·Îµù, Å¬·¡½º¿¡ 1°³¸¸ Á¸Àç
- * instance ¸â¹ö : °´Ã¼ »ý¼º ½Ã ¸Þ¸ð¸®¿¡ ·Îµù, °´Ã¼ °¹¼ö ¸¸Å­ Á¸Àç
+/* static ë©¤ë²„ : ê°ì²´ ìƒì„± ì „ì— ë©”ëª¨ë¦¬ì— ë¡œë”©, í´ëž˜ìŠ¤ì— 1ê°œë§Œ ì¡´ìž¬
+ * instance ë©¤ë²„ : ê°ì²´ ìƒì„± ì‹œ ë©”ëª¨ë¦¬ì— ë¡œë”©, ê°ì²´ ê°¯ìˆ˜ ë§Œí¼ ì¡´ìž¬
  * */
 class InstCnt {
 	//static int instNum;
 	int instNum;
 	InstCnt(){
 		instNum++;
-		System.out.println(String.format("ÀÎ½ºÅÏ½º »ý¼º : %d",instNum));
+		System.out.println(String.format("ì¸ìŠ¤í„´ìŠ¤ ìƒì„± : %d",instNum));
 	}
 }
 

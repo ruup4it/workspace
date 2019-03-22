@@ -1,11 +1,11 @@
-
+ï»¿
 public class _08_InfiniteLoop {
 	public static void main(String[] args) {
 		int num = 0;
 		while(true) {
 			System.out.println(num++);
 			if(num>=10)
-				return; // ¸ŞÀÎ¸Ş¼­µå ÀÚÃ¼°¡ Á¾·á
+				return; // ë©”ì¸ë©”ì„œë“œ ìì²´ê°€ ì¢…ë£Œ
 		}
 	}
 }

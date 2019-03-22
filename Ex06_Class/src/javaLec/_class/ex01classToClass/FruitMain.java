@@ -1,4 +1,4 @@
-package javaLec._class.ex01classToClass;
+﻿package javaLec._class.ex01classToClass;
 
 public class FruitMain {
 	public static void main(String[] args) {

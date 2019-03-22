@@ -1,9 +1,9 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* (1Â÷¿ø String¹è¿­)
- * 3¸í ÇĞ»ıÀÇ ÀÌ¸§À» ÀÔ·Â¹Ş°í ["ÇĞ»ı1","ÇĞ»ı2","ÇĞ»ı3"]
- * (2Â÷¿ø double¹è¿­)[ÇĞ»ı1][±¹,¿µ,¼ö][ÇĞ»ı2][±¹,¿µ,¼ö][ÇĞ»ı3][±¹,¿µ,¼ö]
- * 3¸í ÇĞ»ıÀÇ ±¹, ¿µ, ¼ö Á¡¼ö¸¦ ÀÔ·Â ¹Ş°í ¹è¿­¿¡ ÀúÀå
+/* (1ì°¨ì› Stringë°°ì—´)
+ * 3ëª… í•™ìƒì˜ ì´ë¦„ì„ ì…ë ¥ë°›ê³  ["í•™ìƒ1","í•™ìƒ2","í•™ìƒ3"]
+ * (2ì°¨ì› doubleë°°ì—´)[í•™ìƒ1][êµ­,ì˜,ìˆ˜][í•™ìƒ2][êµ­,ì˜,ìˆ˜][í•™ìƒ3][êµ­,ì˜,ìˆ˜]
+ * 3ëª… í•™ìƒì˜ êµ­, ì˜, ìˆ˜ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ê³  ë°°ì—´ì— ì €ì¥
  * */
 public class _15_InputMultiArray {
 	public static void main(String[] args) {
@@ -12,16 +12,16 @@ public class _15_InputMultiArray {
 		final int SUBJECT = 3;
 		String[] studentArr = new String[STNUM];
 		int[][] scoreArr = new int[STNUM][SUBJECT];
-		String[] subjectArr = {"±¹¾î","¿µ¾î","¼öÇĞ"};
+		String[] subjectArr = {"êµ­ì–´","ì˜ì–´","ìˆ˜í•™"};
 		double[] sum = new double [SUBJECT];
 		double[] avg = new double [SUBJECT];
 		for (int i = 0; i < STNUM; i++) {
-			System.out.println("ÇĞ»ı ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+			System.out.println("í•™ìƒ ì´ë¦„ì„ ì‘ì„±í•˜ì„¸ìš”.");
 			studentArr[i] = scan.next();
 		}
 		for(int i = 0; i<scoreArr.length;i++) {
 			for(int j =0;j<scoreArr[i].length;j++) {
-				System.out.print(String.format("%sÀÇ %s °ú¸ñ Á¡¼ö¸¦ ÀÛ¼ºÇÏ¼¼¿ä ", studentArr[i],subjectArr[j]));
+				System.out.print(String.format("%sì˜ %s ê³¼ëª© ì ìˆ˜ë¥¼ ì‘ì„±í•˜ì„¸ìš” ", studentArr[i],subjectArr[j]));
 				scoreArr[i][j] = scan.nextInt();
 				sum[i] += (double)scoreArr[i][j];
  			}
@@ -30,9 +30,9 @@ public class _15_InputMultiArray {
 		for(int i = 0; i<scoreArr.length;i++) {
 			System.out.println(String.format("=======%s=======",studentArr[i]));
 			for(int j =0;j<scoreArr[i].length;j++) {
-				System.out.println(String.format("%s °ú¸ñ Á¡¼ö : %d",subjectArr[j],scoreArr[i][j]));
+				System.out.println(String.format("%s ê³¼ëª© ì ìˆ˜ : %d",subjectArr[j],scoreArr[i][j]));
 				}
-				System.out.println(String.format("ÃÑÁ¡ : %.2f, Æò±Õ: %.2f",sum[i],avg[i]));
+				System.out.println(String.format("ì´ì  : %.2f, í‰ê· : %.2f",sum[i],avg[i]));
 		}
 		
 		for(int i=0;i<SUBJECT;i++) {
@@ -42,14 +42,14 @@ public class _15_InputMultiArray {
 				sum1 += scoreArr[j][i];
 			}
 			if(i==0) {
-				System.out.println("±¹¾î ÃÑÁ¡: " + sum1);
-				System.out.println("±¹¾î Æò±Õ: " + sum1/SUBJECT);
+				System.out.println("êµ­ì–´ ì´ì : " + sum1);
+				System.out.println("êµ­ì–´ í‰ê· : " + sum1/SUBJECT);
 			}else if(i==1) {
-				System.out.println("¿µ¾î ÃÑÁ¡: " + sum1);
-				System.out.println("¿µ¾î Æò±Õ: " + sum1/SUBJECT);				
+				System.out.println("ì˜ì–´ ì´ì : " + sum1);
+				System.out.println("ì˜ì–´ í‰ê· : " + sum1/SUBJECT);				
 			}else {
-				System.out.println("¼öÇĞ ÃÑÁ¡: " + sum1);
-				System.out.println("¼öÇĞ Æò±Õ: " + sum1/SUBJECT);				
+				System.out.println("ìˆ˜í•™ ì´ì : " + sum1);
+				System.out.println("ìˆ˜í•™ í‰ê· : " + sum1/SUBJECT);				
 			}
 		}
 		

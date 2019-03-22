@@ -1,15 +1,15 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-// »ç¿ëÀÚ·ÎºÎÅÍ Á¤¼ö¸¦ ÀÔ·Â ¹Ş¾Æ¶ó
+// ì‚¬ìš©ìë¡œë¶€í„° ì •ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ë¼
 public class _8_ThreeParamOp {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = 0; String strNum="";
 		
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		num = scan.nextInt();
 		
-		strNum = num % 2 == 0 ? "Â¦¼ö" : "È¦¼ö" ;
+		strNum = num % 2 == 0 ? "ì§ìˆ˜" : "í™€ìˆ˜" ;
 		
 		System.out.println(strNum);
 		scan.close();

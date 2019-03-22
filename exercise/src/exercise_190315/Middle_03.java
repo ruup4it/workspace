@@ -1,11 +1,11 @@
-package exercise_190315;
+ï»¿package exercise_190315;
 
 import java.util.Arrays;
 
-//3. 20°³ ¹è¿­À» ¼±¾ðÇÏ¼¼¿ä
-//20°³ÀÇ °ªÀ» ³­¼ö¸¦ ÀÌ¿ëÇØ¼­ 0 ~ 100±îÁöÀÇ °ªÀ¸·Î Ã¤¿ö³Ö°í
-//¸ÕÀú ÀÎµ¦½ºÀÇ È¦¼ö¹øÂ°´Â ¾Õ¿¡¼­ºÎÅÍ Ãâ·ÂÇÏ°í
-//Â¦¼ö¹øÂ°´Â µÚ¿¡¼­ºÎÅÍ Ãâ·ÂÇÏ¼¼¿ä
+//3. 20ê°œ ë°°ì—´ì„ ì„ ì–¸í•˜ì„¸ìš”
+//20ê°œì˜ ê°’ì„ ë‚œìˆ˜ë¥¼ ì´ìš©í•´ì„œ 0 ~ 100ê¹Œì§€ì˜ ê°’ìœ¼ë¡œ ì±„ì›Œë„£ê³ 
+//ë¨¼ì € ì¸ë±ìŠ¤ì˜ í™€ìˆ˜ë²ˆì§¸ëŠ” ì•žì—ì„œë¶€í„° ì¶œë ¥í•˜ê³ 
+//ì§ìˆ˜ë²ˆì§¸ëŠ” ë’¤ì—ì„œë¶€í„° ì¶œë ¥í•˜ì„¸ìš”
 public class Middle_03 {
 	public static void main(String[] args) {
 		int[] arr = new int[20];

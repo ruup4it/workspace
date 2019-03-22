@@ -1,10 +1,10 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
-//2. ³ª´Â ¸¶Æ®¿¡ °¡¼­ 5000¿øÀ» ÁÖ°í ¹è °¡°İ 2500¸¦ »ò´Ù¸¦ 
-//Å¬·¡½º·Î ¼³°èÇØ¼­ ÇÁ·Î±×·¡¹Ö ÇÏ¼¼¿ä
+//2. ë‚˜ëŠ” ë§ˆíŠ¸ì— ê°€ì„œ 5000ì›ì„ ì£¼ê³  ë°° ê°€ê²© 2500ë¥¼ ìƒ€ë‹¤ë¥¼ 
+//í´ë˜ìŠ¤ë¡œ ì„¤ê³„í•´ì„œ í”„ë¡œê·¸ë˜ë° í•˜ì„¸ìš”
 public class Basic_02_PearBuyer {
-	int myMoney = 10000; // º¸À¯ ±İ¾×
-	int numOfPear = 0; // ¹è °³¼ö
+	int myMoney = 10000; // ë³´ìœ  ê¸ˆì•¡
+	int numOfPear = 0; // ë°° ê°œìˆ˜
 
 	public void buyPear(Basic_02_PearSeller seller, int money) {
 		numOfPear += seller.salePear(money);
@@ -12,9 +12,9 @@ public class Basic_02_PearBuyer {
 	}
 
 	public void showBuyResult() {
-		System.out.println("***³ªÀÇ ÇöÀç »óÈ²***");
-		System.out.println("ÇöÀç ÀÜ¾×: " + myMoney + "¿ø");
-		System.out.println("¹è °³¼ö: " + numOfPear + "°³");
+		System.out.println("***ë‚˜ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("í˜„ì¬ ì”ì•¡: " + myMoney + "ì›");
+		System.out.println("ë°° ê°œìˆ˜: " + numOfPear + "ê°œ");
 	}
 
 }

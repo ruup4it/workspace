@@ -1,66 +1,66 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-//1. ÀÌÁø °Ë»öÀ» Àç±ÍÈ£Ãâ·Î ÀÛ¼ºÇÏ¼¼¿ä
+//1. ì´ì§„ ê²€ìƒ‰ì„ ì¬ê·€í˜¸ì¶œë¡œ ì‘ì„±í•˜ì„¸ìš”
 public class Advance_binarySearch {
 
 	public static void main(String[] args) {
-		int target = 0; // Ã£°íÀÚ ÇÏ´Â °ªÀ» ´ã¾ÆÁÙ º¯¼ö ÃÊ±âÈ­
-		int[] arr = new int[100]; // ¹è¿­ ÃÊ±âÈ­
-		int min = 0; // °Ë»öÇÒ ¹üÀ§ Áß °¡Àå ÀÛÀº °ª
-		int max = arr.length - 1; // °Ë»öÇÒ ¹üÀ§ Áß °¡Àå Å« °ª
-		int mid = (min + max) / 2; // °Ë»öÇÒ ¹üÀ§ Áß Áß°£ °ª
+		int target = 0; // ì°¾ê³ ì í•˜ëŠ” ê°’ì„ ë‹´ì•„ì¤„ ë³€ìˆ˜ ì´ˆê¸°í™”
+		int[] arr = new int[100]; // ë°°ì—´ ì´ˆê¸°í™”
+		int min = 0; // ê²€ìƒ‰í•  ë²”ìœ„ ì¤‘ ê°€ì¥ ì‘ì€ ê°’
+		int max = arr.length - 1; // ê²€ìƒ‰í•  ë²”ìœ„ ì¤‘ ê°€ì¥ í° ê°’
+		int mid = (min + max) / 2; // ê²€ìƒ‰í•  ë²”ìœ„ ì¤‘ ì¤‘ê°„ ê°’
 
 		Scanner sc = new Scanner(System.in);
 
-		// ¹è¿­À» ·£´ıÀ¸·Î »ı¼ºµÈ ¼ö·Î Ã¤¿öÁÖ±â
+		// ë°°ì—´ì„ ëœë¤ìœ¼ë¡œ ìƒì„±ëœ ìˆ˜ë¡œ ì±„ì›Œì£¼ê¸°
 		for (int i = 0; i < 100; i++) {
 			arr[i] = (int) (Math.random() * 1000 + 1);
 		}
 
-		// ¹è¿­ ¿À¸§Â÷¼ø Á¤·ÄÇÏ±â
+		// ë°°ì—´ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬í•˜ê¸°
 		Arrays.sort(arr);
 
-		// »ı¼ºµÈ ¹è¿­ Ãâ·ÂÇØÁÖ±â
-		System.out.println("»ı¼ºµÈ ¹è¿­");
+		// ìƒì„±ëœ ë°°ì—´ ì¶œë ¥í•´ì£¼ê¸°
+		System.out.println("ìƒì„±ëœ ë°°ì—´");
 		System.out.println(Arrays.toString(arr));
 		System.out.println();
 
-		// Ã£°íÀÚÇÏ´Â ¼ö ÀÔ·Â ¹Ş±â
-		System.out.println("Ã£°íÀÚ ÇÏ´Â ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		// ì°¾ê³ ìí•˜ëŠ” ìˆ˜ ì…ë ¥ ë°›ê¸°
+		System.out.println("ì°¾ê³ ì í•˜ëŠ” ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		target = sc.nextInt();
 
-		// Âü°í¿ë Ãâ·Â¹®
+		// ì°¸ê³ ìš© ì¶œë ¥ë¬¸
 		System.out.println(String.format("max %d, mid %d, min %d ", max, mid, min));
 
 		while (true) {
-			if (arr[mid] == target || min >= max) // 1. Å¸°ÙÀ» Ã£°Å³ª
-				break; // 2. min(¹üÀ§ Áß °¡Àå ÀÛÀº °ª)ÀÌ max(¹üÀ§ Áß °¡Àå Å« °ª)º¸´Ù Å©°Å³ª °°´Ù¸é
-						// break ÇØÁÖ±â
+			if (arr[mid] == target || min >= max) // 1. íƒ€ê²Ÿì„ ì°¾ê±°ë‚˜
+				break; // 2. min(ë²”ìœ„ ì¤‘ ê°€ì¥ ì‘ì€ ê°’)ì´ max(ë²”ìœ„ ì¤‘ ê°€ì¥ í° ê°’)ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤ë©´
+						// break í•´ì£¼ê¸°
 
-			else if (arr[mid] < target) { // 3. Áß°£ °ªÀÌ Å¸°Ùº¸´Ù ÀÛ´Ù¸é
-				min = mid + 1; // minÀ» ÇöÀç mid °ªº¸´Ù ÇÑ Ä­ ¾ÕÀ¸·Î ¹Ù²Ù°í (ÇöÀç mid °ªÀÌ target°ú ÀÏÄ¡ÇÏÁö ¾ÊÀ½À» Ã¼Å©ÇÑ »óÅÂ´Ï±î)
-				mid = (max + min) / 2; // Áß°£ °ª ´Ù½Ã ±¸ÇÏ±â
-				// Âü°í¿ë Ãâ·Â¹®
+			else if (arr[mid] < target) { // 3. ì¤‘ê°„ ê°’ì´ íƒ€ê²Ÿë³´ë‹¤ ì‘ë‹¤ë©´
+				min = mid + 1; // minì„ í˜„ì¬ mid ê°’ë³´ë‹¤ í•œ ì¹¸ ì•ìœ¼ë¡œ ë°”ê¾¸ê³  (í˜„ì¬ mid ê°’ì´ targetê³¼ ì¼ì¹˜í•˜ì§€ ì•ŠìŒì„ ì²´í¬í•œ ìƒíƒœë‹ˆê¹Œ)
+				mid = (max + min) / 2; // ì¤‘ê°„ ê°’ ë‹¤ì‹œ êµ¬í•˜ê¸°
+				// ì°¸ê³ ìš© ì¶œë ¥ë¬¸
 				System.out.println(String.format("max %d, mid %d, min %d ", max, mid, min));
 			}
 
-			else if (arr[mid] > target) { // 4.Áß°£ °ªÀÌ Å¸°Ùº¸´Ù Å©´Ù¸é
-				max = mid - 1; // max¸¦ ÇöÀç mid °ªº¸´Ù ÇÑ Ä­ µÚ·Î ¹Ù²Ù°í (ÇöÀç mid °ªÀÌ target°ú ÀÏÄ¡ÇÏÁö ¾ÊÀ½À» Ã¼Å©ÇÑ »óÅÂ´Ï±î)
-				mid = (max + min) / 2; // Áß°£ °ª ´Ù½Ã ±¸ÇÏ±â
+			else if (arr[mid] > target) { // 4.ì¤‘ê°„ ê°’ì´ íƒ€ê²Ÿë³´ë‹¤ í¬ë‹¤ë©´
+				max = mid - 1; // maxë¥¼ í˜„ì¬ mid ê°’ë³´ë‹¤ í•œ ì¹¸ ë’¤ë¡œ ë°”ê¾¸ê³  (í˜„ì¬ mid ê°’ì´ targetê³¼ ì¼ì¹˜í•˜ì§€ ì•ŠìŒì„ ì²´í¬í•œ ìƒíƒœë‹ˆê¹Œ)
+				mid = (max + min) / 2; // ì¤‘ê°„ ê°’ ë‹¤ì‹œ êµ¬í•˜ê¸°
 
-				// Âü°í¿ë Ãâ·Â¹®
+				// ì°¸ê³ ìš© ì¶œë ¥ë¬¸
 				System.out.println(String.format("max %d, mid %d, min %d ", max, mid, min));
 			}
 		}
 
-		// °ªÀÌ ÀÖ´Â Áö ¾ø´Â Áö Ã¼Å©ÇÏ±â
+		// ê°’ì´ ìˆëŠ” ì§€ ì—†ëŠ” ì§€ ì²´í¬í•˜ê¸°
 		if (arr[mid] != target) {
-			System.out.println("°ªÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("ê°’ì´ ì—†ìŠµë‹ˆë‹¤.");
 		} else
-			System.out.println((mid + 1) + "¹øÂ° ÀÖ½À´Ï´Ù.");
+			System.out.println((mid + 1) + "ë²ˆì§¸ ìˆìŠµë‹ˆë‹¤.");
 
 		sc.close();
 	}

@@ -1,5 +1,5 @@
-package exercise_190315;
-//1. AB + BA = 99 ╦╕ ╦╦а╥го╢б ╦П╣Г A©м Bюг а╤гую╩ ╠╦го╢б га╥н╠в╥╔ю╩ юш╪╨го╪╪©Д
+О╩©package exercise_190315;
+//1. AB + BA = 99 К╔╪ К╖▄Л║╠М∙≤К┼■ К╙╗К⌠═ AЛ≥─ BЛ²≤ Л║╟М∙╘Л²└ Й╣╛М∙≤К┼■ М■└К║°Й╥╦К·╗Л²└ Л·▒Л└╠М∙≤Л└╦Л ■
 public class Advance_01 {
 	public static void main(String[] args) {
 		// a*10 

@@ -1,11 +1,11 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
-//3. PencilSeller¿¡ »ı¼ºÀÚ¸¦ Ãß°¡ÇÏ°í »ç¿ëÇØº¸¼¼¿ä
-//(¼ö¾÷½Ã°£ ¸¶Áö¸· ¹®Á¦)
+//3. PencilSellerì— ìƒì„±ìë¥¼ ì¶”ê°€í•˜ê³  ì‚¬ìš©í•´ë³´ì„¸ìš”
+//(ìˆ˜ì—…ì‹œê°„ ë§ˆì§€ë§‰ ë¬¸ì œ)
 public class Basic_03_PencilBuyer {
 
-	int myMoney = 5000; // º¸À¯ ±İ¾×
-	int numOfPencil = 0; // ¿¬ÇÊ °³¼ö
+	int myMoney = 5000; // ë³´ìœ  ê¸ˆì•¡
+	int numOfPencil = 0; // ì—°í•„ ê°œìˆ˜
 
 	public void buyPencil(Basic_03_PencilSeller seller, int money) {
 		numOfPencil += seller.salePencil(money);
@@ -13,9 +13,9 @@ public class Basic_03_PencilBuyer {
 	}
 
 	public void showBuyResult() {
-		System.out.println("***³ªÀÇ ÇöÀç »óÈ²***");
-		System.out.println("ÇöÀç ÀÜ¾×: " + myMoney + "¿ø");
-		System.out.println("¿¬ÇÊ °³¼ö: " + numOfPencil + "°³");
+		System.out.println("***ë‚˜ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("í˜„ì¬ ì”ì•¡: " + myMoney + "ì›");
+		System.out.println("ì—°í•„ ê°œìˆ˜: " + numOfPencil + "ê°œ");
 	}
 
 }

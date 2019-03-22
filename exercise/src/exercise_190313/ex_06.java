@@ -1,14 +1,14 @@
-package exercise_190313;
+ï»¿package exercise_190313;
 
 import java.util.Scanner;
 
-// 6. Á¤¼ö num¸¦ ÀÔ·Â¹Ş½À´Ï´Ù
-// (num x 4)/8 À» ºñÆ®ÀÌµ¿¿¬»êÀÚ¸¦ »ç¿ëÇÏ¿© °è»êÇÏ°í
-// °á°ú°ªÀº ¼Ò¼öÁ¡±îÁö Ãâ·ÂÇÏµµ·Ï ÇÏ¼¼¿ä
+// 6. ì •ìˆ˜ numë¥¼ ì…ë ¥ë°›ìŠµë‹ˆë‹¤
+// (num x 4)/8 ì„ ë¹„íŠ¸ì´ë™ì—°ì‚°ìë¥¼ ì‚¬ìš©í•˜ì—¬ ê³„ì‚°í•˜ê³ 
+// ê²°ê³¼ê°’ì€ ì†Œìˆ˜ì ê¹Œì§€ ì¶œë ¥í•˜ë„ë¡ í•˜ì„¸ìš”
 public class ex_06 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		
 		int num = scan.nextInt();
 		

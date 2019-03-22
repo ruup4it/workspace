@@ -1,17 +1,17 @@
-/* Àß¸øµÈ Àç±ÍÈ£Ãâ »ç¿ëÀÇ ¿¹½Ã
+ï»¿/* ì˜ëª»ëœ ì¬ê·€í˜¸ì¶œ ì‚¬ìš©ì˜ ì˜ˆì‹œ
  * StackOverFlowError
  */
 public class _14_InfRecul {
 	public static void main(String[] args) {
 		showHi(3);
 	}
-//	// ÀÚ±âÀÚ½ÅÀ» °è¼Ó È£ÃâÇÏ¸é¼­ °ªÀÌ Áõ°¨ÇÏÁö ¾Ê°í 3À¸·Î ¸Ó¹°·¯ÀÖÀ½
+//	// ìê¸°ìì‹ ì„ ê³„ì† í˜¸ì¶œí•˜ë©´ì„œ ê°’ì´ ì¦ê°í•˜ì§€ ì•Šê³  3ìœ¼ë¡œ ë¨¸ë¬¼ëŸ¬ìˆìŒ
 //	public static void showHi(int cnt) {
 //		System.out.println("Hi~");
 //		showHi(cnt--); 
 //			return;
 //	}
-//	 // 1À» °Ë»çÇÏ±â Àü¿¡ ´Ù½Ã È£ÃâÇÏ¹Ç·Î °è¼Ó ¹İº¹µÊ
+//	 // 1ì„ ê²€ì‚¬í•˜ê¸° ì „ì— ë‹¤ì‹œ í˜¸ì¶œí•˜ë¯€ë¡œ ê³„ì† ë°˜ë³µë¨
 //	public static void showHi(int cnt) {
 //		System.out.println("Hi~");
 //		showHi(--cnt);

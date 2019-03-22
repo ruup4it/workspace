@@ -1,29 +1,29 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* ¿øÀÇ ¹İÁö¸§À» ÀÔ·Â¹Ş´Â´Ù
- * ¿øÀÇ ³ĞÀÌ ±¸ÇÏ´Â ¸Å¼­µå Á¦ÀÛ
- * ¿øÀÇ µÑ·¹ ±¸ÇÏ´Â ¸Å¼­µå Á¦ÀÛ
+/* ì›ì˜ ë°˜ì§€ë¦„ì„ ì…ë ¥ë°›ëŠ”ë‹¤
+ * ì›ì˜ ë„“ì´ êµ¬í•˜ëŠ” ë§¤ì„œë“œ ì œì‘
+ * ì›ì˜ ë‘˜ë ˆ êµ¬í•˜ëŠ” ë§¤ì„œë“œ ì œì‘
  */
 public class _09_CircleArea {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		// º¯¼ö ¿µ¿ª
+		// ë³€ìˆ˜ ì˜ì—­
 		double r=0, area=0, round=0;
-		// ¸Å¼­µå ¿µ¿ª
+		// ë§¤ì„œë“œ ì˜ì—­
 		r = inputRadius(sc,r);
 		calcArea(r);
 		calcRound(r);
 		area = calcArea(r);
 		round = calcRound(r);
-		System.out.println("¿øÀÇ ³ĞÀÌ´Â "+area+"ÀÔ´Ï´Ù");
-		System.out.println("¿øÀÇ ³ĞÀÌ´Â "+round+"ÀÔ´Ï´Ù");
+		System.out.println("ì›ì˜ ë„“ì´ëŠ” "+area+"ì…ë‹ˆë‹¤");
+		System.out.println("ì›ì˜ ë„“ì´ëŠ” "+round+"ì…ë‹ˆë‹¤");
 		sc.close();
 	}
-	// ¹İÁö¸§ ÀÔ·Â¹Ş´Â ¸Å¼­µå
+	// ë°˜ì§€ë¦„ ì…ë ¥ë°›ëŠ” ë§¤ì„œë“œ
 	public static double inputRadius(Scanner sc,double r2) {
 
 		
-		System.out.println("¹İÁö¸§ÀÇ ±æÀÌ ÀÔ·Â: ");
+		System.out.println("ë°˜ì§€ë¦„ì˜ ê¸¸ì´ ì…ë ¥: ");
 		double r = sc.nextDouble();
 		return r;
 	}

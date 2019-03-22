@@ -1,24 +1,24 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
 /*
- * 2. Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ 1ºÎÅÍ ÀÔ·Â¹ŞÀº Á¤¼ö±îÁöÀÇ 5ÀÇ ¹è¼öÀÇ ÇÕÀ» ±¸ÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
- * 1) while ¹öÀü
- * 2) for ¹öÀü
- * 3) do while ¹öÀü
+ * 2. ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ 1ë¶€í„° ì…ë ¥ë°›ì€ ì •ìˆ˜ê¹Œì§€ì˜ 5ì˜ ë°°ìˆ˜ì˜ í•©ì„ êµ¬í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
+ * 1) while ë²„ì „
+ * 2) for ë²„ì „
+ * 3) do while ë²„ì „
 */
 public class free_02 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num = scan.nextInt();
 		int sum = 0;
 		for(int i = 1; i <= num; i ++) {
 			sum += i * 5;
 			//System.out.println(i * 5);
 		}
-		System.out.println("5ÀÇ ¹è¼öÀÇ ÇÕ : " + sum);
+		System.out.println("5ì˜ ë°°ìˆ˜ì˜ í•© : " + sum);
 		scan.close();
 	}
 }

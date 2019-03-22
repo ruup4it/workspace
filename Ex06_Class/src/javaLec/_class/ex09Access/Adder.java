@@ -1,6 +1,6 @@
-package javaLec._class.ex09Access;
+ï»¿package javaLec._class.ex09Access;
 
-// ÆĞÅ°Áö³»¿¡¼­¸¸ Á¢±Ù °¡´É > default
+// íŒ¨í‚¤ì§€ë‚´ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥ > default
 class Adder {
 	private int cntAdd;
 

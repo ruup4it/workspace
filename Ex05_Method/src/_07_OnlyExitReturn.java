@@ -1,6 +1,6 @@
-/*return ¡æ ³Ê¸¦ È£ÃâÇÑ °÷À¸·Î µ¹¾Æ°¡¶ó
- * return num; ¡æ  numÀ» °¡Áö°í µ¹¾Æ°¡¶ó
- * return; ¡æ  ±×³É µ¹¾Æ°¡¶ó(Á¾·á)
+ï»¿/*return â†’ ë„ˆë¥¼ í˜¸ì¶œí•œ ê³³ìœ¼ë¡œ ëŒì•„ê°€ë¼
+ * return num; â†’  numì„ ê°€ì§€ê³  ëŒì•„ê°€ë¼
+ * return; â†’  ê·¸ëƒ¥ ëŒì•„ê°€ë¼(ì¢…ë£Œ)
  */
 public class _07_OnlyExitReturn {
 	public static void main(String[] args) {
@@ -10,9 +10,9 @@ public class _07_OnlyExitReturn {
 	}
 	public static void divide(int num1, int num2) {
 		if(num2==0) {
-			System.out.println("0À¸·Î ³ª´­ ¼ö ¾øÀ½");
+			System.out.println("0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ìŒ");
 			return;
 		}
-		System.out.println("³ª´°¼À °á°ú: "+(num1/num2));
+		System.out.println("ë‚˜ëˆ—ì…ˆ ê²°ê³¼: "+(num1/num2));
 	}
 }

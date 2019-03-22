@@ -1,24 +1,24 @@
-package exercise_190319;
-//3. PencilSeller¿¡ »ı¼ºÀÚ¸¦ Ãß°¡ÇÏ°í »ç¿ëÇØº¸¼¼¿ä
-//(¼ö¾÷½Ã°£ ¸¶Áö¸· ¹®Á¦)
+ï»¿package exercise_190319;
+//3. PencilSellerì— ìƒì„±ìë¥¼ ì¶”ê°€í•˜ê³  ì‚¬ìš©í•´ë³´ì„¸ìš”
+//(ìˆ˜ì—…ì‹œê°„ ë§ˆì§€ë§‰ ë¬¸ì œ)
 public class Basic_03_PencilSeller {
-	int numOfPencil; // ¿¬ÇÊ °³¼ö
-	int myMoney; // ÆÇ¸Å ±İ¾×
-	final int PENCIL_PRICE; // ¿¬ÇÊ °¡°İ(»ó¼ö)
+	int numOfPencil; // ì—°í•„ ê°œìˆ˜
+	int myMoney; // íŒë§¤ ê¸ˆì•¡
+	final int PENCIL_PRICE; // ì—°í•„ ê°€ê²©(ìƒìˆ˜)
 
 	Basic_03_PencilSeller() {
-		myMoney = 5000; // º¸À¯ ±İ¾×
-		numOfPencil = 2; // ¿¬ÇÊ °³¼ö
-		PENCIL_PRICE = 1000; // ¿¬ÇÊ °¡°İ(»ó¼ö)
+		myMoney = 5000; // ë³´ìœ  ê¸ˆì•¡
+		numOfPencil = 2; // ì—°í•„ ê°œìˆ˜
+		PENCIL_PRICE = 1000; // ì—°í•„ ê°€ê²©(ìƒìˆ˜)
 	}
 
 	Basic_03_PencilSeller(int money, int pencilNum, int price) {
-		myMoney = money; // º¸À¯ ±İ¾×
-		numOfPencil = pencilNum; // ¿¬ÇÊ °³¼ö
-		PENCIL_PRICE = price; // ¿¬ÇÊ °¡°İ(»ó¼ö)
+		myMoney = money; // ë³´ìœ  ê¸ˆì•¡
+		numOfPencil = pencilNum; // ì—°í•„ ê°œìˆ˜
+		PENCIL_PRICE = price; // ì—°í•„ ê°€ê²©(ìƒìˆ˜)
 	}
 
-	// ÆÇ¸ÅÇÏ´Ù
+	// íŒë§¤í•˜ë‹¤
 	public int salePencil(int money) {
 		int num = money / PENCIL_PRICE;
 		numOfPencil -= num;
@@ -26,14 +26,14 @@ public class Basic_03_PencilSeller {
 		return num;
 	}
 
-	// ÆÇ¸Å°á°ú
+	// íŒë§¤ê²°ê³¼
 	public void showSaleResult() {
-		System.out.println("***Ä£±¸ÀÇ ÇöÀç »óÈ²***");
-		System.out.println("³²Àº ¿¬ÇÊ: " + numOfPencil + "°³");
-		System.out.println("ÆÇ¸Å ¼öÀÍ: " + myMoney + "¿ø");
+		System.out.println("***ì¹œêµ¬ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("ë‚¨ì€ ì—°í•„: " + numOfPencil + "ê°œ");
+		System.out.println("íŒë§¤ ìˆ˜ìµ: " + myMoney + "ì›");
 	}
 
-	// °¡°İ È®ÀÎ ¸Ş¼­µå
+	// ê°€ê²© í™•ì¸ ë©”ì„œë“œ
 	public int getPencilPrice() {
 		return PENCIL_PRICE;
 	}

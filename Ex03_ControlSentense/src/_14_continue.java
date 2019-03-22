@@ -1,5 +1,5 @@
-/* 1~100 ±îÁö °¢°¢ È¦¼ö¿Í Â¦¼öÀÇ ÇÕÀ»
- * continue¸¦ ÀÌ¿ëÇØ¼­ Ãâ·ÂÇÏ¼¼¿ä
+ï»¿/* 1~100 ê¹Œì§€ ê°ê° í™€ìˆ˜ì™€ ì§ìˆ˜ì˜ í•©ì„
+ * continueë¥¼ ì´ìš©í•´ì„œ ì¶œë ¥í•˜ì„¸ìš”
  * */
 public class _14_continue {
 	public static void main(String[] args) {
@@ -12,6 +12,6 @@ public class _14_continue {
 			}
 			oddSum += i;
 		}
-		System.out.println("Â¦¼öÀÇ ÇÕ : " + evenSum + "\nÈ¦¼öÀÇ ÇÕ : " + oddSum);
+		System.out.println("ì§ìˆ˜ì˜ í•© : " + evenSum + "\ní™€ìˆ˜ì˜ í•© : " + oddSum);
 	}
 }

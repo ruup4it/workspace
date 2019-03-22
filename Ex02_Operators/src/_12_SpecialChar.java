@@ -1,11 +1,11 @@
-// °£È¤ »ç¿ëÇÑ´Ù.
+ï»¿// ê°„í˜¹ ì‚¬ìš©í•œë‹¤.
 public class _12_SpecialChar {
 	public static void main(String[] args) {
-		System.out.print("¾È³çÇÏ¼¼¿ä.");
-		System.out.print("¹Ý°©½À´Ï´Ù. \n");
-		System.out.print("»ç¶ûÇÕ´Ï´Ù");
-		System.out.println("Á¸°æ\tÇÕ´Ï´Ù.");
-		System.out.println("\'º¸°í½Í¾î¿ä\'");
-		System.out.println("\"º¸°í½Í¾î¿ä\"");
+		System.out.print("ì•ˆë…•í•˜ì„¸ìš”.");
+		System.out.print("ë°˜ê°‘ìŠµë‹ˆë‹¤. \n");
+		System.out.print("ì‚¬ëž‘í•©ë‹ˆë‹¤");
+		System.out.println("ì¡´ê²½\tí•©ë‹ˆë‹¤.");
+		System.out.println("\'ë³´ê³ ì‹¶ì–´ìš”\'");
+		System.out.println("\"ë³´ê³ ì‹¶ì–´ìš”\"");
 	}
 }

@@ -1,4 +1,4 @@
-package javaLec._class.ex10Access;
+ï»¿package javaLec._class.ex10Access;
 
 import java.util.Scanner;
 
@@ -15,14 +15,14 @@ public class CalcMain {
 			// int num1 = rand.nextInt(10)+1;
 			// int num2 = rand.nextInt(10)+1;
 			System.out.println("=================");
-			System.out.print("[µ¡¼À : 1] [»¬¼À : 2] : ");
+			System.out.print("[ë§ì…ˆ : 1] [ëº„ì…ˆ : 2] : ");
 			int sel = scan.nextInt();
 			System.out.println(String.format("num1 = %d, num2 = %d",num1, num2));
 			if (sel == 1)
 				
-				System.out.println(String.format("µ¡¼À °á°ú : %d",cal.addTwoNumber(num1, num2)));
+				System.out.println(String.format("ë§ì…ˆ ê²°ê³¼ : %d",cal.addTwoNumber(num1, num2)));
 			else 
-				System.out.println(String.format("»¬¼À °á°ú : %d", cal.subTwoNumber(num1, num2)));
+				System.out.println(String.format("ëº„ì…ˆ ê²°ê³¼ : %d", cal.subTwoNumber(num1, num2)));
 		}
 		System.out.println("=================");
 		cal.showOperatingTimes();

@@ -1,29 +1,29 @@
-package javaLec._class.ex03classToClass;
+ï»¿package javaLec._class.ex03classToClass;
 
-/* <Å¬·¡½º¿Í Å¬·¡½º°£ÀÇ »óÈ£°ü°è>
- * ³ª´Â Ä£±¸¿¡°Ô 2000¿øÀ» ÁÖ°í ¿¬ÇÊ 1ÀÚ·ç´Â ±¸¸ÅÇß´Ù.
+/* <í´ë˜ìŠ¤ì™€ í´ë˜ìŠ¤ê°„ì˜ ìƒí˜¸ê´€ê³„>
+ * ë‚˜ëŠ” ì¹œêµ¬ì—ê²Œ 2000ì›ì„ ì£¼ê³  ì—°í•„ 1ìë£¨ëŠ” êµ¬ë§¤í–ˆë‹¤.
  * 
- * 1) ¸í»ç : ³ª, Ä£±¸, ¿¬ÇÊ
- * 2) µ¿»ç : ±¸¸ÅÇß´Ù
- * 3) ³ª¿Í Ä£±¸´Â ClassÀÇ ´ë»ó
- * 4) ¿¬ÇÊÀº ÇÊµå
- * 5) ±¸¸ÅÇß´Ù´Â ¸Ş¼­µå
+ * 1) ëª…ì‚¬ : ë‚˜, ì¹œêµ¬, ì—°í•„
+ * 2) ë™ì‚¬ : êµ¬ë§¤í–ˆë‹¤
+ * 3) ë‚˜ì™€ ì¹œêµ¬ëŠ” Classì˜ ëŒ€ìƒ
+ * 4) ì—°í•„ì€ í•„ë“œ
+ * 5) êµ¬ë§¤í–ˆë‹¤ëŠ” ë©”ì„œë“œ
  * */
 
 public class PencilSeller {
-	int numOfPencil = 2; // ¿¬ÇÊ °³¼ö
-	int myMoney = 0; // ÆÇ¸Å ±İ¾×
+	int numOfPencil = 2; // ì—°í•„ ê°œìˆ˜
+	int myMoney = 0; // íŒë§¤ ê¸ˆì•¡
 
-	// ÆÇ¸ÅÇÏ´Ù
+	// íŒë§¤í•˜ë‹¤
 	public void salePencil(PencilBuyer buyer, int money) {
 		numOfPencil -= buyer.buyPencil(money);
 		myMoney += money;
 	}
 
-	// ÆÇ¸Å°á°ú
+	// íŒë§¤ê²°ê³¼
 	public void showSaleResult() {
-		System.out.println("***Ä£±¸ÀÇ ÇöÀç »óÈ²***");
-		System.out.println("³²Àº ¿¬ÇÊ: 2°³ -> " + numOfPencil + "°³");
-		System.out.println("ÆÇ¸Å ¼öÀÍ: 0¿ø -> " + myMoney + "¿ø");
+		System.out.println("***ì¹œêµ¬ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("ë‚¨ì€ ì—°í•„: 2ê°œ -> " + numOfPencil + "ê°œ");
+		System.out.println("íŒë§¤ ìˆ˜ìµ: 0ì› -> " + myMoney + "ì›");
 	}
 }

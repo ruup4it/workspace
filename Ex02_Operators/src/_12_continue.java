@@ -1,9 +1,9 @@
-/* break, continue´Â Á¦¾î¹®°ú °áÇÕÇØ¼­ »ç¿ëÇÑ´Ù.
- * break : °¡Àå °¡±î¿î (³ª¸¦ °¨½Ñ) ¹Ýº¹¹®À» Å»Ãâ
- * continue : ´õ ÀÌ»ó ¾Æ·¡·Î °è¼Ó °¡Áö ¸»°í µ¹¾Æ°¡¼­ °è¼Ó ÁøÇà
+ï»¿/* break, continueëŠ” ì œì–´ë¬¸ê³¼ ê²°í•©í•´ì„œ ì‚¬ìš©í•œë‹¤.
+ * break : ê°€ìž¥ ê°€ê¹Œìš´ (ë‚˜ë¥¼ ê°ì‹¼) ë°˜ë³µë¬¸ì„ íƒˆì¶œ
+ * continue : ë” ì´ìƒ ì•„ëž˜ë¡œ ê³„ì† ê°€ì§€ ë§ê³  ëŒì•„ê°€ì„œ ê³„ì† ì§„í–‰
  * */
 
-// 0ºÎÅÍ 9±îÁö ¼ýÀÚ Áß 5 ÀÌ»óÀÎ ¼ýÀÚ¸¸ Ãâ·Â
+// 0ë¶€í„° 9ê¹Œì§€ ìˆ«ìž ì¤‘ 5 ì´ìƒì¸ ìˆ«ìžë§Œ ì¶œë ¥
 public class _12_continue {
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {

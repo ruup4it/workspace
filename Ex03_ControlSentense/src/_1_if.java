@@ -1,26 +1,26 @@
-//
+ï»¿//
 public class _1_if {
 	public static void main(String[] args) {
 		int num = 10;
 		if(num%2 == 0) 
-			System.out.println("Â¦¼ö");
+			System.out.println("ì§ìˆ˜");
 		else
-			System.out.println("È¦¼ö");
+			System.out.println("í™€ìˆ˜");
 		
 		int num2 = 10;
 		boolean b = num2%2 == 0;
 		if(b) 
-			System.out.println("Â¦¼ö");
+			System.out.println("ì§ìˆ˜");
 		else
-			System.out.println("È¦¼ö");
+			System.out.println("í™€ìˆ˜");
 		
 		
 		int num3 = 11;
 		if(num3%3 == 0) 
-			System.out.println("3ÀÇ ¹è¼ö");
+			System.out.println("3ì˜ ë°°ìˆ˜");
 		else if(num3 %3 ==1)
-			System.out.println("3À¸·Î ³ª´³À» ¶§ ³ª¸ÓÁö1");
+			System.out.println("3ìœ¼ë¡œ ë‚˜ëˆ´ì„ ë•Œ ë‚˜ë¨¸ì§€1");
 		else if (num3 %3 ==2) // else
-			System.out.println("3À¸·Î ³ª´³À» ¶§ ³ª¸ÓÁö 2");
+			System.out.println("3ìœ¼ë¡œ ë‚˜ëˆ´ì„ ë•Œ ë‚˜ë¨¸ì§€ 2");
 	}
 }

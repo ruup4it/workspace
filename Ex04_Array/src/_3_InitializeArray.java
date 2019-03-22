@@ -1,14 +1,14 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 
 public class _3_InitializeArray {
 
 	public static void main(String[] args) {
-		// ¹è¿­ÀÇ ÃÊ±âÈ­
-		// ÀÌ·¸°Ô ½è´Ù°í ÇØ¼­ ½ºÅÃ¿¡ ¿Ã¶ó°¡´Â °ÍÀº ¾Æ´Ï´Ù.
-		// int[] korScore = new int[5]¿Í °°ÀÌ 
-		// Èü¿¡ ¿Ã¶ó°£´Ù
-		// ´Ü, ¿ö³« ¹è¿­Àº ÃÊ±âÈ­°ªÀ» ³Ö¾îµÎ´Â °æ¿ì°¡ 
-		// ¸¹±â ¶§¹®¿¡ ÀÌ·± ¹®¹ıÀ» Çã¿ëÇÑ °ÍÀÌ´Ù.
+		// ë°°ì—´ì˜ ì´ˆê¸°í™”
+		// ì´ë ‡ê²Œ ì¼ë‹¤ê³  í•´ì„œ ìŠ¤íƒì— ì˜¬ë¼ê°€ëŠ” ê²ƒì€ ì•„ë‹ˆë‹¤.
+		// int[] korScore = new int[5]ì™€ ê°™ì´ 
+		// í™ì— ì˜¬ë¼ê°„ë‹¤
+		// ë‹¨, ì›Œë‚™ ë°°ì—´ì€ ì´ˆê¸°í™”ê°’ì„ ë„£ì–´ë‘ëŠ” ê²½ìš°ê°€ 
+		// ë§ê¸° ë•Œë¬¸ì— ì´ëŸ° ë¬¸ë²•ì„ í—ˆìš©í•œ ê²ƒì´ë‹¤.
 		int[] korScore = {99, 88, 90, 39, 86};
 		System.out.println(Arrays.toString(korScore));
 		for(int i=0;i<korScore.length;i++) {

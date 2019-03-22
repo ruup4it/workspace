@@ -17,27 +17,27 @@ public class _play_test {
 			System.out.println("(Hello|Nice)World");
 		}
 		if (strl.matches("\\w*")) {
-			System.out.println("_¸¦ Æ÷ÇÔÇÑ ¿µ¼ıÀÚ");
+			System.out.println("_ë¥¼ í¬í•¨í•œ ì˜ìˆ«ì");
 		}
 	}
 
 	/*
 	 * boolean bResult; int num0 = 0, num1 = 0;
 	 * 
-	 * System.out.println("*** ´ë¼Ò ºñ±³ ¿¬»êÀ» ÇÕ´Ï´Ù ***"); System.out.println();
-	 * System.out.println("Ã¹ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+	 * System.out.println("*** ëŒ€ì†Œ ë¹„êµ ì—°ì‚°ì„ í•©ë‹ˆë‹¤ ***"); System.out.println();
+	 * System.out.println("ì²« ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 	 * 
-	 * Scanner scan = new Scanner(System.in); // ¹®ÀÚ ÀÔ·ÂÀ» ÀÎÀÚ·Î Scanner »ı¼º num0 =
+	 * Scanner scan = new Scanner(System.in); // ë¬¸ì ì…ë ¥ì„ ì¸ìë¡œ Scanner ìƒì„± num0 =
 	 * Integer.parseInt(scan.nextLine());
 	 * 
 	 * 
-	 * System.out.println("µÎ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä"); num1 =
+	 * System.out.println("ë‘ ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”"); num1 =
 	 * Integer.parseInt(scan.nextLine());
 	 * 
 	 * 
-	 * bResult = num0 > num1; System.out.println(); System.out.println("Ã¹¹ø Â° ÀÔ·Â °ªÀº "
-	 * + num0 + " ÀÔ´Ï´Ù."); System.out.println("µÎ¹ø Â° ÀÔ·Â °ªÀº " + num1 + " ÀÔ´Ï´Ù.");
-	 * System.out.println(); System.out.println(num0 + "Àº " + num1 + "º¸´Ù Å©´Ù´Â »ç½ÇÀº " +
-	 * bResult + "ÀÔ´Ï´Ù."); System.out.println();
+	 * bResult = num0 > num1; System.out.println(); System.out.println("ì²«ë²ˆ ì§¸ ì…ë ¥ ê°’ì€ "
+	 * + num0 + " ì…ë‹ˆë‹¤."); System.out.println("ë‘ë²ˆ ì§¸ ì…ë ¥ ê°’ì€ " + num1 + " ì…ë‹ˆë‹¤.");
+	 * System.out.println(); System.out.println(num0 + "ì€ " + num1 + "ë³´ë‹¤ í¬ë‹¤ëŠ” ì‚¬ì‹¤ì€ " +
+	 * bResult + "ì…ë‹ˆë‹¤."); System.out.println();
 	 */
 }

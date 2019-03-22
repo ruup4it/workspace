@@ -1,10 +1,10 @@
-import java.util.Random;
+ï»¿import java.util.Random;
 import java.util.Scanner;
 
-/* 1 ~ 6 »çÀÌÀÇ »ç¿ëÀÚÀÇ ¼ýÀÚ¸¦ ÀÔ·Â ¹Þ´Â´Ù.
- * ÄÄÇ»ÅÍÀÇ ³­¼ö¸¦ »ý¼ºÇÑ´Ù.
- * µÎ ¼ö¸¦ ºñ±³ÇÏ°í Å« ¼ýÀÚ¸¦ ÀÌ°å´Ù°í Ãâ·ÂÇÑ´Ù
- * Á¶°Ç ¿¬»êÀÚ »ç¿ë
+/* 1 ~ 6 ì‚¬ì´ì˜ ì‚¬ìš©ìžì˜ ìˆ«ìžë¥¼ ìž…ë ¥ ë°›ëŠ”ë‹¤.
+ * ì»´í“¨í„°ì˜ ë‚œìˆ˜ë¥¼ ìƒì„±í•œë‹¤.
+ * ë‘ ìˆ˜ë¥¼ ë¹„êµí•˜ê³  í° ìˆ«ìžë¥¼ ì´ê²¼ë‹¤ê³  ì¶œë ¥í•œë‹¤
+ * ì¡°ê±´ ì—°ì‚°ìž ì‚¬ìš©
  * You in!!! or Commputer Win !!! or Draw !!!
  */
 public class _10_diceGame {
@@ -16,7 +16,7 @@ public class _10_diceGame {
 		
 		int computerNum = random.nextInt(6)+1;
 		
-		System.out.println("1ºÎÅÍ 6 »çÀÌÀÇ ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("1ë¶€í„° 6 ì‚¬ì´ì˜ ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		int userNum = scan.nextInt();
 		
 		//winner = computerNum > userNum? "Computer Win !!!" : "You Win !!!";
@@ -26,8 +26,8 @@ public class _10_diceGame {
 			     computerNum < userNum? "You Win !!!" :
 			    	 "Draw !!!" ;
 		
-		System.out.println("ÄÄÇ»ÅÍ : " + computerNum);
-		System.out.println("»ç¿ëÀÚ : " + userNum);
+		System.out.println("ì»´í“¨í„° : " + computerNum);
+		System.out.println("ì‚¬ìš©ìž : " + userNum);
 		System.out.println(winner);
 		scan.close();
 	}

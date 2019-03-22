@@ -1,33 +1,33 @@
-package javaLec._class.ex06Constructor;
+ï»¿package javaLec._class.ex06Constructor;
 
-/* <Å¬·¡½º¿Í Å¬·¡½º°£ÀÇ »óÈ£°ü°è>
- * ³ª´Â Ä£±¸¿¡°Ô 2000¿øÀ» ÁÖ°í ¿¬ÇÊ 1ÀÚ·ç´Â ±¸¸ÅÇß´Ù.
+/* <í´ë˜ìŠ¤ì™€ í´ë˜ìŠ¤ê°„ì˜ ìƒí˜¸ê´€ê³„>
+ * ë‚˜ëŠ” ì¹œêµ¬ì—ê²Œ 2000ì›ì„ ì£¼ê³  ì—°í•„ 1ìë£¨ëŠ” êµ¬ë§¤í–ˆë‹¤.
  * 
- * 1) ¸í»ç : ³ª, Ä£±¸, ¿¬ÇÊ
- * 2) µ¿»ç : ±¸¸ÅÇß´Ù
- * 3) ³ª¿Í Ä£±¸´Â ClassÀÇ ´ë»ó
- * 4) ¿¬ÇÊÀº ÇÊµå
- * 5) ±¸¸ÅÇß´Ù´Â ¸Ş¼­µå
+ * 1) ëª…ì‚¬ : ë‚˜, ì¹œêµ¬, ì—°í•„
+ * 2) ë™ì‚¬ : êµ¬ë§¤í–ˆë‹¤
+ * 3) ë‚˜ì™€ ì¹œêµ¬ëŠ” Classì˜ ëŒ€ìƒ
+ * 4) ì—°í•„ì€ í•„ë“œ
+ * 5) êµ¬ë§¤í–ˆë‹¤ëŠ” ë©”ì„œë“œ
  * */
 
 public class PencilSeller {
-	int numOfPencil; // ¿¬ÇÊ °³¼ö
-	int myMoney; // ÆÇ¸Å ±İ¾×
-	final int PENCIL_PRICE; // ¿¬ÇÊ °¡°İ(»ó¼ö)
+	int numOfPencil; // ì—°í•„ ê°œìˆ˜
+	int myMoney; // íŒë§¤ ê¸ˆì•¡
+	final int PENCIL_PRICE; // ì—°í•„ ê°€ê²©(ìƒìˆ˜)
 
 	PencilSeller() {
-		myMoney = 5000; // º¸À¯ ±İ¾×
-		numOfPencil = 2; // ¿¬ÇÊ °³¼ö
-		PENCIL_PRICE = 1000; // ¿¬ÇÊ °¡°İ(»ó¼ö)
+		myMoney = 5000; // ë³´ìœ  ê¸ˆì•¡
+		numOfPencil = 2; // ì—°í•„ ê°œìˆ˜
+		PENCIL_PRICE = 1000; // ì—°í•„ ê°€ê²©(ìƒìˆ˜)
 	}
 
 	PencilSeller(int money, int pencilNum, int price) {
-		myMoney = money; // º¸À¯ ±İ¾×
-		numOfPencil = pencilNum; // ¿¬ÇÊ °³¼ö
-		PENCIL_PRICE = price; // ¿¬ÇÊ °¡°İ(»ó¼ö)
+		myMoney = money; // ë³´ìœ  ê¸ˆì•¡
+		numOfPencil = pencilNum; // ì—°í•„ ê°œìˆ˜
+		PENCIL_PRICE = price; // ì—°í•„ ê°€ê²©(ìƒìˆ˜)
 	}
 
-	// ÆÇ¸ÅÇÏ´Ù
+	// íŒë§¤í•˜ë‹¤
 	public int salePencil(int money) {
 		int num = money / PENCIL_PRICE;
 		numOfPencil -= num;
@@ -35,14 +35,14 @@ public class PencilSeller {
 		return num;
 	}
 
-	// ÆÇ¸Å°á°ú
+	// íŒë§¤ê²°ê³¼
 	public void showSaleResult() {
-		System.out.println("***Ä£±¸ÀÇ ÇöÀç »óÈ²***");
-		System.out.println("³²Àº ¿¬ÇÊ: " + numOfPencil + "°³");
-		System.out.println("ÆÇ¸Å ¼öÀÍ: " + myMoney + "¿ø");
+		System.out.println("***ì¹œêµ¬ì˜ í˜„ì¬ ìƒí™©***");
+		System.out.println("ë‚¨ì€ ì—°í•„: " + numOfPencil + "ê°œ");
+		System.out.println("íŒë§¤ ìˆ˜ìµ: " + myMoney + "ì›");
 	}
 
-	// °¡°İ È®ÀÎ ¸Ş¼­µå
+	// ê°€ê²© í™•ì¸ ë©”ì„œë“œ
 	public int getPencilPrice() {
 		return PENCIL_PRICE;
 	}

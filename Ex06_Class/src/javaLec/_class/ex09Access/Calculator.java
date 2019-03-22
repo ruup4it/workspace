@@ -1,13 +1,13 @@
-package javaLec._class.ex09Access;
+ï»¿package javaLec._class.ex09Access;
 
-// ¿ÜºÎ¿¡¼­ »ç¿ëÇÏ°Ô ¸¸µå´Â µ¥ ¸ñÀûÀ» µĞ´Ù.
-// ´õÇÏ±â¿Í »©±â¸¦ Á¦°øÇÑ´Ù.
+// ì™¸ë¶€ì—ì„œ ì‚¬ìš©í•˜ê²Œ ë§Œë“œëŠ” ë° ëª©ì ì„ ë‘”ë‹¤.
+// ë”í•˜ê¸°ì™€ ë¹¼ê¸°ë¥¼ ì œê³µí•œë‹¤.
 public class Calculator {
 
 	private Adder adder;
 	private Subtractor subtractor;
 
-	// »ı¼ºÀÚ°¡ publicÀÌ¾î¾ß¸¸ ¿ÜºÎ¿¡¼­ °´Ã¼ »ı¼º °¡´É
+	// ìƒì„±ìê°€ publicì´ì–´ì•¼ë§Œ ì™¸ë¶€ì—ì„œ ê°ì²´ ìƒì„± ê°€ëŠ¥
 	public Calculator() {
 		adder = new Adder();
 		subtractor = new Subtractor();
@@ -23,7 +23,7 @@ public class Calculator {
 	}
 	
 	public void showOperatingTimes() {
-		System.out.println(String.format("µ¡¼À È½¼ö : %d", adder.getCntAdd()));
-		System.out.println(String.format("»¬¼À È½¼ö : %d", subtractor.getCntSub()));
+		System.out.println(String.format("ë§ì…ˆ íšŸìˆ˜ : %d", adder.getCntAdd()));
+		System.out.println(String.format("ëº„ì…ˆ íšŸìˆ˜ : %d", subtractor.getCntSub()));
 	}
 }

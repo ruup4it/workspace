@@ -1,9 +1,9 @@
-package javaLec._class.ex03classToClass;
+ï»¿package javaLec._class.ex03classToClass;
 
 public class PencilBuyer {
-	int myMoney = 5000; // º¸À¯ ±Ý¾×
-	int numOfPencil = 0; // ¿¬ÇÊ °³¼ö
-	final int PENCIL_PRICE = 1000; // ¿¬ÇÊ °¡°Ý(»ó¼ö)
+	int myMoney = 5000; // ë³´ìœ  ê¸ˆì•¡
+	int numOfPencil = 0; // ì—°í•„ ê°œìˆ˜
+	final int PENCIL_PRICE = 1000; // ì—°í•„ ê°€ê²©(ìƒìˆ˜)
 
 	public int buyPencil(int money) {
 		int num = money / PENCIL_PRICE;
@@ -13,8 +13,8 @@ public class PencilBuyer {
 	}
 
 	public void showBuyResult() {
-		System.out.println("***³ªÀÇ ÇöÀç »óÈ²***");
-		System.out.println("ÇöÀç ÀÜ¾×: 5000¿ø -> " + myMoney + "¿ø");
-		System.out.println("¿¬ÇÊ °³¼ö: 0°³ -> " + numOfPencil + "°³");
+		System.out.println("***ë‚˜ì˜ í˜„ìž¬ ìƒí™©***");
+		System.out.println("í˜„ìž¬ ìž”ì•¡: 5000ì› -> " + myMoney + "ì›");
+		System.out.println("ì—°í•„ ê°œìˆ˜: 0ê°œ -> " + numOfPencil + "ê°œ");
 	}
 }

@@ -1,30 +1,30 @@
-package exercise_190314;
+ï»¿package exercise_190314;
 
 import java.util.Scanner;
 
-//1. ¿¬µµ¸¦ ÀÔ·Â¹ÞÀ¸¼¼¿ä
-//	À±³âÀÎÁö ¾Æ´ÑÁö¸¦ ÆÇº°ÇÏ¼¼¿ä
-//	4·Î ³ª´©¾î ¶³¾îÁö´Â ÇØ´Â ÀÏ´Ü À±³â¿¡ Æ÷ÇÔ½ÃÅµ´Ï´Ù
-//	ÇÏÁö¸¸ À±³âÁß¿¡ 100À¸·Î ³ª´©¾î¶³¾îÁö´Â ÇØ´Â Æò³âÀ¸·Î ÇÏµÇ 
-//	Æò³âÁß¿¡ 400À¸·Î ³ª´©¾î ¶³¾îÁö´Â ÇØ´Â À±³â¿¡ ÇØ´çÇÕ´Ï´Ù
+//1. ì—°ë„ë¥¼ ìž…ë ¥ë°›ìœ¼ì„¸ìš”
+//	ìœ¤ë…„ì¸ì§€ ì•„ë‹Œì§€ë¥¼ íŒë³„í•˜ì„¸ìš”
+//	4ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” í•´ëŠ” ì¼ë‹¨ ìœ¤ë…„ì— í¬í•¨ì‹œí‚µë‹ˆë‹¤
+//	í•˜ì§€ë§Œ ìœ¤ë…„ì¤‘ì— 100ìœ¼ë¡œ ë‚˜ëˆ„ì–´ë–¨ì–´ì§€ëŠ” í•´ëŠ” í‰ë…„ìœ¼ë¡œ í•˜ë˜ 
+//	í‰ë…„ì¤‘ì— 400ìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” í•´ëŠ” ìœ¤ë…„ì— í•´ë‹¹í•©ë‹ˆë‹¤
 
-// À±³â : 1) 4·Î ³ª´©¾î ³ª¸ÓÁö°¡ 0ÀÌ°í, 100À¸·Î ³ª´©¾úÀ» ¶§ ³ª¸ÓÁö°¡ 0ÀÌ ¾Æ´Ò ¶§
-//       2) 100À¸·Î ³ª´©¾úÀ» ¶§ ³ª¸ÓÁö°¡ 0ÀÌ´õ¶óµµ, 400À¸·Î ³ª´©¾î ³ª¸ÓÁö°¡ 0 ÀÏ¶§
-// Æò³â : 100À¸·Î ³ª´©¾úÀ» ¶§ ³ª¸ÓÁö°¡ 0 
+// ìœ¤ë…„ : 1) 4ë¡œ ë‚˜ëˆ„ì–´ ë‚˜ë¨¸ì§€ê°€ 0ì´ê³ , 100ìœ¼ë¡œ ë‚˜ëˆ„ì—ˆì„ ë•Œ ë‚˜ë¨¸ì§€ê°€ 0ì´ ì•„ë‹ ë•Œ
+//       2) 100ìœ¼ë¡œ ë‚˜ëˆ„ì—ˆì„ ë•Œ ë‚˜ë¨¸ì§€ê°€ 0ì´ë”ë¼ë„, 400ìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë‚˜ë¨¸ì§€ê°€ 0 ì¼ë•Œ
+// í‰ë…„ : 100ìœ¼ë¡œ ë‚˜ëˆ„ì—ˆì„ ë•Œ ë‚˜ë¨¸ì§€ê°€ 0 
 
-// À±³â : 4·Î ³ª´©¾î ³ª¸ÓÁö°¡ 0ÀÌ°í 100À¸·Î ¶Ç´Â 400À¸·Î ³ª´©¾î ³ª¸ÓÁö°¡ 0
+// ìœ¤ë…„ : 4ë¡œ ë‚˜ëˆ„ì–´ ë‚˜ë¨¸ì§€ê°€ 0ì´ê³  100ìœ¼ë¡œ ë˜ëŠ” 400ìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë‚˜ë¨¸ì§€ê°€ 0
 
 public class ex_01 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("³âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë…„ë„ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		int year = scan.nextInt();
 
 		if((year%4==0 && year%100 !=0) || year%400==0) 
-			System.out.println("À±³âÀÔ´Ï´Ù.");
+			System.out.println("ìœ¤ë…„ìž…ë‹ˆë‹¤.");
 		else 
-			System.out.println("Æò³âÀÔ´Ï´Ù.");
+			System.out.println("í‰ë…„ìž…ë‹ˆë‹¤.");
 		scan.close();
 	}
 }

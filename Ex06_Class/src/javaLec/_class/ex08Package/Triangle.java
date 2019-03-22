@@ -1,4 +1,4 @@
-package javaLec._class.ex08Package;
+﻿package javaLec._class.ex08Package;
 
 public class Triangle {
 	double width;

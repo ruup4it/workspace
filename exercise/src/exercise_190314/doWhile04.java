@@ -1,7 +1,7 @@
-package exercise_190314;
-//4. do~while¹®À» ÀÌ¿ëÇØ¼­ 1ºÎÅÍ 10±îÁö Áß¿¡ Â¦¼ö¸¸ Ãâ·ÂÇÏ¼¼¿ä
-//do~while¹®³»¿¡ Á¶°Ç¹®À» ³Ö¾îÁÖ¸é µÊ
-//Â¦¼ö Á¶°Ç if(num % 2 == 0)
+ï»¿package exercise_190314;
+//4. do~whileë¬¸ì„ ì´ìš©í•´ì„œ 1ë¶€í„° 10ê¹Œì§€ ì¤‘ì— ì§ìˆ˜ë§Œ ì¶œë ¥í•˜ì„¸ìš”
+//do~whileë¬¸ë‚´ì— ì¡°ê±´ë¬¸ì„ ë„£ì–´ì£¼ë©´ ë¨
+//ì§ìˆ˜ ì¡°ê±´ if(num % 2 == 0)
 public class doWhile04 {
 
 	public static void main(String[] args) {

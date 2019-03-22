@@ -1,11 +1,11 @@
-package javaLec._class.ex04Constructor;
+ï»¿package javaLec._class.ex04Constructor;
 
-/* initMember ¸Þ¼­µå·Î °ªÀ» º¯°æÇÒ ¼ö ÀÖ¾î
- * °´Ã¼¸¶´Ù ´Ù¸¥ ±¸¼ºÀÌ °¡´ÉÇØÁ³´Ù
- * ±×·¯³ª, APPLE_PRICE¸¦ »ó¼ö -> º¯¼ö·Î ¸¸µé¾î¾ß¸¸ÇÏ°í
- * initMember¸¦ ÀØÁö ¾Ê°í È£ÃâÇØ¾ß¸¸ÇÑ´Ù.
- * ÀÌ·² ¶§ º°µµ·Î ÃÊ±âÈ­ ÇÔ¼ö¸¦ µÎÁö ¾Ê°í
- * »ý¼ºÀÚ ÇÔ¼ö¸¦ ÀÌ¿ëÇÏ¸é Æí¸®ÇÏ´Ù
+/* initMember ë©”ì„œë“œë¡œ ê°’ì„ ë³€ê²½í•  ìˆ˜ ìžˆì–´
+ * ê°ì²´ë§ˆë‹¤ ë‹¤ë¥¸ êµ¬ì„±ì´ ê°€ëŠ¥í•´ì¡Œë‹¤
+ * ê·¸ëŸ¬ë‚˜, APPLE_PRICEë¥¼ ìƒìˆ˜ -> ë³€ìˆ˜ë¡œ ë§Œë“¤ì–´ì•¼ë§Œí•˜ê³ 
+ * initMemberë¥¼ ìžŠì§€ ì•Šê³  í˜¸ì¶œí•´ì•¼ë§Œí•œë‹¤.
+ * ì´ëŸ´ ë•Œ ë³„ë„ë¡œ ì´ˆê¸°í™” í•¨ìˆ˜ë¥¼ ë‘ì§€ ì•Šê³ 
+ * ìƒì„±ìž í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ë©´ íŽ¸ë¦¬í•˜ë‹¤
  * */
 public class FruitMain {
 	public static void main(String[] args) {

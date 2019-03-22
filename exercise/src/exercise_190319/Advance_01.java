@@ -1,61 +1,61 @@
-package exercise_190319;
+ï»¿package exercise_190319;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-//1. ÀÌÁø °Ë»öÀ» Àç±ÍÈ£Ãâ·Î ÀÛ¼ºÇÏ¼¼¿ä
+//1. ì´ì§„ ê²€ìƒ‰ì„ ìž¬ê·€í˜¸ì¶œë¡œ ìž‘ì„±í•˜ì„¸ìš”
 public class Advance_01 {
 	public static int binarySearch(int target, int min, int max, int[] arr) {
-		int mid = (max + min) / 2; 							// Áß°£ °ª ±¸ÇÏ±â
+		int mid = (max + min) / 2; 							// ì¤‘ê°„ ê°’ êµ¬í•˜ê¸°
 
-		if (arr[mid] == target) 							// 1. Áß°£ °ªÀÌ Å¸°Ù°ú ÀÏÄ¡ ÇÑ´Ù¸é
-			return mid; 									// 	    Áß°£ °ª ¹ÝÈ¯
+		if (arr[mid] == target) 							// 1. ì¤‘ê°„ ê°’ì´ íƒ€ê²Ÿê³¼ ì¼ì¹˜ í•œë‹¤ë©´
+			return mid; 									// 	    ì¤‘ê°„ ê°’ ë°˜í™˜
 
-		else if (min >= max) 								// 2. min(¹üÀ§ Áß °¡Àå ÀÛÀº °ª)ÀÌ max(¹üÀ§ Áß °¡Àå Å« °ª)º¸´Ù Å©°Å³ª °°´Ù¸é
-			return -1; 										// 	  -1 ¹ÝÈ¯ÇÏ±â
+		else if (min >= max) 								// 2. min(ë²”ìœ„ ì¤‘ ê°€ìž¥ ìž‘ì€ ê°’)ì´ max(ë²”ìœ„ ì¤‘ ê°€ìž¥ í° ê°’)ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤ë©´
+			return -1; 										// 	  -1 ë°˜í™˜í•˜ê¸°
 
-		else if (arr[mid] < target)							// 3. Áß°£ °ªÀÌ Å¸°Ùº¸´Ù ÀÛ´Ù¸é
-			return binarySearch(target, mid + 1, max, arr); // 	  minÀ» ÇöÀç mid °ªº¸´Ù ÇÑ Ä­ ¾ÕÀ¸·Î ¹Ù²Ù°í Àç±ÍÈ£Ãâ
-															//    (ÇöÀç mid °ªÀÌ target°ú ÀÏÄ¡ÇÏÁö ¾ÊÀ½À» Ã¼Å©ÇÑ »óÅÂ´Ï±î)
+		else if (arr[mid] < target)							// 3. ì¤‘ê°„ ê°’ì´ íƒ€ê²Ÿë³´ë‹¤ ìž‘ë‹¤ë©´
+			return binarySearch(target, mid + 1, max, arr); // 	  minì„ í˜„ìž¬ mid ê°’ë³´ë‹¤ í•œ ì¹¸ ì•žìœ¼ë¡œ ë°”ê¾¸ê³  ìž¬ê·€í˜¸ì¶œ
+															//    (í˜„ìž¬ mid ê°’ì´ targetê³¼ ì¼ì¹˜í•˜ì§€ ì•ŠìŒì„ ì²´í¬í•œ ìƒíƒœë‹ˆê¹Œ)
 
-		else 												// 4. Áß°£ °ªÀÌ Å¸°Ùº¸´Ù Å©´Ù¸é
-			return binarySearch(target, min, max - 1, arr); //    max¸¦ ÇöÀç mid °ªº¸´Ù ÇÑ Ä­ µÚ·Î ¹Ù²Ù°í Àç±Í È£Ãâ 
-															//    (ÇöÀç mid °ªÀÌ target°ú ÀÏÄ¡ÇÏÁö ¾ÊÀ½À» Ã¼Å©ÇÑ »óÅÂ´Ï±î)
+		else 												// 4. ì¤‘ê°„ ê°’ì´ íƒ€ê²Ÿë³´ë‹¤ í¬ë‹¤ë©´
+			return binarySearch(target, min, max - 1, arr); //    maxë¥¼ í˜„ìž¬ mid ê°’ë³´ë‹¤ í•œ ì¹¸ ë’¤ë¡œ ë°”ê¾¸ê³  ìž¬ê·€ í˜¸ì¶œ 
+															//    (í˜„ìž¬ mid ê°’ì´ targetê³¼ ì¼ì¹˜í•˜ì§€ ì•ŠìŒì„ ì²´í¬í•œ ìƒíƒœë‹ˆê¹Œ)
 	}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);				// ÀÔ·ÂÀ» ¹Þ±âÀ§ÇÑ Scanner °´Ã¼ ¼±¾ð
-		int target = 0; 									// Ã£°íÀÚ ÇÏ´Â °ªÀ» ´ã¾ÆÁÙ º¯¼ö ÃÊ±âÈ­
-		int[] arr = new int[100]; 							// ¹è¿­ ÃÊ±âÈ­
-		int min = 0; 										// °Ë»öÇÒ ¹üÀ§ Áß °¡Àå ÀÛÀº °ª ÃÊ±âÈ­ 
-		int max = arr.length - 1; 							// °Ë»öÇÒ ¹üÀ§ Áß °¡Àå Å« °ª ÃÊ±âÈ­
-		int result = 0;										// Ã£¾Ò´Â Áö ¾Æ´Ñ Áö °á°ú °ª ÃÊ±âÈ­
+		Scanner sc = new Scanner(System.in);				// ìž…ë ¥ì„ ë°›ê¸°ìœ„í•œ Scanner ê°ì²´ ì„ ì–¸
+		int target = 0; 									// ì°¾ê³ ìž í•˜ëŠ” ê°’ì„ ë‹´ì•„ì¤„ ë³€ìˆ˜ ì´ˆê¸°í™”
+		int[] arr = new int[100]; 							// ë°°ì—´ ì´ˆê¸°í™”
+		int min = 0; 										// ê²€ìƒ‰í•  ë²”ìœ„ ì¤‘ ê°€ìž¥ ìž‘ì€ ê°’ ì´ˆê¸°í™” 
+		int max = arr.length - 1; 							// ê²€ìƒ‰í•  ë²”ìœ„ ì¤‘ ê°€ìž¥ í° ê°’ ì´ˆê¸°í™”
+		int result = 0;										// ì°¾ì•˜ëŠ” ì§€ ì•„ë‹Œ ì§€ ê²°ê³¼ ê°’ ì´ˆê¸°í™”
 		
-		// ¹è¿­À» ·£´ýÀ¸·Î »ý¼ºµÈ ¼ö·Î Ã¤¿öÁÖ±â
+		// ë°°ì—´ì„ ëžœë¤ìœ¼ë¡œ ìƒì„±ëœ ìˆ˜ë¡œ ì±„ì›Œì£¼ê¸°
 		for (int i = 0; i < 100; i++) {
 			arr[i] = (int) (Math.random() * 1000 + 1);
 		}
 		
-		// ¹è¿­ ¿À¸§Â÷¼ø Á¤·ÄÇÏ±â
+		// ë°°ì—´ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬í•˜ê¸°
 		Arrays.sort(arr);
 
-		// »ý¼ºµÈ ¹è¿­ Ãâ·ÂÇØÁÖ±â
-		System.out.println("»ý¼ºµÈ ¹è¿­");
+		// ìƒì„±ëœ ë°°ì—´ ì¶œë ¥í•´ì£¼ê¸°
+		System.out.println("ìƒì„±ëœ ë°°ì—´");
 		System.out.println(Arrays.toString(arr));
 		System.out.println();
 
-		// Ã£°íÀÚÇÏ´Â ¼ö ÀÔ·Â ¹Þ±â
-		System.out.println("Ã£°íÀÚ ÇÏ´Â ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		// ì°¾ê³ ìží•˜ëŠ” ìˆ˜ ìž…ë ¥ ë°›ê¸°
+		System.out.println("ì°¾ê³ ìž í•˜ëŠ” ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		target = sc.nextInt();
 
-		// ÀÌÁø °Ë»ö¿ë Àç±ÍÇÔ¼ö È£ÃâÈÄ °á°ú °ª ¾ò±â
+		// ì´ì§„ ê²€ìƒ‰ìš© ìž¬ê·€í•¨ìˆ˜ í˜¸ì¶œí›„ ê²°ê³¼ ê°’ ì–»ê¸°
 		result = binarySearch(target, min, max, arr);
 
-		// °ªÀÌ ÀÖ´Â Áö ¾ø´Â Áö Ã¼Å©ÇÏ±â
+		// ê°’ì´ ìžˆëŠ” ì§€ ì—†ëŠ” ì§€ ì²´í¬í•˜ê¸°
 		if (result == -1) {
-			System.out.println("°ªÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("ê°’ì´ ì—†ìŠµë‹ˆë‹¤.");
 		} else
-			System.out.println((result + 1) + "¹øÂ° ÀÖ½À´Ï´Ù.");
+			System.out.println((result + 1) + "ë²ˆì§¸ ìžˆìŠµë‹ˆë‹¤.");
 
 		sc.close();
 	}

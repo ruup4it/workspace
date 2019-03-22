@@ -1,27 +1,27 @@
-package exercise_190313;
+﻿package exercise_190313;
 
 import java.util.Scanner;
-// 1. �����ڸ� �Է¹޽��ϴ�
-// �ҹ������� �빮������ �Ǻ��ϼ��� (���� �����ڸ� ����ϼ���)
+// 1. 영문자를 입력받습니다
+// 소문자인지 대문자인지 판별하세요 (조건 연산자를 사용하세요)
 
-/*  �ڹ� Scanner���� char �� �ٷ� �Է� �޴� �� ����
+/*  자바 Scanner에서 char 를 바로 입력 받는 건 없음
  *	1) char chr = sc.next().charAt(0);
  *	2) char chr = sc.next().trim().charAt(0);
  */
 
-/*"�ƽ�Ű�ڵ�(ASCII)" 
-�빮�� A~Z������ �ƽ�Ű�ڵ尪�� 65~90�̴�.
-�빮�� A : 65
-�빮�� Z : 90
+/*"아스키코드(ASCII)" 
+대문자 A~Z까지의 아스키코드값은 65~90이다.
+대문자 A : 65
+대문자 Z : 90
 
-�ҹ��� a~z������ �ƽ�Ű�ڵ尪�� 97~122�̴�.
-�ҹ��� a : 97
-�ҹ��� z : 122*/
+소문자 a~z까지의 아스키코드값은 97~122이다.
+소문자 a : 97
+소문자 z : 122*/
 
-//�빮�� 
+//대문자 
 //1) 65<= char <=90 
 //2) 'A'<= char <='Z' 
-//�ҹ���
+//소문자
 //1) 97<= char <= 122 
 //2) 'a'<=char <'z' 
 
@@ -31,11 +31,11 @@ public class ex_01 {
 		Scanner scan = new Scanner(System.in);
 		String result = "";
 
-		System.out.println("�����ڸ� �Է��ϼ���");
+		System.out.println("영문자를 입력하세요");
 		char ch = scan.next().charAt(0);
 
-		result = (int) ch >= 65 && (int) ch <= 90 ? "�Է��Ͻ� ������ " + ch + "�� �빮���Դϴ�."
-				: (int) ch >= 97 && (int) ch <= 122 ? "�Է��Ͻ� ������ " + ch + "�� �ҹ����Դϴ�." : "�߸� �Է��ϼ̽��ϴ�.";
+		result = (int) ch >= 65 && (int) ch <= 90 ? "입력하신 영문자 " + ch + "는 대문자입니다."
+				: (int) ch >= 97 && (int) ch <= 122 ? "입력하신 영문자 " + ch + "는 소문자입니다." : "잘못 입력하셨습니다.";
 
 		System.out.println(result);
 		

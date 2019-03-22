@@ -1,9 +1,9 @@
-/* continue¸¦ »ç¿ëÇØ¼­ ¹®Á¦¸¦ ÇØ°áÇÏ¶ó
- * 1ºÎÅÍ 100±îÁö Áß¿¡ Â¦¼ö¸¸ Ãâ·ÂÇÏ¶ó
+ï»¿/* continueë¥¼ ì‚¬ìš©í•´ì„œ ë¬¸ì œë¥¼ í•´ê²°í•˜ë¼
+ * 1ë¶€í„° 100ê¹Œì§€ ì¤‘ì— ì§ìˆ˜ë§Œ ì¶œë ¥í•˜ë¼
  * */
 public class _13_continue {
 	public static void main(String[] args) {
-		// ¹æ¹ý 1) %
+		// ë°©ë²• 1) %
 		// i % 2 != 0 > continue
 		// i % 2 == 1 > continue
 		for (int i = 1; i <= 100; i++) {
@@ -12,7 +12,7 @@ public class _13_continue {
 			System.out.println(i);
 		}
 		
-		/*// ¹æ¹ý 2) += 2
+		/*// ë°©ë²• 2) += 2
 		for (int i = 2; i <= 100; i+=2) {
 			System.out.println(i);
 		}

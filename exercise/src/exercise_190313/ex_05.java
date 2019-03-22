@@ -1,19 +1,19 @@
-package exercise_190313;
+ï»¿package exercise_190313;
 
 import java.util.Scanner;
 
-/*5. Á¤¼ö 3°³¸¦ ÀÔ·Â¹Ş°í ÀÌ 3°³ÀÇ ¼ö·Î »ï°¢ÇüÀ» ¸¸µé ¼ö ÀÖ´ÂÁö¸¦ ÆÇº°ÇÏ¼¼¿ä
-»ï°¢ÇüÀÌ °¡´ÉÇÏ·Á¸é µÎ º¯ÀÇ ÇÕÀÌ ´Ù¸¥ ÇÑ º¯ÀÇ ±æÀÌº¸´Ù ¹İµå½Ã Ä¿¾ß ÇÕ´Ï´Ù. (Á¶°Ç ¿¬»êÀÚ¸¦ »ç¿ëÇÏ¼¼¿ä)*/
+/*5. ì •ìˆ˜ 3ê°œë¥¼ ì…ë ¥ë°›ê³  ì´ 3ê°œì˜ ìˆ˜ë¡œ ì‚¼ê°í˜•ì„ ë§Œë“¤ ìˆ˜ ìˆëŠ”ì§€ë¥¼ íŒë³„í•˜ì„¸ìš”
+ì‚¼ê°í˜•ì´ ê°€ëŠ¥í•˜ë ¤ë©´ ë‘ ë³€ì˜ í•©ì´ ë‹¤ë¥¸ í•œ ë³€ì˜ ê¸¸ì´ë³´ë‹¤ ë°˜ë“œì‹œ ì»¤ì•¼ í•©ë‹ˆë‹¤. (ì¡°ê±´ ì—°ì‚°ìë¥¼ ì‚¬ìš©í•˜ì„¸ìš”)*/
 public class ex_05 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num1 = 0, num2 = 0, num3 = 0, max =0;
 		int sum = 0;
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” ");
 		num1 = scan.nextInt();
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” ");
 		num2 = scan.nextInt();
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” ");
 		num3 = scan.nextInt();
 		sum = num1+num2+num3;
 		
@@ -28,7 +28,7 @@ public class ex_05 {
 		}
 		
 		
-		String result = max <sum-max ? "»ï°¢Çü ¸Â½À´Ï´Ù" : "»ï°¢Çü ¾Æ´Õ´Ï´Ù";
+		String result = max <sum-max ? "ì‚¼ê°í˜• ë§ìŠµë‹ˆë‹¤" : "ì‚¼ê°í˜• ì•„ë‹™ë‹ˆë‹¤";
 		
 		System.out.println(result);
 		scan.close();

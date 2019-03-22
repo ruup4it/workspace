@@ -1,4 +1,4 @@
-
+﻿
 public class _3_CalcVariable {
 	public static void main(String[] args) {
 		int num0 = 100;

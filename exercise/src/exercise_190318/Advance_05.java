@@ -1,7 +1,7 @@
-package exercise_190318;
-//5. 0 ~ 1000»çÀÌÀÇ 100°³ÀÇ ÀÓÀÇÀÇ Á¤¼ö¸¦ ¹è¿­¿¡ ÀúÀåÇÕ´Ï´Ù
-//Arrays.sort ¸Þ¼­µå·Î ¿À¸§Â÷¼ø Á¤·ÄÀ» ÇÕ´Ï´Ù
-//2Áø°Ë»ö ¾Ë°í¸®ÁòÀ» ±¸ÇöÇÑ ¸Þ¼­µå¸¦ ±¸ÇöÇØ¼­ »ç¿ëÇØº¸¼¼¿ä
+ï»¿package exercise_190318;
+//5. 0 ~ 1000ì‚¬ì´ì˜ 100ê°œì˜ ìž„ì˜ì˜ ì •ìˆ˜ë¥¼ ë°°ì—´ì— ì €ìž¥í•©ë‹ˆë‹¤
+//Arrays.sort ë©”ì„œë“œë¡œ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ì„ í•©ë‹ˆë‹¤
+//2ì§„ê²€ìƒ‰ ì•Œê³ ë¦¬ì¦˜ì„ êµ¬í˜„í•œ ë©”ì„œë“œë¥¼ êµ¬í˜„í•´ì„œ ì‚¬ìš©í•´ë³´ì„¸ìš”
 public class Advance_05 {
 
 	public static void main(String[] args) {

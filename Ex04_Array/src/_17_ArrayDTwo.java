@@ -1,18 +1,18 @@
-
+ï»¿
 public class _17_ArrayDTwo {
 	public static void main(String[] args) {
-		// 1) 2Â÷¿ø ¹è¿­: °¢ÇàÀÇ °¹¼ö°¡ ´Ù¸¦¶§(°¡º¯ ¹è¿­)
+		// 1) 2ì°¨ì› ë°°ì—´: ê°í–‰ì˜ ê°¯ìˆ˜ê°€ ë‹¤ë¥¼ë•Œ(ê°€ë³€ ë°°ì—´)
 //		int[][] arr2 = new int[3][];
 //		arr2[0] = new int[2];
 //		arr2[1] = new int[13];
 //		arr2[2] = new int[24];
 		
-		// 2) 2Â÷¿ø ¹è¿­: °¡º¯¹è¿­¿¡¼­ ±ÔÄ¢¼ºÀÌ ÀÖÀ»¶§ »ç¿ë°¡´É
+		// 2) 2ì°¨ì› ë°°ì—´: ê°€ë³€ë°°ì—´ì—ì„œ ê·œì¹™ì„±ì´ ìˆì„ë•Œ ì‚¬ìš©ê°€ëŠ¥
 //		int[][] arr2 = new int[3][];
 //		for(int i=0;i<arr2.length;i++)
 //			arr2[i] = new int[4];
 		
-		// 3) 2Â÷¿ø ¹è¿­: Å×ÀÌºí ÇüÅÂÀÇ µ¿ÀÏÇÑ ¹è¿­
+		// 3) 2ì°¨ì› ë°°ì—´: í…Œì´ë¸” í˜•íƒœì˜ ë™ì¼í•œ ë°°ì—´
 		int cnt = 0;
 		int[][] arr2 = new int[3][4];
 		for(int i=0;i<arr2.length;i++) {
@@ -22,9 +22,9 @@ public class _17_ArrayDTwo {
 		}
 		
 		int result2 = addTwoArr(arr2);
-		System.out.println("2Â÷¿ø ¹è¿­ÀÇ ÇÕÀº "+result2);
+		System.out.println("2ì°¨ì› ë°°ì—´ì˜ í•©ì€ "+result2);
 	}
-	// 2Â÷¿ø ¹è¿­ ¸Å¼­µå
+	// 2ì°¨ì› ë°°ì—´ ë§¤ì„œë“œ
 	public static int addTwoArr(int[][] arr) {
 		int result = 0;
 		for(int i=0;i<arr.length;i++) {

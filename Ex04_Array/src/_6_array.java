@@ -1,11 +1,11 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 import java.util.Scanner;
 
-/* 10¸íÀÇ ÇĞ»ıÀÇ Á¡¼ö¸¦ ÀÔ·Â ¹Ş°íÀÚ ÇÑ´Ù.
- * 10°³ ¹è¿­À» ¼±¾ğÇÏ°í
- * 10¸íÀÇ Á¡¼ö¸¦ ÀÔ·Â ¹Ş°í
- * 10¸íÀÇ Á¡¼ö¸¦ °Å²Ù·Î Ãâ·ÂÇÏ¼¼¿ä
- * ÃÑÁ¡°ú Æò±Õµµ Ãâ·ÂÇÏ¼¼¿ä
+/* 10ëª…ì˜ í•™ìƒì˜ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ê³ ì í•œë‹¤.
+ * 10ê°œ ë°°ì—´ì„ ì„ ì–¸í•˜ê³ 
+ * 10ëª…ì˜ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ê³ 
+ * 10ëª…ì˜ ì ìˆ˜ë¥¼ ê±°ê¾¸ë¡œ ì¶œë ¥í•˜ì„¸ìš”
+ * ì´ì ê³¼ í‰ê· ë„ ì¶œë ¥í•˜ì„¸ìš”
  * */
 public class _6_array {
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class _6_array {
 		int sum = 0;
 		double avg = 0;
 		for (int i = 0; i < score.length; i++) {
-			System.out.print(String.format("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä  %02d/10 : ",i+1));
+			System.out.print(String.format("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”  %02d/10 : ",i+1));
 			score[i] = scan.nextInt();
 			sum += score[i];
 		}
@@ -24,7 +24,7 @@ public class _6_array {
 			System.out.print(String.format("%d, ",score[i]));
 		}
 		System.out.println();
-		System.out.println(String.format("ÃÑÁ¡ : %d \nÆò±Õ : %.2f", sum, avg));
+		System.out.println(String.format("ì´ì  : %d \ní‰ê·  : %.2f", sum, avg));
 		scan.close();
 	}
 }

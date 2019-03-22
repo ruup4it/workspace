@@ -1,10 +1,10 @@
-package star;
+ï»¿package star;
 
 public class Diamond {
 	public static void main(String[] args) {
 
 		for (int i = 1; i <= 3; i++) {
-			// 1¹ø ºÎºÐ
+			// 1ë²ˆ ë¶€ë¶„
 			for (int j = 3 - i; j > 0; j--) {
 				System.out.print(" ");
 			}
@@ -12,7 +12,7 @@ public class Diamond {
 				System.out.print("*");
 			}
 
-			// 2¹ø ºÎºÐ
+			// 2ë²ˆ ë¶€ë¶„
 			for (int k = 0; k < i - 1; k++) {
 				System.out.print("*");
 			}
@@ -23,9 +23,9 @@ public class Diamond {
 			System.out.println();
 		}
 
-		// ¾Æ·¡ÂÊ »ï°¢Çü
+		// ì•„ëž˜ìª½ ì‚¼ê°í˜•
 		for (int i = 1; i <= 3 - 1; i++) {
-			// 3¹ø ºÎºÐ
+			// 3ë²ˆ ë¶€ë¶„
 			for (int j = 0; j < i; j++) {
 				System.out.print(" ");
 			}
@@ -33,7 +33,7 @@ public class Diamond {
 				System.out.print("*");
 			}
 
-			// 4¹ø ºÎºÐ
+			// 4ë²ˆ ë¶€ë¶„
 			for (int k = i; k < 3; k++) {
 				System.out.print("*");
 			}

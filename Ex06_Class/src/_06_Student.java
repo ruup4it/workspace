@@ -1,62 +1,62 @@
-/* ÇĞ»ıÀ» ¾ÆÄ§¿¡ ÀÏ¾î³ª¼­ ÁØºñÇÏ°í °øºÎÇÏ´Ù °¡´Â ÀÏ°ú¸¦ Å¬·¡½º·Î ¸¸µå¼¼¿ä*/
+ï»¿/* í•™ìƒì„ ì•„ì¹¨ì— ì¼ì–´ë‚˜ì„œ ì¤€ë¹„í•˜ê³  ê³µë¶€í•˜ë‹¤ ê°€ëŠ” ì¼ê³¼ë¥¼ í´ë˜ìŠ¤ë¡œ ë§Œë“œì„¸ìš”*/
 class Student {
 	int tiredness = 0;
 	String clean = "";
 	
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	Student(){
 		
 	}
 
 	public void sleep() {
 		tiredness -= 60;
-		System.out.println(String.format("Àáµé±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ì ë“¤ê¸° í”¼ê³¤ë„: %d", tiredness));
 	}
 
 	public void drinkBeer() {
 		tiredness -= 30;
-		System.out.println(String.format("¸ÆÁÖ¸¶½Ã±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ë§¥ì£¼ë§ˆì‹œê¸° í”¼ê³¤ë„: %d", tiredness));
 	}
 
 	public void groupStudy() {
 		tiredness += 20;
-		System.out.println(String.format("½ºÅÍµğÇÏ±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ìŠ¤í„°ë””í•˜ê¸° í”¼ê³¤ë„: %d", tiredness));
 	}
 
 	public void doHomework() {
 		tiredness += 20;
 		
-		System.out.println(String.format("°úÁ¦ÇÏ±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ê³¼ì œí•˜ê¸° í”¼ê³¤ë„: %d", tiredness));
 	}
 
 	public void haveLunch() {
-		System.out.println(String.format("Ä¿ÇÇ»ç¿À±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ì»¤í”¼ì‚¬ì˜¤ê¸° í”¼ê³¤ë„: %d", tiredness));
 		
 	}
 
 	public void takeAClass() {
 		tiredness += 30;
-		System.out.println(String.format("¼ö¾÷µè±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ìˆ˜ì—…ë“£ê¸° í”¼ê³¤ë„: %d", tiredness));
 	}
 
 	public void drinkCoffee() {
 		tiredness -= 3;
-		System.out.println(String.format("Ä¿ÇÇ ¸¶½Ã±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ì»¤í”¼ ë§ˆì‹œê¸° í”¼ê³¤ë„: %d", tiredness));
 	}
 
 	public void wash() {
-		clean ="±ú²ı";
-		System.out.println(String.format("¾Ä±â Ã»°áµµ: %s", clean));
+		clean ="ê¹¨ë—";
+		System.out.println(String.format("ì”»ê¸° ì²­ê²°ë„: %s", clean));
 	}
 
 	public void smoking() {
 		tiredness -= 10;
-		System.out.println(String.format("¹Ù¶÷½ı±â ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ë°”ëŒì¬ê¸° í”¼ê³¤ë„: %d", tiredness));
 	}
 
 	public void wakeUp() {
 		tiredness += 10;
-		System.out.println(String.format("ÀÏ¾î³µ´Ù ÇÇ°ïµµ: %d", tiredness));
+		System.out.println(String.format("ì¼ì–´ë‚¬ë‹¤ í”¼ê³¤ë„: %d", tiredness));
 	}
 	
 	
@@ -66,27 +66,27 @@ class Student {
 public class _06_Student {
 	public static void main(String[] args) {
 		Student st = new Student();
-		// ÀÏ¾î³ª±â
+		// ì¼ì–´ë‚˜ê¸°
 		st.wakeUp();
-		// ¸± Âî±â
+		// ë¦´ ì°Œê¸°
 		st.smoking();
-		// ¾Ä±â
+		// ì”»ê¸°
 		st.wash();
-		// ¹ö½ºÅ¸±â
+		// ë²„ìŠ¤íƒ€ê¸°
 		st.takeAClass();
-		// Ä¿ÇÇ »ç±â
+		// ì»¤í”¼ ì‚¬ê¸°
 		st.drinkCoffee();
-		// ¼ö¾÷µè±â
+		// ìˆ˜ì—…ë“£ê¸°
 		st.takeAClass();
-		// Á¡½É¸Ô±â
+		// ì ì‹¬ë¨¹ê¸°
 		st.haveLunch();
-		// °úÁ¦ÇÏ±â
+		// ê³¼ì œí•˜ê¸°
 		st.doHomework();
-		// ½ºÅÍµğÇÏ±â
+		// ìŠ¤í„°ë””í•˜ê¸°
 		st.groupStudy();
-		// ¸ÆÁÖ ¸¶½Ã±â
+		// ë§¥ì£¼ ë§ˆì‹œê¸°
 		st.drinkBeer();
-		// ÀáÀÚ±â
+		// ì ìê¸°
 		st.sleep();
 	}
 }

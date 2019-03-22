@@ -1,19 +1,19 @@
-import java.util.Scanner;
+ï»¿import java.util.Scanner;
 
-/* Â¦¼öÀÎÁö È¦¼öÀÎÁö 
- * ¹®ÀÚ¿­À» ¸®ÅÏÇÏ´Â ¸Ş¼­µå¸¦ Á¦ÀÛÇÏ°í
- * 5°³ÀÇ Á¤¼ö ¹è¿­À» ¼±¾ğÇÏ¼¼¿ä
- * ¹è¿­¿¡ Á¤¼ö 5°³¸¦ Å°º¸µå·ÎºÎÅÍ ÀÔ·Â ¹ŞÀ¸¼¼¿ä
- * foreach¹®À» »ç¿ëÇØ¼­ ¸Ş¼­µå¿¡ ¹è¿­À» ÀÔ·ÂÇÏ°í
- * °á°ú°ªÀ» Ãâ·Â (Â¦¼ö/È¦¼ö)ÇÏ¼¼¿ä
+/* ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€ 
+ * ë¬¸ìì—´ì„ ë¦¬í„´í•˜ëŠ” ë©”ì„œë“œë¥¼ ì œì‘í•˜ê³ 
+ * 5ê°œì˜ ì •ìˆ˜ ë°°ì—´ì„ ì„ ì–¸í•˜ì„¸ìš”
+ * ë°°ì—´ì— ì •ìˆ˜ 5ê°œë¥¼ í‚¤ë³´ë“œë¡œë¶€í„° ì…ë ¥ ë°›ìœ¼ì„¸ìš”
+ * foreachë¬¸ì„ ì‚¬ìš©í•´ì„œ ë©”ì„œë“œì— ë°°ì—´ì„ ì…ë ¥í•˜ê³ 
+ * ê²°ê³¼ê°’ì„ ì¶œë ¥ (ì§ìˆ˜/í™€ìˆ˜)í•˜ì„¸ìš”
  * */
 public class _05_JudgeTrueFalse {
 
 	public static void main(String[] args) {
 		final int ARRAYLENTH = 5;
-		int[] arr = inputArray(ARRAYLENTH);// ÀÔ·Â¸Ş¼­µå
-		String[] arrResult = isOddOrEven(arr);// °è»ê ¸Ş¼­µå
-		printResult(arrResult);// Ãâ·Â ¸Ş¼­µå
+		int[] arr = inputArray(ARRAYLENTH);// ì…ë ¥ë©”ì„œë“œ
+		String[] arrResult = isOddOrEven(arr);// ê³„ì‚° ë©”ì„œë“œ
+		printResult(arrResult);// ì¶œë ¥ ë©”ì„œë“œ
 	}
 
 	private static int[] inputArray(int length) {
@@ -21,7 +21,7 @@ public class _05_JudgeTrueFalse {
 		int[] arr = new int[length];
 		int count = 0;
 		for (@SuppressWarnings("unused") int item : arr) {
-			System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			arr[count] = scan.nextInt();
 			count++;
 		}
@@ -34,9 +34,9 @@ public class _05_JudgeTrueFalse {
 		int count = 0;
 		for(int item : arr) {
 			if (item % 2 == 0)
-				arrResult[count] = "Â¦¼ö";
+				arrResult[count] = "ì§ìˆ˜";
 			else
-				arrResult[count] = "È¦¼ö";
+				arrResult[count] = "í™€ìˆ˜";
 			count++;
 		}
 		return arrResult;

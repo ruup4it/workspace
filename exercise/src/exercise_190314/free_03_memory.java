@@ -1,4 +1,4 @@
-package exercise_190314;
+﻿package exercise_190314;
 
 public class free_03_memory {
 	static int a = 10;

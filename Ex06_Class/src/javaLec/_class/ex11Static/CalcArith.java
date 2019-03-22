@@ -1,9 +1,9 @@
-package javaLec._class.ex11Static;
+ï»¿package javaLec._class.ex11Static;
 /*
  * */
-/* static ¸Þ¼­µå¸¦ ¸¸µé¸é °´Ã¼¸¦ ¸¸µéÁö ¾Ê¾Æµµ Ã³À½ºÎÅÍ
- * ¸Þ¸ð¸®¿¡ ¸Þ¼­µå°¡ ·ÎµùµÇ±â ¶§¹®¿¡ °ªÀ» À¯ÁöÇÒ ÇÊ¿ä ¾øÀ» °æ¿ì´Â ¸Å¿ì Æí¸®ÇÏ´Ù.
- * ÇÏÁö¸¸ ÇÁ·Î±×·¥ Á¾·á½Ã±îÁö °è¼Ó ¸Þ¸ð¸®¿¡ Á¸ÀçÇÏ°Ô µÈ´Ù.
+/* static ë©”ì„œë“œë¥¼ ë§Œë“¤ë©´ ê°ì²´ë¥¼ ë§Œë“¤ì§€ ì•Šì•„ë„ ì²˜ìŒë¶€í„°
+ * ë©”ëª¨ë¦¬ì— ë©”ì„œë“œê°€ ë¡œë”©ë˜ê¸° ë•Œë¬¸ì— ê°’ì„ ìœ ì§€í•  í•„ìš” ì—†ì„ ê²½ìš°ëŠ” ë§¤ìš° íŽ¸ë¦¬í•˜ë‹¤.
+ * í•˜ì§€ë§Œ í”„ë¡œê·¸ëž¨ ì¢…ë£Œì‹œê¹Œì§€ ê³„ì† ë©”ëª¨ë¦¬ì— ì¡´ìž¬í•˜ê²Œ ëœë‹¤.
  * */
 
 class Arith {
@@ -24,18 +24,18 @@ class Arith {
 	}
 }
 
-/* °´Ã¼ º°·Î µ¥ÀÌÅÍ¸¦ ´Ù¸£°Ô À¯ÁöÇÏ°í ½ÍÀ» ¶§´Â ÀÎ½ºÅÏ½º ¸â¹ö·Î ¸¸µç´Ù.
- * ÀÎ½ºÅÏ½º ¸Þ¼­µå´Â ÃÖÃÊÀÇ °´Ã¼°¡ ¸¸µé¾î Áú ¶§ method¸Þ¸ð¸® ¿µ¿ª¿¡ 
- * ¿Ã¶ó°¡°í ÀÌÈÄÀÇ °´Ã¼µéÀ» Àç»ç¿ëÇÏ°Ô µÈ´Ù.
- * Áï, ÀÎ½ºÅÏ½º º¯¼ö´Â °´Ã¼º°·Î µû·Î »ý¼ºÀÌµÇÁö¸¸
- * ÀÎ½ºÅÏ½º ¸Þ¼­µå´Â 1°³¸¸ ¸¸µé¾îÁø´Ù
- * ³ªÁß¿¡ °´Ã¼°¡ ¸ðµÎ ¼Ò¸êµÇ¸é ¸Þ¼­µåµµ ¼Ò¸êµÈ´Ù.
+/* ê°ì²´ ë³„ë¡œ ë°ì´í„°ë¥¼ ë‹¤ë¥´ê²Œ ìœ ì§€í•˜ê³  ì‹¶ì„ ë•ŒëŠ” ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ë¡œ ë§Œë“ ë‹¤.
+ * ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œëŠ” ìµœì´ˆì˜ ê°ì²´ê°€ ë§Œë“¤ì–´ ì§ˆ ë•Œ methodë©”ëª¨ë¦¬ ì˜ì—­ì— 
+ * ì˜¬ë¼ê°€ê³  ì´í›„ì˜ ê°ì²´ë“¤ì„ ìž¬ì‚¬ìš©í•˜ê²Œ ëœë‹¤.
+ * ì¦‰, ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ê°ì²´ë³„ë¡œ ë”°ë¡œ ìƒì„±ì´ë˜ì§€ë§Œ
+ * ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œëŠ” 1ê°œë§Œ ë§Œë“¤ì–´ì§„ë‹¤
+ * ë‚˜ì¤‘ì— ê°ì²´ê°€ ëª¨ë‘ ì†Œë©¸ë˜ë©´ ë©”ì„œë“œë„ ì†Œë©¸ëœë‹¤.
  *  * */
 
 class Calc_Arith {
 	double result = 0;
 	void showResult() {
-		System.out.println("°á°ú´Â " + result);
+		System.out.println("ê²°ê³¼ëŠ” " + result);
 	}
 	void add(double num1, double num2) {
 		result = num1 + num2;

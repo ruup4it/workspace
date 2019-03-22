@@ -1,75 +1,75 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 import java.util.Random;
 
-/* ½Ä´ç Å¬·¡½º ¼³°è
- * 1) ¸í»çÇü°ú µ¿»çÇüÀ» ±¸ºĞÇÑ´Ù.
- * 2) ¸í»çÇüÀº º¸Åë º¯¼ö°¡ µÈ´Ù.
- * 3) µ¿»çÇüÀº º¸Åë ¸Ş¼­µå°¡ µÈ´Ù.
- * 4) º¯¼ö´Â ÇÔºÎ·Î Á¢±ÙÇÏ¸é ¹®Á¦ÀÇ ¼ÒÁö°¡ ¸Å¿ì ¸¹À½
- *    ±×·¡¼­ ÀÏ¹İÀûÀ¸·Î ¿ÜºÎ Á¢±ÙÀ» ±İÁö½ÃÅ´(private)
- *    class³»¿¡¼­¸¸ Á¢±Ù °¡´É
- * 5) ¸Ş¼­µå´Â ÀÏ¹İÀûÀ¸·Î ¿ÜºÎ È£ÃâÀ» ÀüÁ¦·Î ÇÔ
- *    ±×·¡¼­ ÀÏ¹İÀûÀ¸·Î Á¢±ÙÀ» Çã°¡ÇÔ(public, default)
- * 6) Å¬·¡½ºÀÇ ÃÊ±âÈ­ ÀÛ¾÷À» ÇÏ´Â °´Ã¼ »ı¼º½Ã ¹«Á¶°Ç È£ÃâµÇ´Â
- *    ¸Ş¼­µå°¡ ÀÖ´Ù. ÀÌ ¸Ş¼­µå´Â Å¬·¡½ºÀÇ ÀÌ¸§°ú µ¿ÀÏÇÏ´Ù
- *    ÀÌ¹Ì Java¸¦ ¸¸µé¶§ºÎÅÍ Á¤ÇØÁø ¾à¼Ó
- *    (°´Ã¼ÁöÇâ ÇÁ·Î±×·¡¹ÖÀº ÀÌ·¯ÇÑ ¸Ş¼­µå¸¦ °®´Â´Ù)
- *    ÀÌ ¸Ş¼­µå¸¦ "»ı¼ºÀÚ"¶ó ºÎ¸¥´Ù
- *    ¸¸¾à¿¡ »ı¼ºÀÚ¸¦ ¸¸µéÁö ¾ÊÀ¸¸é ÄÄÆÄÀÏ·¯°¡ ÄÄÆÄÀÏ½Ã ÀÚµ¿À¸·Î
- *    default»ı¼ºÀÚ¸¦ Ãß°¡ÇØÁØ´Ù.
- *    Unity·Î ºñÀ¯ÇÏ¸é void Start()ÀÇ ¿ªÇÒ°ú À¯»ç
+/* ì‹ë‹¹ í´ë˜ìŠ¤ ì„¤ê³„
+ * 1) ëª…ì‚¬í˜•ê³¼ ë™ì‚¬í˜•ì„ êµ¬ë¶„í•œë‹¤.
+ * 2) ëª…ì‚¬í˜•ì€ ë³´í†µ ë³€ìˆ˜ê°€ ëœë‹¤.
+ * 3) ë™ì‚¬í˜•ì€ ë³´í†µ ë©”ì„œë“œê°€ ëœë‹¤.
+ * 4) ë³€ìˆ˜ëŠ” í•¨ë¶€ë¡œ ì ‘ê·¼í•˜ë©´ ë¬¸ì œì˜ ì†Œì§€ê°€ ë§¤ìš° ë§ìŒ
+ *    ê·¸ë˜ì„œ ì¼ë°˜ì ìœ¼ë¡œ ì™¸ë¶€ ì ‘ê·¼ì„ ê¸ˆì§€ì‹œí‚´(private)
+ *    classë‚´ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥
+ * 5) ë©”ì„œë“œëŠ” ì¼ë°˜ì ìœ¼ë¡œ ì™¸ë¶€ í˜¸ì¶œì„ ì „ì œë¡œ í•¨
+ *    ê·¸ë˜ì„œ ì¼ë°˜ì ìœ¼ë¡œ ì ‘ê·¼ì„ í—ˆê°€í•¨(public, default)
+ * 6) í´ë˜ìŠ¤ì˜ ì´ˆê¸°í™” ì‘ì—…ì„ í•˜ëŠ” ê°ì²´ ìƒì„±ì‹œ ë¬´ì¡°ê±´ í˜¸ì¶œë˜ëŠ”
+ *    ë©”ì„œë“œê°€ ìˆë‹¤. ì´ ë©”ì„œë“œëŠ” í´ë˜ìŠ¤ì˜ ì´ë¦„ê³¼ ë™ì¼í•˜ë‹¤
+ *    ì´ë¯¸ Javaë¥¼ ë§Œë“¤ë•Œë¶€í„° ì •í•´ì§„ ì•½ì†
+ *    (ê°ì²´ì§€í–¥ í”„ë¡œê·¸ë˜ë°ì€ ì´ëŸ¬í•œ ë©”ì„œë“œë¥¼ ê°–ëŠ”ë‹¤)
+ *    ì´ ë©”ì„œë“œë¥¼ "ìƒì„±ì"ë¼ ë¶€ë¥¸ë‹¤
+ *    ë§Œì•½ì— ìƒì„±ìë¥¼ ë§Œë“¤ì§€ ì•Šìœ¼ë©´ ì»´íŒŒì¼ëŸ¬ê°€ ì»´íŒŒì¼ì‹œ ìë™ìœ¼ë¡œ
+ *    defaultìƒì„±ìë¥¼ ì¶”ê°€í•´ì¤€ë‹¤.
+ *    Unityë¡œ ë¹„ìœ í•˜ë©´ void Start()ì˜ ì—­í• ê³¼ ìœ ì‚¬
  * */
 
 class Restaurant1{
-	// ÇÊµå(º¯¼ö):¸í»ç
+	// í•„ë“œ(ë³€ìˆ˜):ëª…ì‚¬
 		private int money = 100000;
-		private String[] foods = {"¶±ººÀÌ", "¼ø´ë", "¶ó¸é", "ÂÌ¸é"};
-		private int sel;		// ÇÊµåº¯¼ö´Â ÀÚµ¿À¸·Î ÃÊ±âÈ­µÊ
+		private String[] foods = {"ë–¡ë³¶ì´", "ìˆœëŒ€", "ë¼ë©´", "ì«„ë©´"};
+		private int sel;		// í•„ë“œë³€ìˆ˜ëŠ” ìë™ìœ¼ë¡œ ì´ˆê¸°í™”ë¨
 		
-		// ¸Ş¼­µå(±â´É):µ¿»ç
-		Restaurant1(){		// »ı¼ºÀÚ (¸Ş¼­µå)
+		// ë©”ì„œë“œ(ê¸°ëŠ¥):ë™ì‚¬
+		Restaurant1(){		// ìƒì„±ì (ë©”ì„œë“œ)
 			cleaning();
 			prepareFoods();
 		}
 		void cleaning() {
-			System.out.println("½Ä´çÀ» Ã»¼ÒÇÑ´Ù");
+			System.out.println("ì‹ë‹¹ì„ ì²­ì†Œí•œë‹¤");
 		}
 		void prepareFoods() {
-			System.out.println("À½½Ä Àç·á¸¦ ¼ÕÁúÇÏ´Ù");
+			System.out.println("ìŒì‹ ì¬ë£Œë¥¼ ì†ì§ˆí•˜ë‹¤");
 		}
 		void welcome() {
-			System.out.println("¾î¼­ ¿À¼¼¿ä");
+			System.out.println("ì–´ì„œ ì˜¤ì„¸ìš”");
 		}
 		void byeBye() {
-			System.out.println("¾È³çÈ÷°¡¼¼¿ä");
+			System.out.println("ì•ˆë…•íˆê°€ì„¸ìš”");
 		}
 		void getMoney(int m) {
 			money += m;
-			System.out.println(m + "À» À½½Ä°ªÀ¸·Î ¹ŞÀ½");
+			System.out.println(m + "ì„ ìŒì‹ê°’ìœ¼ë¡œ ë°›ìŒ");
 		}
 		void calcMoney() {
-			System.out.println("¿À´Ã µ·Àº " + money + "ÀÌ´Ù");
+			System.out.println("ì˜¤ëŠ˜ ëˆì€ " + money + "ì´ë‹¤");
 		}
 		void anyFood() {
-			System.out.println("¾î¶² À½½Ä µå½Ç·¡¿ä?");
+			System.out.println("ì–´ë–¤ ìŒì‹ ë“œì‹¤ë˜ìš”?");
 			System.out.println(Arrays.toString(foods));
 			Random rd = new Random();
 			sel = rd.nextInt(foods.length);
-			System.out.println(foods[sel]+"ÀÌ¿ä");
+			System.out.println(foods[sel]+"ì´ìš”");
 		}
 		void cookFood() {
-			System.out.println(foods[sel]+"À» ¿ä¸®ÇÏ´Ù");
+			System.out.println(foods[sel]+"ì„ ìš”ë¦¬í•˜ë‹¤");
 		}
 		void sendFood() {
-			System.out.println(foods[sel]+"³ª¿Ô½À´Ï´Ù");
-			System.out.println("¸ÀÀÖ°Ô µå¼¼¿ä");
+			System.out.println(foods[sel]+"ë‚˜ì™”ìŠµë‹ˆë‹¤");
+			System.out.println("ë§›ìˆê²Œ ë“œì„¸ìš”");
 		}			
 }
 
 public class _04_Restaurant {
 	
 	public static void main(String[] args) {
-		// ¼³°èµµ         ¸®¸ğÄÁ           ½ÇÃ¼(°´Ã¼)
+		// ì„¤ê³„ë„         ë¦¬ëª¨ì»¨           ì‹¤ì²´(ê°ì²´)
 		Restaurant1 rest = new Restaurant1();
 //		rest.cleaning();
 //		rest.prepareFoods();
@@ -77,7 +77,7 @@ public class _04_Restaurant {
 			System.out.println("==================");
 			rest.welcome();
 //			if(i==5)
-//				rest.foods = new String[] {"Áã", "¹ÙÄû"};
+//				rest.foods = new String[] {"ì¥", "ë°”í€´"};
 			rest.anyFood();
 			rest.cookFood();
 //			rest.money = -999999999;

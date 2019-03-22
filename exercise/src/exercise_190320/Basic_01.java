@@ -1,13 +1,13 @@
-package exercise_190320;
+ï»¿package exercise_190320;
 
-/*1. Å¬·¡½º Add
-Å¬·¡½º Sub
-Å¬·¡½º Mul
-Å¬·¡½º Div¸¦ ¸¸µå¼¼¿ä
-ÀÌµéÀº ´ÙÀ½ ÇÊµå¿Í ¸Þ¼­µå¸¦ °¡Áý´Ï´Ù
-intÅ¸ÀÔÀÇ a, b ÇÊµå : ¿¬»êÇÏ°íÀÚ ÇÏ´Â °ª
-void setValue(int _a, int _b) : ¿¬»ê°ªÀ» Àü´Þ¹Þ¾Æ ÇÊµå¿¡ ÀúÀå
-int calculate() : ÇØ´ç Å¬·¡½ºÀÇ ¸ñÀû¿¡ ¸Â´Â ¿¬»êÀ» ½ÇÇàÇÏ°í °á°ú¸¦ ¸®ÅÏÇÕ´Ï´Ù*/
+/*1. í´ëž˜ìŠ¤ Add
+í´ëž˜ìŠ¤ Sub
+í´ëž˜ìŠ¤ Mul
+í´ëž˜ìŠ¤ Divë¥¼ ë§Œë“œì„¸ìš”
+ì´ë“¤ì€ ë‹¤ìŒ í•„ë“œì™€ ë©”ì„œë“œë¥¼ ê°€ì§‘ë‹ˆë‹¤
+intíƒ€ìž…ì˜ a, b í•„ë“œ : ì—°ì‚°í•˜ê³ ìž í•˜ëŠ” ê°’
+void setValue(int _a, int _b) : ì—°ì‚°ê°’ì„ ì „ë‹¬ë°›ì•„ í•„ë“œì— ì €ìž¥
+int calculate() : í•´ë‹¹ í´ëž˜ìŠ¤ì˜ ëª©ì ì— ë§žëŠ” ì—°ì‚°ì„ ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ ë¦¬í„´í•©ë‹ˆë‹¤*/
 
 class Add {
 	int a;

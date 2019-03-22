@@ -1,6 +1,6 @@
-package exercise_190318;
+ï»¿package exercise_190318;
 
-//3. µÎ ¼ö¸¦ ÀÔ·Â¹Ş°í ÃÖ´ë °ø¾à¼ö¸¦ Ãâ·ÂÇÏ¼¼¿ä
+//3. ë‘ ìˆ˜ë¥¼ ì…ë ¥ë°›ê³  ìµœëŒ€ ê³µì•½ìˆ˜ë¥¼ ì¶œë ¥í•˜ì„¸ìš”
 public class Middle_03 {
 
 	public static void main(String[] args) {

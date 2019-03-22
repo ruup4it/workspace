@@ -9,11 +9,11 @@ class Circle {
 	}
 
 	void showPerimeter() {
-		System.out.println(String.format("µÑ·¹ : %.2f",radius*2*PI));
+		System.out.println(String.format("ë‘˜ë ˆ : %.2f",radius*2*PI));
 	}
 	
 	void showArea() {
-		System.out.println(String.format("³ĞÀÌ : %.2f",radius*radius*PI));
+		System.out.println(String.format("ë„“ì´ : %.2f",radius*radius*PI));
 	}
 }
 

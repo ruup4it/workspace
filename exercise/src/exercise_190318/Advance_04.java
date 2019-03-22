@@ -1,5 +1,5 @@
-package exercise_190318;
-//4. ¹öºí Á¤·Ä·Î ¿À¸§Â÷¼ø ¸Þ¼­µå¿Í ³»¸²Â÷¼ø ¸Þ¼­µå ±¸Çö
+ï»¿package exercise_190318;
+//4. ë²„ë¸” ì •ë ¬ë¡œ ì˜¤ë¦„ì°¨ìˆœ ë©”ì„œë“œì™€ ë‚´ë¦¼ì°¨ìˆœ ë©”ì„œë“œ êµ¬í˜„
 public class Advance_04 {
 
 	public static void main(String[] args) {

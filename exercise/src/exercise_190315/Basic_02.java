@@ -1,6 +1,6 @@
-package exercise_190315;
+ï»¿package exercise_190315;
 
-//2. 1ºÎÅÍ 10±îÁö °öÇØ¼­ ±× °á°ú¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä
+//2. 1ë¶€í„° 10ê¹Œì§€ ê³±í•´ì„œ ê·¸ ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì„¸ìš”
 public class Basic_02 {
 	public static void main(String[] args) {
 		int mul = 1;

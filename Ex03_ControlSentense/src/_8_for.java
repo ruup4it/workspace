@@ -1,5 +1,5 @@
-//for(ÃÊ±âÈ­; ÁøÇà or Á¾·á; Áõ°¨) {
-//	½ÇÇà¹®
+ï»¿//for(ì´ˆê¸°í™”; ì§„í–‰ or ì¢…ë£Œ; ì¦ê°) {
+//	ì‹¤í–‰ë¬¸
 //}
 public class _8_for {
 	public static void main(String[] args) {
