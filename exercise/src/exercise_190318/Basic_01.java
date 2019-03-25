@@ -1,4 +1,4 @@
-﻿package exercise_190318;
+package exercise_190318;
 
 import java.util.Scanner;
 
@@ -9,9 +9,18 @@ public class Basic_01 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		//int num1 = scan.nextInt();
-		//int num2 = scan.nextInt();
+		int result = 0;
+		System.out.print("첫 번째 정수를 입력하세요 : ");
+		int num1 = scan.nextInt();
+		System.out.print("두 번째 정수를 입력하세요 : ");
+		int num2 = scan.nextInt();
 		
+		if(num1 > num2) {
+			result = num1-num2;
+		} else {
+			result = num2-num1;
+		}
+		System.out.println(String.format("두 수의 차의 절댓값은 %d입니다.", result));
 		
 		scan.close();
 	}

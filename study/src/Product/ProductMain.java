@@ -1,7 +1,6 @@
 package Product;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 //보유재산
 //상품(이름,가격,재고) 5종류
@@ -38,8 +37,8 @@ public class ProductMain{
 		product.getProduct();
 		shop.add(product);
 
-		int index = shop.indexOf(0);
-		System.out.println(index);
+		//int index = shop.indexOf(0);
+		//System.out.println(index);
 	}
 	
 }
