@@ -13,18 +13,18 @@ package exercise_190325;
 //
 //main에서 2개의 PhoneInfo객체를 생성하고 출력해보도록 구현한다
 
-class PhoneInfo {
+class PhoneInfo_Basic {
 	private String name;
 	private String phoneNumber;
 	private String birthday;
 
 	// 저장하지 않는 생성자를 정의한다
-	PhoneInfo() {
+	PhoneInfo_Basic() {
 
 	}
 
 	// 생년월일 정보를 저장하는 생성자
-	PhoneInfo(String birthday) {
+	PhoneInfo_Basic(String birthday) {
 		this.birthday = birthday;
 	}
 
@@ -37,8 +37,8 @@ class PhoneInfo {
 
 public class Basic_01 {
 	public static void main(String[] args) {
-		PhoneInfo phoneInfo1 = new PhoneInfo();
-		PhoneInfo phoneInfo2 = new PhoneInfo("950114");
+		PhoneInfo_Basic phoneInfo1 = new PhoneInfo_Basic();
+		PhoneInfo_Basic phoneInfo2 = new PhoneInfo_Basic("95년 01월 14일");
 		
 		phoneInfo1.printInfo();
 		phoneInfo2.printInfo();

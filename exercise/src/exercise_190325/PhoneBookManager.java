@@ -34,16 +34,16 @@ import java.util.Scanner;
 //2. 프로그램 종료
 //선택 :
 
-class PhoneInfo2 {
+class PhoneInfo {
 	private String name;
 	private String phoneNumber;
 	private String birthday;
 
 	// 저장하지 않는 생성자를 정의한다
-	PhoneInfo2() {}
+	PhoneInfo() {}
 
 	// 생년월일 정보를 저장하는 생성자
-	PhoneInfo2(String name, String phoneNumber, String birthday) {
+	PhoneInfo(String name, String phoneNumber, String birthday) {
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.birthday = birthday;
@@ -62,7 +62,7 @@ class PhoneInfo2 {
 }
 
 public class PhoneBookManager {
-	//static ArrayList<PhoneInfo2> phoneList = new ArrayList<PhoneInfo2>();
+	static ArrayList<PhoneInfo> phoneList = new ArrayList<PhoneInfo>();
 
 	public static void showMenu() {// 메뉴출력
 		System.out.println("--선택하세요--");
@@ -81,12 +81,18 @@ public class PhoneBookManager {
 		String birthday = scan.nextLine();
 		
 		//birthday = birthday.substring(0, 2) + "년 " + birthday.substring(2, 4) + "월 " + birthday.substring(4, 6) + "일";
-		PhoneInfo2 phoneInfo = new PhoneInfo2(name, phoneNumber, birthday);
+		PhoneInfo phoneInfo = new PhoneInfo(name, phoneNumber, birthday);
 		phoneInfo.printInfo();
 		
-		//phoneList.add(phoneInfo);
+		phoneList.add(phoneInfo);
 	}
-
+	
+	public static void selectData() {
+		for(int i =0 ; i<phoneList.size();i++) {
+			phoneList.get(i).printInfo();
+		}
+	}
+	
 	public static void main(String[] args) { // 메뉴선택 반복 루프
 		Scanner scan = new Scanner(System.in);
 		while (true) {
@@ -100,6 +106,9 @@ public class PhoneBookManager {
 				System.out.println("이용해주셔서 감사합니다.");
 				scan.close();
 				System.exit(0);
+				break;
+			case 3 :
+				selectData();
 				break;
 			default:
 				System.out.println("잘못 입력하셨습니다.");
