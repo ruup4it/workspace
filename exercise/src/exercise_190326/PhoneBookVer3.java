@@ -9,14 +9,14 @@ import java.util.Arrays;
 
 import java.util.Scanner;
 
-class PhoneInfo2 // 주소록 구조
+class PhoneInfo // 주소록 구조
 {
 	String name; // 이름
 	String phoneNumber; // 전화번호
 	String birth; // 생년월일
 
 	// 생성자
-	public PhoneInfo2(String name, String num, String birth) {
+	public PhoneInfo(String name, String num, String birth) {
 		this.name = name;
 		phoneNumber = num;
 		this.birth = birth;
@@ -24,7 +24,7 @@ class PhoneInfo2 // 주소록 구조
 	}
 
 	// 생성자
-	public PhoneInfo2(String name, String num) {
+	public PhoneInfo(String name, String num) {
 		this.name = name;
 		phoneNumber = num;
 		this.birth = null;
@@ -41,9 +41,9 @@ class PhoneInfo2 // 주소록 구조
 	}
 }
 
-public class PhoneBookVer02 {
+public class PhoneBookVer3 {
 	static Scanner keyboard = new Scanner(System.in);
-	static PhoneInfo2[] phoneList = new PhoneInfo2[3];
+	static PhoneInfo[] phoneList = new PhoneInfo[3];
 
 	public static void showMenu() // 메뉴 출력
 	{
@@ -74,7 +74,7 @@ public class PhoneBookVer02 {
 				System.out.print("생년월일: ");
 				String birth = keyboard.nextLine();
 
-				PhoneInfo2 info = new PhoneInfo2(name, phone, birth);
+				PhoneInfo info = new PhoneInfo(name, phone, birth);
 				phoneList[j] = info;
 				break;
 			}
@@ -156,24 +156,22 @@ public class PhoneBookVer02 {
 			System.out.println("\n조회된 결과가 없습니다.\n");
 		} else {
 			System.out.println("\n" + count + "건의 결과가 있습니다.\n");
-			for (int k = 0, i = 0; i < findData.length; i++, k++) {
+			for (int i = 0; i < findData.length; i++) {
 				if (findData[i] != -1) {
 					System.out.println("[" + (i + 1) + "]");
-					phoneList[findData[i - k]].showPhoneInfo();
-					System.out.println("삭제하시겠습니까?");
-					System.out.print("입력 (예: 1 / 아니오 : 2) : ");
-					int select = keyboard.nextInt();
-					keyboard.nextLine();
-					if (select == 1) {
-						for (int j = findData[i - k]; j < phoneList.length - 1; j++) {
-							phoneList[j] = phoneList[j + 1];
-						}
-						phoneList[phoneList.length - 1] = null;
-						System.out.println("\n데이터가 삭제되었습니다\n");
-					}
+					phoneList[findData[i]].showPhoneInfo();
 				}
 			}
 
+			System.out.println("삭제하실 데이터의 번호를 입력해주세요.");
+			System.out.print("입력 : ");
+			int select = keyboard.nextInt();
+			
+			for (int i = findData[select - 1]; i < phoneList.length - 1; i++) {
+				phoneList[i] = phoneList[i + 1];
+			}
+			phoneList[phoneList.length - 1] = null;
+			System.out.println("\n데이터가 삭제되었습니다\n");
 		}
 
 	}
