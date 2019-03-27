@@ -23,7 +23,7 @@
 <XPD:OBJ name="OwnedViews[0]" type="UMLPackageView" guid="WKjP+iIbVEWQ4Xy9AJwA7wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">108</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">112</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">20</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">857</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">449</XPD:ATTR>
@@ -570,12 +570,12 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[1]" type="UMLOperation" guid="9Y0FAsAruk6R3amj5CmSKgAA">
-<XPD:ATTR name="Name" type="string">void showData</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">showData</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPackage</XPD:ATTR>
 <XPD:REF name="Owner">DH6+8lR+gUSQjCGgoRQS1wAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[2]" type="UMLOperation" guid="8OOt9PNyuUumLNi0o3NUNAAA">
-<XPD:ATTR name="Name" type="string">void showBasicInfo</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">showBasicInfo</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPackage</XPD:ATTR>
 <XPD:REF name="Owner">DH6+8lR+gUSQjCGgoRQS1wAA</XPD:REF>
 </XPD:OBJ>

@@ -1,6 +1,6 @@
 package exercise_190326;
 
-import java.util.Arrays;
+
 
 /*
  * 전화번호 관리 프로그램 구현 프로젝트
@@ -90,7 +90,7 @@ public class PhoneBookVer3 {
 		for (int j = 0; j < findData.length; j++) {
 			findData[j] = -1;
 		}
-		// System.out.println(Arrays.toString(findData));
+		
 		System.out.println("검색하실 데이터를 입력하세요");
 		System.out.print("입력 :");
 		String keyword = keyboard.nextLine();
@@ -131,7 +131,6 @@ public class PhoneBookVer3 {
 		for (int j = 0; j < findData.length; j++) {
 			findData[j] = -1;
 		}
-		// System.out.println(Arrays.toString(findData));
 		System.out.println("삭제하실 데이터를 입력하세요");
 		System.out.print("입력 :");
 		String keyword = keyboard.nextLine();
