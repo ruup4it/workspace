@@ -16,7 +16,27 @@ package javaLec.ExAbstract.ex03equals;
  *    비교할 정보를 구현자가 정할 수 있다.
  * */
 public class Ball {
+	private double radius;
+
+	public Ball(double rad) {
+		this.radius = rad;
+	}
+
+	public String toString() {
+		return "이 공의 반지름은 " + radius;
+	}
+
+	public boolean equals(Object obj) {
+		return this.radius == ((Ball) obj).radius;
+	}
+
 	public static void main(String[] args) {
-		System.out.println();
+		Ball ball1 = new Ball(30);
+		Ball ball2 = new Ball(30);
+
+		System.out.println(ball1);
+		System.out.println(ball2);
+		System.out.println(ball1 == ball2);
+		System.out.println(ball1.equals(ball2));
 	}
 }
