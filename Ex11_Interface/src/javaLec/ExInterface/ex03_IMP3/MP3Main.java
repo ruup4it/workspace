@@ -67,6 +67,6 @@ public class MP3Main {
 			System.out.println("A를 선택");
 		else if (sel == 1)
 			System.out.println("B를 선택");
-
+		
 	}
 }
