@@ -18,4 +18,5 @@ public interface IMP3 {
 	public void listenFM();
 
 	public void viewPhoto();
+	
 }

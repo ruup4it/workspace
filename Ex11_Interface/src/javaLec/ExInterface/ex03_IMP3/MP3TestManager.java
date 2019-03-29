@@ -10,8 +10,7 @@ public class MP3TestManager {
 	IMP3 mp3;
 
 	/*
-	 * 마틴 파울러는 이것을 의존성 주입(Dependency Injection) 
-	 * 클래스 내부에서 결정하지 않고, 외부에서 상속받은 다양한 객체를
+	 * 마틴 파울러는 이것을 의존성 주입(Dependency Injection) 클래스 내부에서 결정하지 않고, 외부에서 상속받은 다양한 객체를
 	 * 전달할 수 있으므로 프로그램 설계의 유연성을 가져올 수 있다.
 	 */
 	MP3TestManager(IMP3 mp3) {
@@ -20,6 +19,18 @@ public class MP3TestManager {
 
 	void setMP3(IMP3 mp3) {
 		this.mp3 = mp3;
+	}
+
+	void allTest(int cnt) throws InterruptedException {
+		for (int i = 0; i < cnt; i++) {
+			System.out.println("**** " + mp3 + " *****");
+			mp3.listenFM();
+			Thread.sleep(500);
+			mp3.playMp3();
+			Thread.sleep(500);
+			mp3.viewPhoto();
+			Thread.sleep(500);
+		}
 	}
 
 	void listenTest() {

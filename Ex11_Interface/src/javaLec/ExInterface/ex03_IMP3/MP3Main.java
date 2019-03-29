@@ -33,31 +33,33 @@ import java.util.Random;
  * */
 public class MP3Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// 1) A가 먼저 제품을 보내왔다.
 		AMP3 aMp3 = new AMP3();
 
 		// 2) BCamp는 A의 mp3를 테스트하기 위해서
 		// MP3TestManager객체를 만든다.
 		MP3TestManager mp3Tm = new MP3TestManager(aMp3);
-		mp3Tm.listenTest();
-		mp3Tm.playTest();
-		mp3Tm.viewTest();
+//		mp3Tm.listenTest();
+//		mp3Tm.playTest();
+//		mp3Tm.viewTest();
 
 		// 3) 마침 B와 C도 mp3를 보내왔다
 		// 함께 테스트 해보자
 		IMP3[] mp3s = new IMP3[] { aMp3, new BMP3(), new CMP3() };
 		String[] company = new String[] { "A", "B", "C" };
-
+		int temp = 0;
 		for (IMP3 mp3 : mp3s) {
-			for (String item : company) {
-				System.out.println(item + "회사\n");
-				mp3Tm.setMP3(mp3);
-				mp3Tm.listenTest();
-				mp3Tm.playTest();
-				mp3Tm.viewTest();
-				System.out.println("--------------------");
-			}
+			System.out.print(company[temp] + "회사\n");
+			mp3Tm.allTest(1);
+			mp3Tm.setMP3(mp3);
+			System.out.println();
+			temp++;
+			
+//			mp3Tm.listenTest();
+//			mp3Tm.playTest();
+//			mp3Tm.viewTest();
+//			System.out.println("--------------------");
 
 		}
 
@@ -67,6 +69,6 @@ public class MP3Main {
 			System.out.println("A를 선택");
 		else if (sel == 1)
 			System.out.println("B를 선택");
-		
+
 	}
 }

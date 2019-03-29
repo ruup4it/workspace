@@ -1,4 +1,4 @@
-﻿package javaLec._class.ex05Constructor;
+package javaLec._class.ex05Constructor;
 
 /* initMember 메서드로 값을 변경할 수 있어
  * 객체마다 다른 구성이 가능해졌다
@@ -12,7 +12,7 @@ public class FruitMain {
 		FruitSeller seller1 = new FruitSeller(); // Default 생성자 호출
 		FruitSeller seller2 = new FruitSeller(10000, 20, 1500); // 매개변수 있는 생성자 호출
 		FruitBuyer buyer = new FruitBuyer();
-
+		
 		if (seller1.getApplePrice() < seller2.getApplePrice()) {
 
 			buyer.buyApple(seller1, 2000);
