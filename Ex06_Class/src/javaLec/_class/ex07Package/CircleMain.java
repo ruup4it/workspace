@@ -40,6 +40,7 @@ public class CircleMain {
 	public static void main(String[] args) {
 		// 같은 패키지에 있는 Circle 객체 생성
 		Circle cc = new Circle(2);
+
 		System.out.println(cc.circleArea());
 
 		// 다른 패키지에 있는 Triangle 객체 생성 -> 패키지.클래스 import 시켜줘야함

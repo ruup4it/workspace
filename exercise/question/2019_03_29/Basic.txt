@@ -1,0 +1,22 @@
+
+
+1. 정수 10개를 입력받아 배열에 저장하고, 이 정수중에서 3의 배수만 출력하는 순서도를 그리세요
+
+
+2. 2개의 정수를 입력받고 큰 값을 반환하는 순서도를 그리세요
+
+
+
+3. Math.random() 메서드를 이용하여 10에서 50사이의 난수 10개를 화면에
+   출력하는 프로그램을 작성하세요
+
+4. 다음 main()메서드의 실행결과가 출력되도록 MyPont클래스를 작성하세요
+
+   public static void main(String[] args){
+	MyPoint a = new MyPoint(3, 20);
+	System.out.println(a);
+   }
+
+  <출력결과>
+  MyPoint(3, 20)
+
