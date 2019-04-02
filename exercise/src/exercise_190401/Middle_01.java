@@ -1,7 +1,7 @@
 package exercise_190401;
 
 //1. AB + BA = 99 를 만족하는 모든 A와 B의 조합을 구하는 프로그램의 순서도를 그리세요
-
+// 1~ 9 / 1~9
 public class Middle_01 {
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
