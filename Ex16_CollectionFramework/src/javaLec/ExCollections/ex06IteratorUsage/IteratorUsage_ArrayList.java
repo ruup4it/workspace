@@ -17,8 +17,9 @@ public class IteratorUsage_ArrayList {
 		list.add("Second");
 		list.add("Third");
 		list.add("Fourth");
-
+		//Iterator<String> itr1 = new ArrayList<String>().iterator();
 		Iterator<String> itr = list.iterator();	// Iterator 생성
+		System.out.println(itr);
 		System.out.println("----------------------");
 		while (itr.hasNext()) {	// 값이 있다면
 			String curStr = itr.next();	
@@ -30,5 +31,7 @@ public class IteratorUsage_ArrayList {
 		itr = list.iterator();
 		while (itr.hasNext())
 			System.out.println(itr.next());
+		
+		
 	}
 }

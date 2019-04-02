@@ -19,6 +19,7 @@ public class IteratorUsage_HashSet {
 		set.add("Fourth");
 
 		Iterator<String> itr = set.iterator(); // Iterator 생성
+
 		System.out.println("----------------------");
 		while (itr.hasNext()) { // 값이 있다면
 			String curStr = itr.next();
