@@ -9,17 +9,21 @@ package exercise_190403;
 //다음과 같은 해시맵을 이용하라
 //HashMap<String, Student> dept = new HashMap<String, Student>();
 
+//1) Student를 만들고 이름, 학과, 학번, 학점 평균 o
+//2) 메인 :HashMap<String, Student> dept = new HashMap<String, Student>(); o
+// 3) 5명 입력받고 o
+//4) 검색할 학번 입력받고
+//5 ) 해당 값 출력
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
 
-
 class Student {
 	Scanner scan = new Scanner(System.in);
-	String name;
-	String department;
-	String studentNum;
-	double scoreAvg;
+	String name; // 이름
+	String department; // 학과
+	String studentNum; // 학번
+	double scoreAvg; // 학점평균
 
 	Student() {
 		System.out.print("이름을 입력하세요 : ");
@@ -32,9 +36,15 @@ class Student {
 		scoreAvg = scan.nextDouble();
 		scan.nextLine();
 	}
+
 	public String getStudentNum() {
 		return this.studentNum;
 	}
+
+	public void setStudentNum(String studentNum) {
+		this.studentNum = studentNum;
+	}
+
 	public String toString() {
 		return "=========================\n이름 : " + name + "\n" + "학과 : " + department + "\n" + "학번 : " + studentNum
 				+ "\n" + "학점 평균 : " + scoreAvg;
@@ -44,23 +54,29 @@ class Student {
 public class Middle_02 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		// 키, 밸류
+		// 학번, 학생클래스
 		HashMap<String, Student> dept = new HashMap<String, Student>();
+
 		for (int i = 0; i < 2; i++) {
 			Student st = new Student();
 			dept.put(st.getStudentNum(), st);
 		}
-		
+		///////////////////////
 		System.out.print("검색하실 학번을 입력하세요 : ");
 		String search = scan.nextLine();
+		//////////////
+
 		Iterator<String> itr = dept.keySet().iterator(); // Iterator 생성
 
 		while (itr.hasNext()) { // 값이 있다면
 			String key = itr.next();
-			if(search.equals(key)) {
-				System.out.println("이름 : " + dept.get(key).name);
-				System.out.println("학과 : " + dept.get(key).department);
-				System.out.println("학번 : " + dept.get(key).studentNum);
-				System.out.println("학점평균 : " + dept.get(key).scoreAvg);
+			if (search.equals(key)) {
+				System.out.println(dept.get(key));
+//				System.out.println("이름 : " + dept.get(key).name);
+//				System.out.println("학과 : " + dept.get(key).department);
+//				System.out.println("학번 : " + dept.get(key).studentNum);
+//				System.out.println("학점평균 : " + dept.get(key).scoreAvg);
 			}
 		}
 		scan.close();
