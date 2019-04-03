@@ -7,7 +7,12 @@ public class MyStack<T> implements Stack {
 
 	@Override
 	public Object pop() {
-		return lList.pop();
+		try{
+			return lList.pop();
+		}catch(java.util.NoSuchElementException e){
+			System.out.println("값이 없습니다.");
+			return null;     
+		}
 	}
 
 	@Override
