@@ -1,8 +1,5 @@
+ï»¿
 /*
- * ÀüÈ­¹øÈ£ °ü¸® ÇÁ·Î±×·¥ ±¸Çö ÇÁ·ÎÁ§Æ®
- * Version 0.6
- */
-
 import java.util.Scanner;
 
 interface INIT_MENU
@@ -21,13 +18,13 @@ class MenuChoiceException extends Exception
 	
 	public MenuChoiceException(int choice)
 	{
-		super("Àß¸øµÈ ¼±ÅÃÀÌ ÀÌ·ïÁ³½À´Ï´Ù.");
+		super("ì˜ëª»ëœ ì„ íƒì´ ì´ë¤„ì¡ŒìŠµë‹ˆë‹¤.");
 		wrongChoice=choice;
 	}
 
 	public void showWrongChoice()
 	{
-		System.out.println(wrongChoice+"¿¡ ÇØ´çÇÏ´Â ¼±ÅÃÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+		System.out.println(wrongChoice+"ì— í•´ë‹¹í•˜ëŠ” ì„ íƒì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 	}
 }
 
@@ -105,22 +102,22 @@ class PhoneBookManager
 	
 	private PhoneInfo readFriendInfo()
 	{
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String name=MenuViewer.keyboard.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		String phone=MenuViewer.keyboard.nextLine();
 		return new PhoneInfo(name, phone);
 	}
 	
 	private PhoneInfo readUnivFriendInfo()
 	{
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String name=MenuViewer.keyboard.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		String phone=MenuViewer.keyboard.nextLine();
-		System.out.print("Àü°ø: ");
+		System.out.print("ì „ê³µ: ");
 		String major=MenuViewer.keyboard.nextLine();
-		System.out.print("ÇĞ³â: ");
+		System.out.print("í•™ë…„: ");
 		int year=MenuViewer.keyboard.nextInt();
 		MenuViewer.keyboard.nextLine();
 		return new PhoneUnivInfo(name, phone, major, year);
@@ -128,20 +125,20 @@ class PhoneBookManager
 	
 	private PhoneInfo readCompanyFriendInfo()
 	{
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String name=MenuViewer.keyboard.nextLine();
-		System.out.print("ÀüÈ­¹øÈ£: ");
+		System.out.print("ì „í™”ë²ˆí˜¸: ");
 		String phone=MenuViewer.keyboard.nextLine();
-		System.out.print("È¸»ç: ");
+		System.out.print("íšŒì‚¬: ");
 		String company=MenuViewer.keyboard.nextLine();
 		return new PhoneCompanyInfo(name, phone, company);	
 	}	
 	
 	public void inputData() throws MenuChoiceException
 	{
-		System.out.println("µ¥ÀÌÅÍ ÀÔ·ÂÀ» ½ÃÀÛÇÕ´Ï´Ù..");
-		System.out.println("1. ÀÏ¹İ, 2. ´ëÇĞ, 3. È¸»ç");
-		System.out.print("¼±ÅÃ>> ");
+		System.out.println("ë°ì´í„° ì…ë ¥ì„ ì‹œì‘í•©ë‹ˆë‹¤..");
+		System.out.println("1. ì¼ë°˜, 2. ëŒ€í•™, 3. íšŒì‚¬");
+		System.out.print("ì„ íƒ>> ");
 		int choice=MenuViewer.keyboard.nextInt();
 		MenuViewer.keyboard.nextLine();
 		PhoneInfo info=null;
@@ -163,39 +160,39 @@ class PhoneBookManager
 		}
 		
 		infoStorage[curCnt++]=info;
-		System.out.println("µ¥ÀÌÅÍ ÀÔ·ÂÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù. \n");		
+		System.out.println("ë°ì´í„° ì…ë ¥ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. \n");		
 	}
 	
 	public void searchData()
 	{
-		System.out.println("µ¥ÀÌÅÍ °Ë»öÀ» ½ÃÀÛÇÕ´Ï´Ù..");
+		System.out.println("ë°ì´í„° ê²€ìƒ‰ì„ ì‹œì‘í•©ë‹ˆë‹¤..");
 		
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String name=MenuViewer.keyboard.nextLine();
 		
 		int dataIdx=search(name);
 		if(dataIdx<0)
 		{
-			System.out.println("ÇØ´çÇÏ´Â µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. \n");
+			System.out.println("í•´ë‹¹í•˜ëŠ” ë°ì´í„°ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. \n");
 		}
 		else
 		{
 			infoStorage[dataIdx].showPhoneInfo();
-			System.out.println("µ¥ÀÌÅÍ °Ë»öÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù. \n");
+			System.out.println("ë°ì´í„° ê²€ìƒ‰ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. \n");
 		}
 	}
 	
 	public void deleteData()
 	{
-		System.out.println("µ¥ÀÌÅÍ »èÁ¦¸¦ ½ÃÀÛÇÕ´Ï´Ù..");
+		System.out.println("ë°ì´í„° ì‚­ì œë¥¼ ì‹œì‘í•©ë‹ˆë‹¤..");
 		
-		System.out.print("ÀÌ¸§: ");
+		System.out.print("ì´ë¦„: ");
 		String name=MenuViewer.keyboard.nextLine();
 		
 		int dataIdx=search(name);
 		if(dataIdx<0)
 		{
-			System.out.println("ÇØ´çÇÏ´Â µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. \n");
+			System.out.println("í•´ë‹¹í•˜ëŠ” ë°ì´í„°ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. \n");
 		}
 		else
 		{
@@ -203,7 +200,7 @@ class PhoneBookManager
 				infoStorage[idx]=infoStorage[idx+1];
 			
 			curCnt--;
-			System.out.println("µ¥ÀÌÅÍ »èÁ¦°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù. \n");
+			System.out.println("ë°ì´í„° ì‚­ì œê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. \n");
 		}
 	}
 	
@@ -225,12 +222,12 @@ class MenuViewer
 	
 	public static void showMenu()
 	{
-		System.out.println("¼±ÅÃÇÏ¼¼¿ä...");
-		System.out.println("1. µ¥ÀÌÅÍ ÀÔ·Â");
-		System.out.println("2. µ¥ÀÌÅÍ °Ë»ö");
-		System.out.println("3. µ¥ÀÌÅÍ »èÁ¦");
-		System.out.println("4. ÇÁ·Î±×·¥ Á¾·á");
-		System.out.print("¼±ÅÃ: ");
+		System.out.println("ì„ íƒí•˜ì„¸ìš”...");
+		System.out.println("1. ë°ì´í„° ì…ë ¥");
+		System.out.println("2. ë°ì´í„° ê²€ìƒ‰");
+		System.out.println("3. ë°ì´í„° ì‚­ì œ");
+		System.out.println("4. í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
+		System.out.print("ì„ íƒ: ");
 	}
 }
 
@@ -264,15 +261,17 @@ class PhoneBookVer06
 					manager.deleteData();
 					break;
 				case INIT_MENU.EXIT:
-					System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+					System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					return;
 				}
 			}
 			catch(MenuChoiceException e)
 			{
 				e.showWrongChoice();
-				System.out.println("¸Ş´º ¼±ÅÃÀ» Ã³À½ºÎÅÍ ´Ù½Ã ÁøÇàÇÕ´Ï´Ù.\n");
+				System.out.println("ë©”ë‰´ ì„ íƒì„ ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì§„í–‰í•©ë‹ˆë‹¤.\n");
 			}
 		}
 	}
 }
+
+*/
