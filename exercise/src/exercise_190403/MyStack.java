@@ -22,7 +22,6 @@ public class MyStack<T> implements Stack {
 			return true;
 		} else
 			return false;
-
 	}
 
 }
