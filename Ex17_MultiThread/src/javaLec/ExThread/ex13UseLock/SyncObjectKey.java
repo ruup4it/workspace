@@ -1,71 +1,55 @@
-package javaLec.ExThread.ex08SyncObjectKey;
-/*
- * at1.run() 호출하는 쓰레드가 num1 의 연산을 하고 있다.
- * 그 때, at2.run()을 호출하는 쓰레드가 num2의 연산을 하고 있다면
- * 이 때는 동시에 연산이 이루어져도 문제가 없다.
- * 그러므로 아래처럼 무조건 synchronized를 다 붙여주면
- * 속도가 느려지는 과한 동기화가 된다.
- */
+package javaLec.ExThread.ex13UseLock;
+
+import java.util.concurrent.locks.ReentrantLock;
+
 class IHaveTwoNum {
 	int num1 = 0;
 	int num2 = 0;
-	
-	
+	final ReentrantLock key1 = new ReentrantLock();
+	final ReentrantLock key2 = new ReentrantLock();
+
 	public void addOneNum1() {
-
+		key1.lock();
 		num1 += 1;
+		key1.unlock();
 	}
 
-	public synchronized void addTwoNum1() {
-
+	public void addTwoNum1() {
+		key1.lock();
 		num1 += 2;
+		key1.unlock();
 	}
 
-	public synchronized void addOneNum2() {
-
+	public void addOneNum2() {
+		key2.lock();
 		num2 += 1;
+		key2.unlock();
 	}
 
-	public synchronized void addTwoNum2() {
-
+	public void addTwoNum2() {
+		key2.lock();
 		num2 += 2;
+		key2.unlock();
 	}
 
 	public void showAllnums() {
 		System.out.println("num1: " + num1);
 		System.out.println("num2: " + num2);
 	}
-	
 }
 
 class AccessThread extends Thread {
 	IHaveTwoNum twoNumInst;
-	static int num= 0;
-	String name;
-	AccessThread(){
-		
-	}
+
 	public AccessThread(IHaveTwoNum inst) {
 		twoNumInst = inst;
-		num++;
-		this.name = "스레드"+num;
 	}
 
 	public void run() {
-		System.out.println(this);
 		twoNumInst.addOneNum1();
-		
-		System.out.println(this);
 		twoNumInst.addTwoNum1();
-		
-		System.out.println(this);
 		twoNumInst.addOneNum2();
-		
-		System.out.println(this);
 		twoNumInst.addTwoNum2();
-	}
-	public String toString(){
-		return this.name;
 	}
 }
 
