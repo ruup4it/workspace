@@ -84,9 +84,8 @@ class PhoneCompanyInfo extends PhoneInfo {
 }
 
 class PhoneBookManager {
-	final int MAX_CNT = 100;
 	HashSet<PhoneInfo> infoStorage = new HashSet<PhoneInfo>();
-	int curCnt = 0;
+
 
 	static PhoneBookManager inst = null;
 
