@@ -40,7 +40,9 @@ class PhoneInfo {
 	private String birthday;
 
 	// 저장하지 않는 생성자를 정의한다
-	PhoneInfo() {}
+	PhoneInfo() {
+		
+	}
 
 	// 생년월일 정보를 저장하는 생성자
 	PhoneInfo(String name, String phoneNumber, String birthday) {

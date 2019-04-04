@@ -3,16 +3,17 @@ package exercise_190404;
 //2. 1부터 100까지 출력한 뒤 종료하는 쓰레드는 Runnable를 상속하는 방식으로 만들어보세요
 
 class PrintNumRunnable implements Runnable {
-	int start, end;
-
-	PrintNumRunnable(int s, int e) {
-		start = s;
-		end = e;
-	}
+//	int start, end;
+//
+//	PrintNumRunnable(int s, int e) {
+//		start = s;
+//		end = e;
+//	}
 
 	@Override
 	public void run() {
-		for (int i = start; i <= end; i++) {
+		//for (int i = start; i <= end; i++) {
+		for (int i = 1; i <= 100; i++) {
 			System.out.println(i);
 		}
 	}
@@ -22,7 +23,8 @@ class PrintNumRunnable implements Runnable {
 public class Basic_02 {
 	public static void main(String[] args) {
 		System.out.println("Runnable 상속");
-		PrintNumRunnable pt = new PrintNumRunnable(1,100);
+		//PrintNumRunnable pt = new PrintNumRunnable(1,100);
+		PrintNumRunnable pt = new PrintNumRunnable();
 		Thread t1 = new Thread(pt);
 		t1.start();
 		try {

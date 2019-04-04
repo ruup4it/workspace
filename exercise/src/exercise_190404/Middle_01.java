@@ -1,4 +1,7 @@
 package exercise_190404;
+
+import java.util.Calendar;
+
 //1. 현재 시간을 계속 해서 출력하는 프로그램을 만드세요
 
 //
@@ -14,28 +17,28 @@ package exercise_190404;
 //clockText = clockText.concat(":");
 //clockText = clockText.concat(Integer.toString(second));
 
-import java.util.Calendar;
-
-class TimeThread extends Thread {
-
+class TimeThread extends Thread{
+	
 	public void run() {
 		while (true) {
 			Calendar c = Calendar.getInstance();
 			int hour = c.get(Calendar.HOUR_OF_DAY);
 			int min = c.get(Calendar.MINUTE);
 			int second = c.get(Calendar.SECOND);
+			
 			String clockText = Integer.toString(hour);
 			clockText = clockText.concat(":");
 			clockText = clockText.concat(Integer.toString(min));
 			clockText = clockText.concat(":");
 			clockText = clockText.concat(Integer.toString(second));
-			System.out.println(clockText);
 
+			System.out.println(clockText);
 			try {
-				Thread.sleep(1000);
+				sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
+			
 		}
 	}
 }
