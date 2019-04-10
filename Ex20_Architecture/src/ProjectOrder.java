@@ -129,9 +129,9 @@ import java.util.Scanner;
 
 class EmployeeVO { // Model - VO (Value Object)
 	// 필드
-	private String companyNum;
-	private String name;
-	private String ssn;
+	private String companyNum; // 사번
+	private String name;  // 이름
+	private String ssn; // 주민번호
 
 	// 생성자
 	public EmployeeVO() {
