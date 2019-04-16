@@ -18,11 +18,13 @@ public class ObjectCalculatorServer {
 			ois = new ObjectInputStream(sock.getInputStream());
 			Object obj = null;		
 			while((obj = ois.readObject()) != null){		
+				
 				SendData sd = (SendData)obj;	
 				int op1 = sd.getOp1();	
 				int op2 = sd.getOp2();	
 				String opcode = sd.getOpcode();	
 				if(opcode.equals("+")){	
+					// "1 + 2 = 3"
 					oos.writeObject(op1 + " + " + op2 + " = " + (op1 + op2));
 					oos.flush();
 				}else if(opcode.equals("-")){	

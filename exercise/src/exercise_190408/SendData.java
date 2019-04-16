@@ -1,7 +1,8 @@
 ﻿package exercise_190408;
 import java.io.Serializable;		
 		
-public class SendData implements Serializable {		
+public class SendData implements Serializable {	
+	int state;// cmd
 	private int op1;	
 	private int op2;	
 	private String opcode;	

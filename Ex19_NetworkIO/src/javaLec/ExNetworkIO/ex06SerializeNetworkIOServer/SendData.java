@@ -3,9 +3,9 @@ package javaLec.ExNetworkIO.ex06SerializeNetworkIOServer;
 import java.io.Serializable;
 
 public class SendData implements Serializable {
-	int op1;
-	int op2;
-	String opcode;
+	private int op1;
+	private int op2;
+	private String opcode;
 
 	public SendData(int op1, int op2, String opcode) {
 		this.op1 = op1;

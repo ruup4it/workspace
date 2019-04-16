@@ -65,7 +65,7 @@ class InputThread extends Thread{
 			String line = null;		
 			while((line = br.readLine()) != null){		
 				System.out.println(line);	
-			}		
+			}
 		}catch(Exception ex){			
 		}finally{			
 			try{		
